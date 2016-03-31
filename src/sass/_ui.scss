@@ -1,0 +1,81 @@
+
+button.btn,
+a.btn {
+  -webkit-appearance:none;-moz-appearance:none;border-radius:0;border-style:solid;border-width:0;cursor:pointer;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-weight:normal;line-height:normal;margin:0 0 1.25rem;position:relative;text-align:center;text-decoration:none;display:inline-block;padding:1rem 2rem 1.0625rem 2rem;font-size:1rem;background-color:#2ba6cb;border-color:#2285a2;color:#fff;transition:background-color 300ms ease-out
+}
+// DEFAULT BUTTON BASE
+button.btn,
+a.btn {
+  background: #333;
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: $body;
+  margin:2.5px;
+  font-size: .85em;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: 'Lato';
+  font-weight: 800;
+  vertical-align: top;
+  -webkit-transition: background ease-in-out 0.2s;
+  -moz-transition: background ease-in-out 0.2s;
+  -ms-transition: background ease-in-out 0.2s;
+  -o-transition: background ease-in-out 0.2s;
+  transition: background ease-in-out 0.2s;
+
+}
+
+button.btn.ghost,
+a.btn.ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: $body;
+}
+
+button.btn:hover,
+a.btn:hover {
+  background: #333;
+  border: 1px solid #fff;
+  color: #fff;
+}
+@include tablet {
+  button.btn,
+  a.btn,
+  button.btn.ghost,
+  a.btn.ghost,
+  button.btn.outro,
+  a.btn.outro
+   {
+    width: 100%;
+    color: #333;
+  }
+}
+
+
+// overrides
+.fp-slides {
+    height: 400px !important;
+}
+.middle > .fp-tableCell {
+    vertical-align: middle !important;
+}
+.fp-tableCell {
+    vertical-align: initial;
+}
+div.fp-controlArrow.fp-prev {
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    border-width: 0;
+    cursor: pointer;
+    background: url(../img/ui/left.svg);
+}
+div.fp-controlArrow.fp-next {
+    right: -80px;
+    width: 60px;
+    height: 60px;
+    border-width: 0;
+    cursor: pointer;
+    background: url(../img/ui/right.svg);
+}
