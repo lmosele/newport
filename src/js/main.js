@@ -17,9 +17,9 @@ $(document).ready(function() {
         css3: true,
         scrollingSpeed: 600,
         autoScrolling: false,
-        fitToSection: false,
+        fitToSection: true,
         fitToSectionDelay: 1000,
-        scrollBar: true,
+        scrollBar: false,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
         loopBottom: false,
@@ -56,12 +56,14 @@ $(document).ready(function() {
             // var leavingSection = $(this);
 
             if(index == 1 && direction == 'down'){
-                 $(".floater").addClass('sec1');
+                $(".floater").addClass("visible");
+                $("canvas").fadeOut();
             }
-             if(index == 2 && direction == 'down'){
-                 $(".floater").addClass('sec2');
+             
+            else if(index == 2 && direction == 'up'){
+                $(".floater").removeClass("visible");
+                $("canvas").fadeIn();
             }
-            // else if(index == 2 && direction == 'up'){}
          
             // SCROLLHELPER - Counts current scroll position
             // if(direction =='down'){
@@ -74,8 +76,9 @@ $(document).ready(function() {
         },
         afterLoad: function(anchorLink, index){
             // INDEX 2 STATE
-            if(index == 2){
-            }
+            // if(index == 2){
+                
+            // }
         },
         afterRender: function(){
             // SKROLLR INIT
@@ -100,25 +103,15 @@ $(document).ready(function() {
 });
 
 
-// $(function() {
-//         var message = "Welcome!";
-//         var original;
 
-//         $(window).focus(function() {
-//             if (original) {
-//                 document.title = original;
-//             }
-//         }).blur(function() {
-//             var title = $("Come Back!").text();
-//             if (title != message) {
-//                 original = title;
-//             }
-//             document.title = message;
-//         });
-// });
+// menu pop
+$(".popout").hover(function() {
+    $(this).toggleClass("open");
+});
 
+var original = document.title;
 $(window).blur(function() {
-    document.title = 'Hello!'; 
+    document.title = 'Come back!'; 
 }).focus(function() {
     document.title = original;
 });
@@ -188,14 +181,14 @@ function render(){
         p.r += p.s;
 
         var vel = {
-            x: p.d * Math.cos(p.r * Math.PI / scaleZ*1) + scaleZ/10,
-            y: p.d * Math.sin(p.r * Math.PI / scaleX*1) + scaleX/10
+            x: p.d * Math.cos(p.r * Math.PI / scaleZ ) + (scaleZ/10),
+            y: p.d * Math.sin(p.r * Math.PI / scaleX ) + (scaleX/10)
         };
 
         
         var centx, centy;
-        centx = p.p.x - p.size * 0.5;
-        centy = p.p.y - p.size * 0.5;
+        centx = p.p.x - p.size * 0.8;
+        centy = p.p.y - p.size * 0.8;
         ctx.fillRect(centx, centy, p.size, p.size);        
         
 
