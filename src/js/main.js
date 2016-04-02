@@ -103,7 +103,6 @@ $(document).ready(function() {
 });
 
 
-
 // menu pop
 $(".popout").hover(function() {
     $(this).toggleClass("open");
@@ -158,8 +157,8 @@ for (var i = 0; i < a; i++) {
 // render loop
 function render(){
 
-    var scaleX = currentMousePos.x;
-    var scaleZ = currentMousePos.y;
+    var scaleX = currentMousePos.x/2;
+    var scaleZ = currentMousePos.y/2;
 
 
 
@@ -181,8 +180,8 @@ function render(){
         p.r += p.s;
 
         var vel = {
-            x: p.d * Math.cos(p.r * Math.PI / scaleZ ) + (scaleZ/10),
-            y: p.d * Math.sin(p.r * Math.PI / scaleX ) + (scaleX/10)
+            x: p.d * Math.sin(p.r * Math.PI / 180 ) + (scaleX/10),
+            y: p.d * Math.cos(p.r * Math.PI / 180 ) + (scaleZ/10)
         };
 
         
@@ -220,7 +219,7 @@ window.requestAnimFrame = (function(){
         window.oRequestAnimationFrame      ||
         window.msRequestAnimationFrame     ||
     function(callback) {
-        window.setTimeout(callback, 1000 / 60);
+        window.setTimeout(callback, 1000 / 30);
     };
 })();
 
