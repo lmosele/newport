@@ -3,16 +3,22 @@
 }
 
 $bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-$endbounce: ease;
 
 body{
   overflow-x: hidden;
-  background: #ffb347; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #ffb347 , #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #ffb347 , #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  // background: #ffb347; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #ffb347 , #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to bottom, #ffb347 , #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  background: rgb(255,179,71);
+  transition: background .6s ease;
+}
+body.sec1 {
+  background: rgb(77,118,225);
+  transition: background .6s ease;
 }
 #content {
   z-index: $z9;
+  overflow-x: hidden;
 }
 #bg {
   position: fixed;
@@ -22,21 +28,13 @@ body{
   height: 100vh;
   z-index: $z1;
 }
-#cube {
+#geometry {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   height: 100vh;
   z-index: $z2;
-}
-
-h2 {
-	font-size: $fontxlarger;
-	line-height: $linehuge;
-  font-weight: 700;
-  font-family: $header;
-  text-transform: uppercase;
 }
 
 
@@ -46,13 +44,14 @@ h2 {
   text-align: center;
   color: white;
   h2 {
-    font-size: 5em;
-    line-height: 1em;
+    font-size: 4em;
+    line-height: 1.3em;
     font-weight: 800;
-    margin-bottom: 1em;
+    font-weight: 700;
   }
 }
 
+// ==================== SECTION
 .section .container { 
 	width: 96%;
   margin: 0 auto;
@@ -77,6 +76,20 @@ h2 {
 }
 
 
+// ==================== MOCKUPS
+.allcells {
+  position: absolute;
+  right: -5%;
+  transition: all .6s $bounce;
+  transform: translate3d(100%, 0, 0);
+}
+.allcells.visible {
+  transition: all .6s $bounce;
+  transform: translate3d(0, 0, 0);
+}
+
+
+// ==================== FLOATER
 .floater {
   position: fixed;
   z-index: $z10;
@@ -87,13 +100,14 @@ h2 {
   height: 500px;
   background: white;
   transform: translate3d(0, 200%, 0);
-  transition: all 600ms $bounce;
+  transition: all .2s $bounce;
 }
 .floater.visible {
   transform: translate3d(0, 0, 0);
-  transition: all 600ms $bounce;
+  transition: all .5s $bounce;
 }
 
+// ==================== MENU
 .popout {
   display: block;
   position: fixed;
@@ -102,8 +116,8 @@ h2 {
   background: white;
   z-index: $z10;
   padding-right: 100px;
-  transform: translateX(85%);
-  transition: all 600ms $endbounce;
+  transform: translateX(89%);
+  transition: all 600ms $bounce;
   ul {
     position: relative;
     list-style: none;
@@ -114,19 +128,17 @@ h2 {
   }
   li {
     display: inline-block;
-    padding: 17px;
+    padding: 20px;
   }
-  a{
-    height: 0px;
+  a:not(.trigger){
     padding: 30px;
     color: black;
   }
-  a:hover {
-    height: 80px;
-    color: black;
+  a:not(.trigger):hover {
+    background-color: #d3d3d3;
   }
 }
   .popout.open {
     transform: translateX(12%);
-    transition: all 600ms $endbounce;
+    transition: all 600ms ease;
   }

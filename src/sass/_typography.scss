@@ -55,7 +55,9 @@ b {
 
 // TYPOGRAPHY
 h1,h2 {
-  font-weight: 800;
+  font-weight: 700;
+  margin: 0;
+  text-transform: capitalize;
 }
 h3,h4,h5 {
   font-weight: 600;
@@ -66,12 +68,10 @@ p,ul,li,a,span {
 h1 {
   font-size: $fonthuge;
   line-height: $linehuge;
-  margin: 0;
 }
 h2 {
   font-size: $fontxlarger;
-  line-height: $linexlarger;
-  margin: 0;
+  line-height: $linehuge;
 }
 h3 {
   font-size: $fontlarger;

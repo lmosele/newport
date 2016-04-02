@@ -9,10 +9,10 @@ $(document).ready(function() {
         anchors:['1', '2', '3', '4', '5', '6', '7', '8', '9','10', '11', '12', '13'],
         navigation: true,
         navigationPosition: 'right',
-        // navigationTooltips: ['slide1', 'slide2', 'slide3'],
-        showActiveTooltip: false,
-        slidesNavigation: false,
-        slidesNavPosition: 'bottom',
+        navigationTooltips: ['Home', 'Maxi Cosi', 'AllCells',],
+        showActiveTooltip: true,
+        // slidesNavigation: true,
+        // slidesNavPosition: 'bottom',
         //Scrolling
         css3: true,
         scrollingSpeed: 600,
@@ -37,13 +37,12 @@ $(document).ready(function() {
         recordHistory: true,
 
         //Design
-        controlArrows: true,
+        controlArrows: false,
         verticalCentered: true,
         resize : false,
-        // sectionsColor : ['#ccc', '#fff'],
         paddingTop: '3em',
         paddingBottom: '10px',
-        fixedElements: '#header, .footer',
+        fixedElements: '.popout, .floater',
         responsiveWidth: 640,
         responsiveHeight: 0,
 
@@ -53,16 +52,21 @@ $(document).ready(function() {
 
         //events
         onLeave: function(index, nextIndex, direction){
+            var body = $("body");
+            var canvas = $("canvas");
+            var mockup = $(".allcells")
             // var leavingSection = $(this);
 
             if(index == 1 && direction == 'down'){
-                $(".floater").addClass("visible");
-                $("canvas").fadeOut();
+                $(".floater, .mockup").addClass("visible");
+                canvas.fadeOut();
+                body.addClass("sec1");
             }
              
             else if(index == 2 && direction == 'up'){
-                $(".floater").removeClass("visible");
+                $(".floater, .mockup").removeClass("visible");
                 $("canvas").fadeIn();
+                body.removeClass("sec1");
             }
          
             // SCROLLHELPER - Counts current scroll position
@@ -72,7 +76,9 @@ $(document).ready(function() {
             //     console.log(position);
             // }  
 
-            
+            // Adjust Scroll Intensity
+            var idx = Math.abs(index - nextIndex)*2.5; 
+            $.fn.fullpage.setScrollingSpeed(idx*500);
         },
         afterLoad: function(anchorLink, index){
             // INDEX 2 STATE
@@ -90,34 +96,34 @@ $(document).ready(function() {
             //     skrollr.init().destroy();
             //     $(alts).addClass('noSkrollr');
             //   }
-            
         },
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){ 
-                    // Adjust Scroll Intensity
-            var idx = Math.abs(index - nextIndex)*2.5; 
-            $.fn.fullpage.setScrollingSpeed(idx*500);
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+
         }
     });
 });
 
 
+
 // menu pop
 $(".popout").hover(function() {
-    $(this).toggleClass("open");
+    $(".popout").toggleClass("open");
+    $("#nav-icon").toggleClass("open");
 });
+
 
 var original = document.title;
 $(window).blur(function() {
-    document.title = 'Come back!'; 
+    document.title = '♥ Come Back Soon'; 
 }).focus(function() {
     document.title = original;
 });
 
 
-// Our spinning object thingy
-var canvas = document.getElementById("cube"),
+
+var canvas = document.getElementById("geometry"),
     ctx = canvas.getContext('2d'),
     points = [],
     r = 0;
@@ -198,7 +204,7 @@ function render(){
     ctx.closePath();
 
 }
-
+// draw connecting lines
 function distance(p1x, p1y, p2x, p2y) {
     var dx = p1x - p2x;
     var dy = p1y - p2y;
@@ -209,9 +215,7 @@ function distance(p1x, p1y, p2x, p2y) {
         ctx.lineTo(p2x, p2y);        
     }  
 }
-
-
-
+// shim layer with setTimeout fallback
 window.requestAnimFrame = (function(){
     return  window.requestAnimationFrame   ||
         window.webkitRequestAnimationFrame ||
@@ -219,7 +223,7 @@ window.requestAnimFrame = (function(){
         window.oRequestAnimationFrame      ||
         window.msRequestAnimationFrame     ||
     function(callback) {
-        window.setTimeout(callback, 1000 / 30);
+        window.setTimeout(callback, 1000 / 60);
     };
 })();
 
