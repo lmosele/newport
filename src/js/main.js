@@ -2,6 +2,9 @@
 // $(document).scrollTop();
 // INIT FULLPAGE
 $(document).ready(function() {
+            var body = $("body");
+            var canvas = $("canvas");
+            var mockup = $(".allcells")
     $('#content').fullpage({
         //Navigation
         menu: '#menu',
@@ -52,55 +55,38 @@ $(document).ready(function() {
 
         //events
         onLeave: function(index, nextIndex, direction){
-            var body = $("body");
-            var canvas = $("canvas");
-            var mockup = $(".allcells")
+
             // var leavingSection = $(this);
 
             if(index == 1 && direction == 'down'){
-                $(".floater, .mockup").addClass("visible");
+                $(".floater, .allcells").addClass("visible");
                 canvas.fadeOut();
                 body.addClass("sec1");
+                $(".grid").addClass("show");
             }
              
             else if(index == 2 && direction == 'up'){
-                $(".floater, .mockup").removeClass("visible");
+                $(".floater, .allcells").removeClass("visible");
                 $("canvas").fadeIn();
                 body.removeClass("sec1");
+                $(".grid").removeClass("show");
             }
          
-            // SCROLLHELPER - Counts current scroll position
-            // if(direction =='down'){
-            //     var position = $(document).scrollTop();
-
-            //     console.log(position);
-            // }  
-
             // Adjust Scroll Intensity
             var idx = Math.abs(index - nextIndex)*2.5; 
-            $.fn.fullpage.setScrollingSpeed(idx*500);
+            $.fn.fullpage.setScrollingSpeed(idx*100);
         },
-        afterLoad: function(anchorLink, index){
-            // INDEX 2 STATE
-            // if(index == 2){
-                
-            // }
-        },
-        afterRender: function(){
-            // SKROLLR INIT
-            // var s = skrollr.init();
-            // var alts = '.st18,#sky,#bg1,#bg2,.star'; 
-            // if ($(window).width() > 640) {
-            //     skrollr.init();
-            //   } else {
-            //     skrollr.init().destroy();
-            //     $(alts).addClass('noSkrollr');
-            //   }
-        },
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+            var leavingSlide = $(this);
 
+            //leaving the first slide of the 2nd Section to the right
+            if(index == 1 && slideIndex == 0 && direction == 'right'){
+                body.addClass("sec0");
+            }
         }
     });
 });
@@ -118,7 +104,10 @@ var original = document.title;
 $(window).blur(function() {
     document.title = '♥ Come Back Soon'; 
 }).focus(function() {
-    document.title = original;
+    setTimeout(function(){
+      document.title = original;
+    }, 5000);
+    document.title = 'Welcome Back!'
 });
 
 

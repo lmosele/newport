@@ -54,34 +54,6 @@ a.btn:hover {
 }
 
 
-// // overrides
-// .fp-slides {
-//     height: 400px !important;
-// }
-// .middle > .fp-tableCell {
-//     vertical-align: middle !important;
-// }
-// .fp-tableCell {
-//     vertical-align: initial;
-// }
-// div.fp-controlArrow.fp-prev {
-//     left: -80px;
-//     width: 60px;
-//     height: 60px;
-//     border-width: 0;
-//     cursor: pointer;
-//     background: url(../img/ui/left.svg);
-// }
-// div.fp-controlArrow.fp-next {
-//     right: -80px;
-//     width: 60px;
-//     height: 60px;
-//     border-width: 0;
-//     cursor: pointer;
-//     background: url(../img/ui/right.svg);
-// }
-
-
 // ICON
 #nav-icon {
   margin-right: 20px;
@@ -96,12 +68,12 @@ a.btn:hover {
   cursor: pointer;
 }
 
-#nav-icon span {
+body #nav-icon span {
   display: block;
   position: absolute;
   height: 4px;
   width: 40px;
-  background: #d3d3d3;
+  background: $color1;
   opacity: 1;
   left: 0;
   vertical-align: center;
@@ -113,6 +85,12 @@ a.btn:hover {
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+}
+body.sec0 #nav-icon span {
+  background: $color2;
+}
+body.sec1 #nav-icon span {
+  background: $color3;
 }
 
 #nav-icon span:nth-child(1) {
@@ -147,3 +125,93 @@ a.btn:hover {
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+
+
+
+
+
+// perspective SHIT
+
+// img {
+//   A high perspective to give the UL an isometric look
+//   perspective: 3000;
+// }
+
+.grid {
+  position: absolute;
+  right: 0%; //change for screen size
+  bottom: -25%;
+  opacity: 0;
+  width: 800px;
+  transform: translate3d(100%,0,0) rotateX(00deg) rotateZ(-0deg);
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+}
+.grid.show {
+  opacity: 1;
+  transform: translate3d(0%,0,0) rotateX(60deg) rotateZ(-50deg);
+  transition: all 1s ease;
+}
+.grid li {
+  height: 500px; width: 300px;
+  float: left; margin: 20px;
+  list-style-type: none;
+  background-size: 0, cover;
+  transform-style: preserve-3d;
+}
+/*Left and Bottom Sides*/
+.grid li:before, .grid li:after {
+  content: '';
+  position: absolute;
+  /*100% height and width*/
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: inherit;
+  background-size: cover;
+}
+/*Left Side*/
+.grid li:before {
+  transform-origin: left center;
+  transform: rotateY(90deg);
+  /*Reducing the width of the left side for a flat feel*/
+  width: 5px;
+}
+/*Bottom Side*/
+.grid li:after {
+  transform-origin: bottom center;
+  transform: rotateX(90deg);
+  /*Reducing the height*/
+  height: 5px; top: auto; bottom: 0;
+  /*Background fix - start the background from the bottom*/
+  background-position: bottom center;
+}
+.s {
+  position: absolute;
+  /*30px smaller from each side*/
+  top: 30px; left: 30px; right: 30px; bottom: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
+  /*Pushing down the shadow to give an elevated feel*/
+  transform: translate3d(0,0,-20px);
+}
+
+.mock1 {
+  background: 
+    linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+    url("../img/long.png");
+}
+.mock2 {
+  background: 
+    linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+    url("http://thecodeplayer.com/uploads/media/m2.png");
+}
+.mock3 {
+  background: 
+    linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+    url("http://thecodeplayer.com/uploads/media/m3.png");
+}
+.mock4 {
+  background: 
+    linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+    url("http://thecodeplayer.com/uploads/media/m4.png");
+}
+

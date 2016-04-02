@@ -3,19 +3,26 @@
 }
 
 $bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
+$color1: rgb(255,179,71); //First Section Color
+$color2: rgb(233,79,55); //Second Slide Color
+$color3: rgb(77,118,225); //Second Section Color
 body{
   overflow-x: hidden;
   // background: #ffb347; /* fallback for old browsers */
   // background: -webkit-linear-gradient(to bottom, #ffb347 , #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to bottom, #ffb347 , #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
-  background: rgb(255,179,71);
+  background: $color1;
   transition: background .6s ease;
 }
-body.sec1 {
-  background: rgb(77,118,225);
+.sec0 {
+  background: $color2;
   transition: background .6s ease;
 }
+.sec1 {
+  background: $color3;
+  transition: background .6s ease;
+}
+
 #content {
   z-index: $z9;
   overflow-x: hidden;
@@ -77,16 +84,16 @@ body.sec1 {
 
 
 // ==================== MOCKUPS
-.allcells {
-  position: absolute;
-  right: -5%;
-  transition: all .6s $bounce;
-  transform: translate3d(100%, 0, 0);
-}
-.allcells.visible {
-  transition: all .6s $bounce;
-  transform: translate3d(0, 0, 0);
-}
+// .allcells {
+//   position: absolute;
+//   right: -5%;
+//   transition: all .6s $bounce;
+//   transform: translate3d(100%, 0, 0);
+// }
+// .allcells.visible {
+//   transition: all .6s $bounce;
+//   transform: translate3d(0, 0, 0);
+// }
 
 
 // ==================== FLOATER
@@ -105,6 +112,13 @@ body.sec1 {
 .floater.visible {
   transform: translate3d(0, 0, 0);
   transition: all .5s $bounce;
+}
+.floater-companion {
+  position: fixed;
+  z-index: $z10;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
 }
 
 // ==================== MENU
