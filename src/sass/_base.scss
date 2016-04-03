@@ -3,25 +3,31 @@
 }
 
 $bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-$color1: rgb(255,179,71); //First Section Color
-$color2: rgb(233,79,55); //Second Slide Color
-$color3: rgb(77,118,225); //Second Section Color
+$color0: rgb(255,179,71); //First Section Color orange
+$color1: rgb(233,79,55); //Second Slide Color red
+$color2: rgb(77,118,225); //Second Section Color blue
+$color3: rgb(80,80,80); //Third Section Color black
 body{
   overflow-x: hidden;
   // background: #ffb347; /* fallback for old browsers */
   // background: -webkit-linear-gradient(to bottom, #ffb347 , #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to bottom, #ffb347 , #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  background: $color0;
+  transition: background .6s ease;
+}
+.fp-viewing-1-aboutme {
   background: $color1;
   transition: background .6s ease;
 }
-.sec0 {
+.fp-viewing-2 {
   background: $color2;
   transition: background .6s ease;
 }
-.sec1 {
+.fp-viewing-3 {
   background: $color3;
   transition: background .6s ease;
 }
+
 
 #content {
   z-index: $z9;
@@ -45,18 +51,7 @@ body{
 }
 
 
-.middle {
-  max-width: 1248px;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  h2 {
-    font-size: 4em;
-    line-height: 1.3em;
-    font-weight: 800;
-    font-weight: 700;
-  }
-}
+
 
 // ==================== SECTION
 .section .container { 
@@ -71,6 +66,18 @@ body{
   transition: all .6s $bounce;
   transform: translate3d(0, -10%, 0);
 }
+.middle {
+  max-width: 1248px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  h2 {
+    font-size: 4em;
+    line-height: 1.3em;
+    font-weight: 800;
+    font-weight: 700;
+  }
+}
 @include tablet {
   .section .container { 
     width: 94%;
@@ -82,20 +89,6 @@ body{
   }
 }
 
-
-// ==================== MOCKUPS
-// .allcells {
-//   position: absolute;
-//   right: -5%;
-//   transition: all .6s $bounce;
-//   transform: translate3d(100%, 0, 0);
-// }
-// .allcells.visible {
-//   transition: all .6s $bounce;
-//   transform: translate3d(0, 0, 0);
-// }
-
-
 // ==================== FLOATER
 .floater {
   position: fixed;
@@ -104,21 +97,55 @@ body{
   text-align: center;
   left: 10%;
   top: 15%;
-  height: 500px;
+  height: auto;
+  padding: 20px;
   background: white;
   transform: translate3d(0, 200%, 0);
   transition: all .2s $bounce;
 }
 .floater.visible {
   transform: translate3d(0, 0, 0);
-  transition: all .5s $bounce;
+  transition: all .5s ease;
 }
 .floater-companion {
   position: fixed;
-  z-index: $z10;
+  z-index: $z3;
   width: 100%;
   height: 100%;
   height: 100vh;
+  transition: all .5s ease;
+}
+
+
+.floater .description {
+  max-width: 90%;
+  margin: 0 auto;
+  h3 {
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #d3d3d3;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    font-size: .8em;
+    color: #d3d3d3;
+  }
+  p {
+    weight: 400;
+    color: #d3d3d3;
+    font-size: 1.1em;
+  }
+  .ghost {
+    color: #d3d3d3;
+    border: 1px solid #d3d3d3;
+  }
 }
 
 // ==================== MENU

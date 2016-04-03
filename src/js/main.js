@@ -10,7 +10,7 @@ $(document).ready(function() {
         menu: '#menu',
         lockAnchors: true,
         anchors:['1', '2', '3', '4', '5', '6', '7', '8', '9','10', '11', '12', '13'],
-        navigation: true,
+        navigation: false,
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'Maxi Cosi', 'AllCells',],
         showActiveTooltip: true,
@@ -59,14 +59,14 @@ $(document).ready(function() {
             // var leavingSection = $(this);
 
             if(index == 1 && direction == 'down'){
-                $(".floater, .allcells").addClass("visible");
+                $(".floater").addClass("visible");
                 canvas.fadeOut();
                 body.addClass("sec1");
                 $(".grid").addClass("show");
             }
              
             else if(index == 2 && direction == 'up'){
-                $(".floater, .allcells").removeClass("visible");
+                $(".floater").removeClass("visible");
                 $("canvas").fadeIn();
                 body.removeClass("sec1");
                 $(".grid").removeClass("show");

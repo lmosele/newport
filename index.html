@@ -36,13 +36,16 @@
  	</nav>
 
 	<div class="floater">
-		<h2>test</h2>
-		<ul>
-			<li><a href="#">test</a></li>
-			<li><a href="#">test</a></li>
-			<li><a href="#">test</a></li>
-			<li><a href="#">test</a></li>
-		</ul>
+		<div class="description">
+			<h3>Maxi Cosi Mico Max</h3>
+			<ul class="tags">
+				<li>User Experience</li>
+				<li>User Interface</li>
+				<li>Interaction Design</li>
+			</ul>
+			<p>Lorem ipsum Id anim commodo eiusmod sint anim est culpa in Duis officia nulla in in do aliqua nisi non nulla in sint magna aliquip ea ullamco et adipisicing.</p>
+			<button class="btn ghost">See Case Study</button>
+		</div>
 	</div>
 	<div class="floater-companion">
 		<ul class="grid">
@@ -53,6 +56,11 @@
 		</ul>
 	</div>
 
+	<div class="arrows">
+		<button class="btn arrow" onclick="$.fn.fullpage.moveSectionUp();"><i class="fa fa-chevron-up"></i></button>
+		<button class="btn arrow" onclick="$.fn.fullpage.moveSectionDown();"><i class="fa fa-chevron-down"></i></button>
+	</div>
+
 	<canvas id="geometry"></canvas>
 
 	<!-- CONTENT -->
@@ -61,8 +69,12 @@
 	    	<div class="slide" data-anchor="main">
 	    		<div class="container">
 	    			<h2>The Full Stack Designer You didn't know you needed.</h2>
-	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">Check Me Out</button>
-	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSlideRight();">About Me ></button>
+	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">
+	    				Check Me Out
+	    			</button>
+	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSlideRight();">
+	    				About Me <i class="left fa fa-chevron-right"></i>
+	    			</button>
 	    		</div>
 	    	</div>
     		<div class="slide" data-anchor="aboutme">
@@ -73,17 +85,9 @@
     		</div>
 	    </div>
 
-	    <div class="section"> 
-	    	<div class="container">
-	    	</div>
-	    </div>
+	    <div class="section"></div>
 
-	    <div class="section">
-	    	<div class="container">
-	    		<h2>Fini!</h2>
-
-	    	</div>
-	    </div>
+	    <div class="section"></div>
 
 
 	    
