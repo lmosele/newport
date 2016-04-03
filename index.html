@@ -11,14 +11,7 @@
 </head>
 <body>
 
-	<!-- <div id="bg" 
-		data-0="background:linear-gradient(-90deg, rgb(255,179,71) 50%, rgb(255,204,51)   );" 
-		data-2000="background:linear-gradient(90deg, rgb(255,179,71) 50%, rgb(255,204,51)   );"
-		>
-		
-	</div>
- -->
-
+<!-- NAV MENU -->
  	<nav class="popout">
  		<ul>
  			<li>
@@ -34,11 +27,7 @@
  			<li><a href="#work">Work</a></li>
  		</ul>
  	</nav>
-
-
-
-
-
+<!-- MOCKUPS -->
 	<div class="floater-companion">
 		<ul class="grid">
 			<li class="mock1"><span class="s"></span></li>
@@ -47,17 +36,18 @@
 			<li class="mock4"><span class="s"></span></li>
 		</ul>
 	</div>
-
+<!-- CONTROLS -->
 	<div class="arrows">
 		<button class="btn arrow" onclick="$.fn.fullpage.moveSectionUp();"><i class="fa fa-chevron-up"></i></button>
 		<button class="btn arrow" onclick="$.fn.fullpage.moveSectionDown();"><i class="fa fa-chevron-down"></i></button>
 	</div>
-
+<!-- CANVAS BG -->
 	<canvas id="geometry"></canvas>
 
 	<!-- CONTENT -->
 	<div id="content">
 	    <div class="section middle">
+	    	<!-- main section -->
 	    	<div class="slide" data-anchor="main">
 	    		<div class="container">
 	    			<h2>The Full Stack Designer You didn't know you needed.</h2>
@@ -69,6 +59,7 @@
 	    			</button>
 	    		</div>
 	    	</div>
+	    	<!-- about me -->
     		<div class="slide" data-anchor="aboutme">
     			<h2>My name's Lucas.</h2>
     			<h3>I am an Interaction Designer &amp; Developer from Brazil and Living in Boston</h3>
@@ -77,6 +68,7 @@
     		</div>
 	    </div>
 
+	    <!-- SECTION 2 -->
 	    <div class="section">
 	    	<div class="floater">
 				<figure class="description">
@@ -92,6 +84,7 @@
 			</div>
 	    </div>
 
+	    <!-- SECTION 3 -->
 	    <div class="section">
 			<div class="floater">
 				<figure class="description">
@@ -107,6 +100,7 @@
 			</div>
 	    </div>
 
+	    <!-- SECTION 4 -->
 	    <div class="section">
 			<div class="floater">
 				<figure class="description">
@@ -126,14 +120,10 @@
 	    
 	</div>
 
-
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src="dist/js/jquery-3-alpha.min.js"></script>
-	<!-- <script type="text/javascript" src="dist/js/skrollr.min.js"></script> -->
 	<script type="text/javascript" src="dist/js/jquery.fullpage.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.min.js"></script>
-
-
 	
 </body>
 </html>

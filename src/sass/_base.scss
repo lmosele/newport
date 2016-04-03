@@ -7,6 +7,7 @@ $color0: rgb(255,179,71); //First Section Color orange
 $color1: rgb(233,79,55); //Second Slide Color red
 $color2: rgb(77,118,225); //Second Section Color blue
 $color3: rgb(80,80,80); //Third Section Color black
+$color4: rgb(40,200,150); //fourth Section Color 
 body{
   overflow-x: hidden;
   // background: #ffb347; /* fallback for old browsers */
@@ -22,11 +23,40 @@ body{
 .fp-viewing-2 {
   background: $color2;
   transition: background .6s ease;
+    .description h3,
+    .description p,
+    .description li,
+    .description .ghost {
+      color: $color2 !important;
+      border-color: $color2 !important;
+      transition: all .6s ease;
+    }
 }
 .fp-viewing-3 {
   background: $color3;
   transition: background .6s ease;
+  .description h3,
+  .description p,
+  .description li,
+  .description .ghost {
+    color: $color3 !important;
+    border-color: $color3 !important;
+    transition: all .6s ease;
+  }
 }
+.fp-viewing-4 {
+  background: $color4;
+  transition: background .6s ease;
+  .description h3,
+  .description p,
+  .description li,
+  .description .ghost {
+    color: $color4 !important;
+    border-color: $color4 !important;
+    transition: all .6s ease;
+  }
+}
+
 
 
 #content {
@@ -123,21 +153,33 @@ body{
   margin: 0 auto;
   transition: all .5s ease;
   h3 {
-    margin-top: 40px;
+    font-size: 1.9em;
+    line-height: 1em;
+    margin-top: 30px;
     text-transform: uppercase;
     color: #d3d3d3;
-    padding-bottom: 10px;
+    padding-bottom: .5em;
     border-bottom: 1px solid #d3d3d3;
-    margin-bottom: 10px;
+    margin-bottom: .5em;
   }
   ul {
     list-style: none;
     margin: 0;
+    text-align: center;
   }
-  li {
+  li:not(:nth-child(2)) {
+    padding: 5px;
     display: inline-block;
     font-size: .8em;
     color: #d3d3d3;
+  }
+  li:nth-child(2) {
+    padding: 6px;
+    display: inline-block;
+    font-size: .8em;
+    color: #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
   }
   p {
     weight: 400;
@@ -149,11 +191,6 @@ body{
     border: 1px solid #d3d3d3;
   }
 }
-// .description.visible {
-//   display: block;
-//   transform: translate3d(0, 0%, 0);
-//   transition: all .5s ease;
-// }
 
 // ==================== MENU
 .popout {

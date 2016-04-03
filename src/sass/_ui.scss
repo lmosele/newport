@@ -58,7 +58,6 @@ a.btn:hover {
   a.btn.outro
    {
     width: 100%;
-    color: #333;
   }
 }
 
@@ -127,6 +126,13 @@ body.fp-viewing-1-aboutme #nav-icon span {
 body.fp-viewing-2 #nav-icon span {
   background: $color2;
 }
+body.fp-viewing-3 #nav-icon span {
+  background: $color3;
+}
+body.fp-viewing-4 #nav-icon span {
+  background: $color4;
+}
+
 
 #nav-icon span:nth-child(1) {
   top: 0px;
@@ -189,6 +195,7 @@ body.fp-viewing-2 #nav-icon span {
   background-size: 0, cover;
   transform-style: preserve-3d;
 }
+
 /*Left and Bottom Sides*/
 .grid li:before, .grid li:after {
   content: '';
@@ -216,12 +223,14 @@ body.fp-viewing-2 #nav-icon span {
 }
 .s {
   position: absolute;
-  /*30px smaller from each side*/
   top: 30px; left: 30px; right: 30px; bottom: 30px;
   background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.5);
-  /*Pushing down the shadow to give an elevated feel*/
+  box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.5);
   transform: translate3d(0,0,-20px);
+}
+.show .s {
+   box-shadow: 0 0 30px 40px rgba(0, 0, 0, 0.5);
+   transition: all 4s ease;
 }
   .mock1 {
     transition: background 1s ease;
