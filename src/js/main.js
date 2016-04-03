@@ -58,47 +58,41 @@ $(document).ready(function() {
 
             // var leavingSection = $(this);
             if(index == 1 && direction == 'down'){
-                // $(".floater").addClass("visible");
-                canvas.fadeOut();
-                body.addClass("sec1");
+                canvas.remove();
                 $(".grid").addClass("show");
-            }
-             
-            else if(index == 2 && direction == 'up'){
-                // $(".floater").removeClass("visible");
-                $("canvas").fadeIn();
-                body.removeClass("sec1");
+            } else if(index == 2 && direction == 'up'){
+                // $("canvas").fadeIn();
                 $(".grid").removeClass("show");
+            }
+
+            if(index == 4 && direction == 'down'){
+                $(".floater").addClass("tile");
+                $(".grid").removeClass("show");
+            } else if(index == 5 && direction == 'up'){
+                $(".floater").removeClass("tile");
+                $(".grid").addClass("show");
             }
          
             // Adjust Scroll Intensity
             var idx = Math.abs(index - nextIndex)*2.5; 
             $.fn.fullpage.setScrollingSpeed(idx*100);
         },
-        afterLoad: function(anchorLink, index){},
-        afterRender: function(){},
-        afterResize: function(){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
-            var leavingSlide = $(this);
-
-            //leaving the first slide of the 2nd Section to the right
-            if(index == 1 && slideIndex == 0 && direction == 'right'){
-                body.addClass("sec0");
-            }
-        }
+        // afterLoad: function(anchorLink, index){},
+        // afterRender: function(){},
+        // afterResize: function(){},
+        // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
 
 
-
-// menu pop
+// pop menu out on hover
 $(".popout").hover(function() {
     $(".popout").toggleClass("open");
     $("#nav-icon").toggleClass("open");
 });
 
-
+// Change document title on tabout
 var original = document.title;
 $(window).blur(function() {
     document.title = '♥ Come Back Soon'; 
@@ -110,7 +104,7 @@ $(window).blur(function() {
 });
 
 
-
+// spinning thingy
 var canvas = document.getElementById("geometry"),
     ctx = canvas.getContext('2d'),
     points = [],

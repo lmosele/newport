@@ -3,11 +3,12 @@
 }
 
 $bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-$color0: rgb(255,179,71); //First Section Color orange
-$color1: rgb(233,79,55); //Second Slide Color red
-$color2: rgb(77,118,225); //Second Section Color blue
-$color3: rgb(80,80,80); //Third Section Color black
-$color4: rgb(40,200,150); //fourth Section Color 
+$color0: rgb(255,179,71); // Main
+$color1: rgb(233,79,55); // About Me
+$color2: rgb(93,185,209); // Maxwell
+$color3: rgb(0, 157, 235); // SALT 
+$color4: rgb(221,0,100); // Maxi Cosi
+$color5: rgb(126,224,129); // Design Snippets
 body{
   overflow-x: hidden;
   // background: #ffb347; /* fallback for old browsers */
@@ -16,48 +17,6 @@ body{
   background: $color0;
   transition: background .6s ease;
 }
-.fp-viewing-1-aboutme {
-  background: $color1;
-  transition: background .6s ease;
-}
-.fp-viewing-2 {
-  background: $color2;
-  transition: background .6s ease;
-    .description h3,
-    .description p,
-    .description li,
-    .description .ghost {
-      color: $color2 !important;
-      border-color: $color2 !important;
-      transition: all .6s ease;
-    }
-}
-.fp-viewing-3 {
-  background: $color3;
-  transition: background .6s ease;
-  .description h3,
-  .description p,
-  .description li,
-  .description .ghost {
-    color: $color3 !important;
-    border-color: $color3 !important;
-    transition: all .6s ease;
-  }
-}
-.fp-viewing-4 {
-  background: $color4;
-  transition: background .6s ease;
-  .description h3,
-  .description p,
-  .description li,
-  .description .ghost {
-    color: $color4 !important;
-    border-color: $color4 !important;
-    transition: all .6s ease;
-  }
-}
-
-
 
 #content {
   z-index: $z9;
@@ -97,7 +56,7 @@ body{
   transform: translate3d(0, -10%, 0);
 }
 .middle {
-  max-width: 1248px;
+  max-width: 80%;
   margin: 0 auto;
   text-align: center;
   color: white;
@@ -106,6 +65,21 @@ body{
     line-height: 1.3em;
     font-weight: 800;
     font-weight: 700;
+    text-shadow: 4px 4px 10px rgba(0,0,0, .05);
+  }
+  h3 {
+    font-size: 1.2em;
+    text-shadow: 4px 4px 10px rgba(0,0,0, .05);
+  }
+  p {
+    font-size: 1.1em;
+    text-shadow: 4px 4px 10px rgba(0,0,0, .05);
+  }
+  .ghost {
+    margin-top: 40px;
+  }
+  .ghost:hover {
+    box-shadow: 4px 4px 4px rgba(0,0,0, .1);
   }
 }
 @include tablet {
@@ -132,7 +106,13 @@ body{
   padding: 20px;
   background: white;
   overflow-y: hidden;
+  box-shadow: 4px 4px 10px rgba(0,0,0, .1);
   transition: all .2s $bounce;
+}
+.floater.tile {
+  width: 350px;
+  position: relative;
+  display: inline-block;
 }
 .floater.visible {
   transform: translate3d(0, 0, 0);
@@ -149,7 +129,7 @@ body{
 
 
 .floater .description {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   transition: all .5s ease;
   h3 {
@@ -202,6 +182,7 @@ body{
   z-index: $z10;
   padding-right: 100px;
   transform: translateX(89%);
+  box-shadow: 4px 4px 10px rgba(0,0,0, .1);
   transition: all 600ms $bounce;
   ul {
     position: relative;
@@ -216,14 +197,71 @@ body{
     padding: 20px;
   }
   a:not(.trigger){
+    text-transform: uppercase;
     padding: 30px;
-    color: black;
+    color: $color0;
   }
   a:not(.trigger):hover {
-    background-color: #d3d3d3;
+    padding: 30px;
+    cursor: url(../img/cursor.png), auto;
   }
 }
   .popout.open {
     transform: translateX(12%);
     transition: all 600ms ease;
   }
+
+
+  // ================================SECTION COLORS
+.fp-viewing-1-aboutme {
+  background: $color1;
+  transition: background .6s ease;
+  .popout a {
+    color: $color1;
+  }
+}
+.fp-viewing-2 {
+  background: $color2;
+  transition: background .6s ease;
+  .description h3,
+  .description p,
+  .description li,
+  .description .ghost {
+    color: $color2 !important;
+    border-color: $color2 !important;
+    transition: all .6s ease;
+  }
+  .popout a {
+    color: $color2;
+  }
+}
+.fp-viewing-3 {
+  background: $color3;
+  transition: background .6s ease;
+  .description h3,
+  .description p,
+  .description li,
+  .description .ghost {
+    color: $color3 !important;
+    border-color: $color3 !important;
+    transition: all .6s ease;
+  }
+  .popout a {
+    color: $color3;
+  }
+}
+.fp-viewing-4 {
+  background: $color4;
+  transition: background .6s ease;
+  .description h3,
+  .description p,
+  .description li,
+  .description .ghost {
+    color: $color4 !important;
+    border-color: $color4 !important;
+    transition: all .6s ease;
+  }
+  .popout a {
+    color: $color4;
+  }
+}
