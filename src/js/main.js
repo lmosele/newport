@@ -45,7 +45,7 @@ $(document).ready(function() {
         resize : false,
         paddingTop: '3em',
         paddingBottom: '10px',
-        fixedElements: '.popout, .floater',
+        fixedElements: '.popout',
         responsiveWidth: 640,
         responsiveHeight: 0,
 
@@ -57,16 +57,15 @@ $(document).ready(function() {
         onLeave: function(index, nextIndex, direction){
 
             // var leavingSection = $(this);
-
             if(index == 1 && direction == 'down'){
-                $(".floater").addClass("visible");
+                // $(".floater").addClass("visible");
                 canvas.fadeOut();
                 body.addClass("sec1");
                 $(".grid").addClass("show");
             }
              
             else if(index == 2 && direction == 'up'){
-                $(".floater").removeClass("visible");
+                // $(".floater").removeClass("visible");
                 $("canvas").fadeIn();
                 body.removeClass("sec1");
                 $(".grid").removeClass("show");

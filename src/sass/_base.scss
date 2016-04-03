@@ -91,16 +91,17 @@ body{
 
 // ==================== FLOATER
 .floater {
-  position: fixed;
+  position: absolute;
   z-index: $z10;
   width: 400px;
+  overflow-x: hidden;
   text-align: center;
   left: 10%;
   top: 15%;
   height: auto;
   padding: 20px;
   background: white;
-  transform: translate3d(0, 200%, 0);
+  overflow-y: hidden;
   transition: all .2s $bounce;
 }
 .floater.visible {
@@ -120,6 +121,7 @@ body{
 .floater .description {
   max-width: 90%;
   margin: 0 auto;
+  transition: all .5s ease;
   h3 {
     margin-top: 40px;
     text-transform: uppercase;
@@ -147,6 +149,11 @@ body{
     border: 1px solid #d3d3d3;
   }
 }
+// .description.visible {
+//   display: block;
+//   transform: translate3d(0, 0%, 0);
+//   transition: all .5s ease;
+// }
 
 // ==================== MENU
 .popout {
