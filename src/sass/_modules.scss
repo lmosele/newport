@@ -8,6 +8,13 @@
 $body: 'Poppins', serif;
 $header: 'Poppins', serif; 
 
+$bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+$color0: rgb(255,179,71); // Main
+$color1: rgb(233,79,55); // About Me
+$color2: rgb(93,185,209); // Maxwell
+$color3: rgb(0, 157, 235); // SALT 
+$color4: rgb(221,0,100); // Maxi Cosi
+$color5: rgb(144,19,254); // Design Snippets
 // ** Colors ** 
 $white:            #fff;
 
@@ -87,29 +94,7 @@ $z10: 100;
   }
 }
 @mixin monitor { // Screens 1366px and up
-  @media (min-width: #{$xlargescreen}) and (max-width: #{$xxlargescreen - 1px}) { 
-    @content; 
-  }
-}
-@mixin large-monitor { // large screens  
-  @media (min-width: #{$xxlargescreen}) and (max-width: #{$xxxlargescreen - 1px}) { 
-    @content; 
-  }
-}
-@mixin larger-monitor { // larger screens  
-  @media (min-width: #{$xxxlargescreen}) and (max-width: #{$superlargescreen - 1px}) { 
-    @content; 
-  }
-}
-@mixin supermonitor { // super large higher 
-  @media (min-width: #{$superlargescreen}) { 
-    @content; 
-  }
-}
-
-
-@mixin retina { // For retina screens
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  @media (min-width: #{$xxlargescreen}) { 
     @content; 
   }
 }

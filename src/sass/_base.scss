@@ -1,19 +1,5 @@
-* {
-	transition: all 1s easein
-}
-
-$bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-$color0: rgb(255,179,71); // Main
-$color1: rgb(233,79,55); // About Me
-$color2: rgb(93,185,209); // Maxwell
-$color3: rgb(0, 157, 235); // SALT 
-$color4: rgb(221,0,100); // Maxi Cosi
-$color5: rgb(126,224,129); // Design Snippets
 body{
   overflow-x: hidden;
-  // background: #ffb347; /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to bottom, #ffb347 , #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to bottom, #ffb347 , #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
   background: $color0;
   transition: background .6s ease;
 }
@@ -37,6 +23,11 @@ body{
   height: 100%;
   height: 100vh;
   z-index: $z2;
+}
+@include tablet {
+  #geometry {
+    display: none !important;
+  }
 }
 
 
@@ -83,13 +74,8 @@ body{
   }
 }
 @include tablet {
-  .section .container { 
-    width: 94%;
-  }
-}
-@include mobile {
-  .section .container { 
-    width: 90%;
+  .middle h2 {
+    font-size: 3em;
   }
 }
 
@@ -109,11 +95,6 @@ body{
   box-shadow: 4px 4px 10px rgba(0,0,0, .1);
   transition: all .2s $bounce;
 }
-.floater.tile {
-  width: 350px;
-  position: relative;
-  display: inline-block;
-}
 .floater.visible {
   transform: translate3d(0, 0, 0);
   transition: all .5s ease;
@@ -126,9 +107,18 @@ body{
   height: 100vh;
   transition: all .5s ease;
 }
+@include tablet {
+  .floater {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+  }
+}
 
 
-.floater .description {
+
+.description {
   max-width: 100%;
   margin: 0 auto;
   transition: all .5s ease;
@@ -212,56 +202,66 @@ body{
   }
 
 
-  // ================================SECTION COLORS
-.fp-viewing-1-aboutme {
-  background: $color1;
-  transition: background .6s ease;
-  .popout a {
-    color: $color1;
+
+.tile {
+  position: relative;
+  display: inline-block;
+  z-index: $z10;
+  width: 500px;
+  overflow-x: hidden;
+  height: 400px;
+  background: white;
+  color: black;
+  margin: 10px;
+  overflow-y: hidden;
+  box-shadow: 4px 4px 10px rgba(0,0,0, .1);
+  transition: all .2s $bounce;
+  .preview {
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    background: gray;
+    float: left;
+    border-right: 1px solid #d3d3d3;
+    background: url(../img/majestic-1.png);
+    background-size: cover;
+  }
+  .text {
+    width: 50%;
+    float: right;
+    color: black;
+    padding: 20px 10px 10px 0px;
+    margin-left: 10px;
+    text-align: left;
+     h3 {
+      font-size: 1.1em;
+      line-height: 1em;
+      text-transform: uppercase;
+      color: #d3d3d3;
+      padding-bottom: .5em;
+      border-bottom: 1px solid #d3d3d3;
+      margin-bottom: .5em;
+    }
+    p {
+      weight: 400;
+      color: #d3d3d3;
+      font-size: 1.1em;
+    }
+    span {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      text-transform: uppercase;
+      font-size: .8em;
+      .fa {
+         transform: translate(20%, 0);
+         transition: all .5s ease;
+      }
+    }
   }
 }
-.fp-viewing-2 {
-  background: $color2;
-  transition: background .6s ease;
-  .description h3,
-  .description p,
-  .description li,
-  .description .ghost {
-    color: $color2 !important;
-    border-color: $color2 !important;
-    transition: all .6s ease;
-  }
-  .popout a {
-    color: $color2;
-  }
+.tile:hover .fa {
+  transform: translate(100%, 0) !important;
+  transition: all .5s ease;
 }
-.fp-viewing-3 {
-  background: $color3;
-  transition: background .6s ease;
-  .description h3,
-  .description p,
-  .description li,
-  .description .ghost {
-    color: $color3 !important;
-    border-color: $color3 !important;
-    transition: all .6s ease;
-  }
-  .popout a {
-    color: $color3;
-  }
-}
-.fp-viewing-4 {
-  background: $color4;
-  transition: background .6s ease;
-  .description h3,
-  .description p,
-  .description li,
-  .description .ghost {
-    color: $color4 !important;
-    border-color: $color4 !important;
-    transition: all .6s ease;
-  }
-  .popout a {
-    color: $color4;
-  }
-}
+

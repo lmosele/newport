@@ -66,10 +66,8 @@ $(document).ready(function() {
             }
 
             if(index == 4 && direction == 'down'){
-                $(".floater").addClass("tile");
                 $(".grid").removeClass("show");
             } else if(index == 5 && direction == 'up'){
-                $(".floater").removeClass("tile");
                 $(".grid").addClass("show");
             }
          

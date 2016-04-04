@@ -1,8 +1,9 @@
-@import "_normalize";
-@import "_fullpage";
+@import "vendor/_normalize";
+@import "vendor/_fullpage";
 @import "_modules";
 @import "_typography";
-@import "_base";
 @import "_ui";
-@import "_font-awesome";
+@import "_base";
+@import "vendor/_font-awesome";
+@import "_sections";
 

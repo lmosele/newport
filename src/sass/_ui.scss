@@ -89,7 +89,11 @@ a.btn:hover {
   border: none;
   box-shadow: none;
 }
-
+@include tablet {
+  .arrows {
+    display: none;
+  }
+}
 // ICON
 #nav-icon {
   margin-right: 20px;
@@ -109,18 +113,6 @@ body #nav-icon span {
   vertical-align: center;
   transform: rotate(0deg);
   transition: .25s ease-in-out;
-}
-body.fp-viewing-1-aboutme #nav-icon span {
-  background: $color1;
-}
-body.fp-viewing-2 #nav-icon span {
-  background: $color2;
-}
-body.fp-viewing-3 #nav-icon span {
-  background: $color3;
-}
-body.fp-viewing-4 #nav-icon span {
-  background: $color4;
 }
 
 
@@ -269,7 +261,6 @@ body.fp-viewing-4 #nav-icon span {
     }
   }
 }
-
 //
 // SECTION 3 - SALT
 //
@@ -345,5 +336,17 @@ body.fp-viewing-4 #nav-icon span {
     .s {
       display: none;
     }
+  }
+}
+
+@include monitor {
+  .fp-viewing-2 .grid.show {
+    transform: translateY(-20%) rotateX(60deg) rotateZ(-50deg);
+  }
+  .fp-viewing-3 .grid.show {
+    transform: translateY(-20%) rotateX(60deg) rotateZ(-50deg);
+  }
+  .fp-viewing-4 .grid.show {
+    transform: translateY(-20%) rotateX(60deg) rotateZ(-50deg);
   }
 }

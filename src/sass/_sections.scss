@@ -1,0 +1,82 @@
+.fp-viewing-1-aboutme {
+  background: $color1;
+  transition: background .6s ease;
+  .popout a {
+    color: $color1;
+  }
+  #nav-icon span {
+    background: $color1;
+  }
+}
+.fp-viewing-2 {
+  background: $color2;
+  transition: background .6s ease;
+  .description h3,
+  .description p,
+  .description li,
+  .description .ghost {
+    color: $color2 !important;
+    border-color: $color2 !important;
+    transition: all .6s ease;
+  }
+  .popout a {
+    color: $color2;
+  }
+  #nav-icon span {
+    background: $color2;
+  }
+}
+.fp-viewing-3 {
+  background: $color3;
+  transition: background .6s ease;
+  .description h3,
+  .description p,
+  .description li,
+  .description .ghost {
+    color: $color3 !important;
+    border-color: $color3 !important;
+    transition: all .6s ease;
+  }
+  .popout a {
+    color: $color3;
+  }
+  #nav-icon span {
+    background: $color3;
+  }
+}
+.fp-viewing-4 {
+  background: $color4;
+  transition: background .6s ease;
+  .description h3,
+  .description p,
+  .description li,
+  .description .ghost {
+    color: $color4 !important;
+    border-color: $color4 !important;
+    transition: all .6s ease;
+  }
+  .popout a {
+    color: $color4;
+  }
+  #nav-icon span {
+    background: $color4;
+  }
+}
+.fp-viewing-5 {
+  background: $color5;
+  transition: background .6s ease;
+  .popout a {
+    color: $color5;
+  }
+  #nav-icon span {
+    background: $color5;
+  }
+  .text h3, 
+  .text p,
+  .text span {
+    border-color: $color5;
+    color: $color5;
+  }
+}
+
+
