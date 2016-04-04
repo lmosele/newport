@@ -1,32 +1,7 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
-<head>
-	<meta charset="utf-8" />
-	<title>Lucas Mosele | UX/UI Design &amp; Front End Development</title>
-    <meta property="og:image" content="" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="dist/css/main.min.css">
-</head>
-<body>
+<?php echo file_get_contents("src/includes/_head.php"); 
+	  echo file_get_contents("src/includes/_menu.php"); ?>
+<body id="home">
 
-<!-- NAV MENU -->
- 	<nav class="popout">
- 		<ul>
- 			<li>
- 				<div id="nav-icon">
-				  <span></span>
-				  <span></span>
-				  <span></span>
-				</div>
- 			</li>
- 			<li><a href="#contact">Contact</a></li>
- 			<li><a href="#about">About</a></li>
- 			<li><a href="#play">Play</a></li>
- 			<li><a href="#work">Work</a></li>
- 		</ul>
- 	</nav>
 <!-- MOCKUPS -->
 	<div class="floater-companion">
 		<ul class="grid">
@@ -64,7 +39,7 @@
     			<h2>My name's Lucas Mosele.</h2>
     			<h3>I am an Interaction Designer &amp; Developer from Brazil and Living in Boston, MA.</h3>
     			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">See My Work</button>
-    			<button class="btn ghost">See My Resume</button>
+    			<a class="btn ghost">See My Resume</a>
     		</div>
 	    </div>
 
@@ -79,7 +54,7 @@
 						<li>Front End</li>
 					</ul>
 					<p>I was responsible for developing and designing Maxwell Health's multiple corporate websites. I focused on bringing the platforms from legacy code to scalable stylesheets, consistently modern design, and redesigned information architecture on the back end.</p>
-					<button class="btn ghost">See Case Study</button>
+					<a class="btn ghost" href="case.php">See Case Study</a>
 				</figure>
 			</div>
 	    </div>
@@ -95,7 +70,7 @@
 						<li>Interaction Design</li>
 					</ul>
 					<p>As part of our product team, I worked on defining all brand UX guidelines, communicating with engineers, user testing, and designing user interfaces.</p>
-					<button class="btn ghost">See Case Study</button>
+					<a class="btn ghost" href="case.php">See Case Study</a>
 				</figure>
 			</div>
 	    </div>
@@ -111,7 +86,7 @@
 						<li>Interaction Design</li>
 					</ul>
 					<p>I was brought on to lead the design of the world's first car seat customizer ecommerce tool. We worked closely with their team and branding guidelines to create a uniquely Cosi shopping experience.</p>
-					<button class="btn ghost">See Case Study</button>
+					<a class="btn ghost" href="case.php">See Case Study</a>
 				</figure>
 			</div>
 	    </div>
@@ -140,14 +115,7 @@
 
 	</div>
 
-	<article class="project">
-		<div class="banner">
-			<h3>Project Title</h4>
-		</div>
-		<div class="case-text">
-			Lorem ipsum Nostrud ut nostrud culpa dolore velit incididunt eiusmod dolor enim.
-		</div>
-	</article>
+
 
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src="dist/js/jquery-3-alpha.min.js"></script>

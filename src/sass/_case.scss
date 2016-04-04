@@ -1,0 +1,58 @@
+#case {
+	height: 100%;
+	width: 100%;
+}
+
+#case .popout {
+	box-shadow: none;
+}
+
+a.return {
+	position: fixed;
+	left: 2%;
+	top: 0%;
+	color: $color0;
+	font-size: 1em;
+	padding: 20px;
+}
+
+article {
+	max-width: 1024px;
+	margin: 0 auto;
+	margin-top: 5%;
+	.header {
+		font-size: 3em;
+	}
+}
+.case-text-container {
+	display: block;
+	margin: 10px;
+	width: 100%;
+	margin: 0 auto;
+	height: auto;
+	padding: 50px;
+	font-size: 1.3em;
+	color: #333;
+	text-rendering: optimizeLegibility;
+	letter-spacing: .02em;
+	line-height: 1.9em;
+	p {
+		font-family: $copy;
+	}
+	img {
+		margin: 20px;
+		text-align: center;
+		width: 100%;
+	}
+}
+.float {
+	display: block;
+	clear: both;
+	max-width: 30%;
+}
+.float.left {
+	float: left;
+}
+.float.right {
+	float: right;
+}

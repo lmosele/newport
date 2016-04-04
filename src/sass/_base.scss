@@ -1,4 +1,4 @@
-body{
+#home{
   overflow-x: hidden;
   background: $color0;
   transition: background .6s ease;
@@ -195,6 +195,9 @@ body{
     padding: 30px;
     cursor: url(../img/cursor.png), auto;
   }
+}
+@include tablet {
+  
 }
   .popout.open {
     transform: translateX(12%);

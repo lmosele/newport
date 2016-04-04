@@ -3,10 +3,15 @@
   font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.otf");
 }
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather-Regular.ttf");
+}
 
 // main fonts
-$body: 'Poppins', serif;
-$header: 'Poppins', serif; 
+$body: 'Poppins', Helvetica, sans-serif;
+$header: 'Poppins', Helvetica, sans-serif; 
+$copy: 'Merriweather', Helvetica, serif;
 
 $bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 $color0: rgb(255,179,71); // Main
