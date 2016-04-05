@@ -2,7 +2,7 @@
 // $(document).scrollTop();
 // INIT FULLPAGE
 $(document).ready(function() {
-            var body = $("body");
+            var body = $("#home");
             var canvas = $("canvas");
             var mockup = $(".allcells")
     $('#content').fullpage({

@@ -1,4 +1,4 @@
-.fp-viewing-1-aboutme {
+#home.fp-viewing-1-aboutme {
   background: $color1;
   transition: background .6s ease;
   .popout a {
@@ -8,7 +8,7 @@
     background: $color1;
   }
 }
-.fp-viewing-2 {
+#home.fp-viewing-2 {
   background: $color2;
   transition: background .6s ease;
   .description h3,
@@ -26,7 +26,7 @@
     background: $color2;
   }
 }
-.fp-viewing-3 {
+#home.fp-viewing-3 {
   background: $color3;
   transition: background .6s ease;
   .description h3,
@@ -44,7 +44,7 @@
     background: $color3;
   }
 }
-.fp-viewing-4 {
+#home.fp-viewing-4 {
   background: $color4;
   transition: background .6s ease;
   .description h3,
@@ -62,7 +62,7 @@
     background: $color4;
   }
 }
-.fp-viewing-5 {
+#home.fp-viewing-5 {
   background: $color5;
   transition: background .6s ease;
   .popout a {
