@@ -1,6 +1,3 @@
-// SCROLL HEIGHT
-// $(document).scrollTop();
-// INIT FULLPAGE
 $(document).ready(function() {
             var body = $("#home");
             var canvas = $("canvas");
@@ -82,6 +79,7 @@ $(document).ready(function() {
         // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
+
 
 
 // pop menu out on hover
@@ -211,3 +209,5 @@ window.requestAnimFrame = (function(){
     requestAnimFrame(animloop);
     render();
 })();
+
+
