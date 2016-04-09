@@ -1,3 +1,4 @@
+
 #home.fp-viewing-1-aboutme {
   background: $color1;
   transition: background .6s ease;
@@ -6,6 +7,12 @@
   }
   #nav-icon span {
     background: $color1;
+  }
+  .mobile-trigger .fa {
+    color: $color1;
+  }
+  .mobile-popout li a {
+    color: $color1;
   }
 }
 #home.fp-viewing-2 {
@@ -25,6 +32,12 @@
   #nav-icon span {
     background: $color2;
   }
+  .mobile-trigger .fa {
+    color: $color2;
+  }
+  .mobile-popout li a {
+    color: $color2;
+  }
 }
 #home.fp-viewing-3 {
   background: $color3;
@@ -42,6 +55,12 @@
   }
   #nav-icon span {
     background: $color3;
+  }
+  .mobile-trigger .fa {
+    color: $color3;
+  }
+  .mobile-popout li a {
+    color: $color3;
   }
 }
 #home.fp-viewing-4 {
@@ -61,6 +80,12 @@
   #nav-icon span {
     background: $color4;
   }
+  .mobile-trigger .fa {
+    color: $color4;
+  }
+  .mobile-popout li a {
+    color: $color4;
+  }
 }
 #home.fp-viewing-5 {
   background: $color5;
@@ -76,6 +101,12 @@
   .text span {
     border-color: $color5;
     color: $color5;
+  }
+  .mobile-menu .fa {
+    color: $color5;
+  }
+  .mobile-popout li a {
+    color: $color1;
   }
 }
 

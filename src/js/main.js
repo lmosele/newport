@@ -42,7 +42,7 @@ $(document).ready(function() {
         resize : false,
         paddingTop: '3em',
         paddingBottom: '10px',
-        fixedElements: '.popout',
+        fixedElements: '.popout, .mobile-popout',
         responsiveWidth: 640,
         responsiveHeight: 0,
 
@@ -55,10 +55,11 @@ $(document).ready(function() {
 
             // var leavingSection = $(this);
             if(index == 1 && direction == 'down'){
+                canvas.fadeOut();
                 canvas.remove();
                 $(".grid").addClass("show");
             } else if(index == 2 && direction == 'up'){
-                // $("canvas").fadeIn();
+                // canvas.fadeIn();
                 $(".grid").removeClass("show");
             }
 
@@ -86,6 +87,9 @@ $(document).ready(function() {
 $(".popout").hover(function() {
     $(".popout").toggleClass("open");
     $("#nav-icon").toggleClass("open");
+});
+$(".mobile-trigger").click(function() {
+    $(".mobile-popout, .mobile-bg").toggleClass("open");
 });
 
 // Change document title on tabout

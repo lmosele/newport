@@ -36,10 +36,13 @@
 	    	</div>
 	    	<!-- about me -->
     		<div class="slide" data-anchor="aboutme">
-    			<h2>My name's Lucas Mosele.</h2>
-    			<h3>I am an Interaction Designer &amp; Developer from Brazil and Living in Boston, MA.</h3>
-    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">See My Work</button>
-    			<a class="btn ghost">See My Resume</a>
+    			<div class="container">
+	    			<h2>Hi, I'm Lucas.</h2>
+	    			<h3>I am an Interaction Designer &amp; Developer from Brazil who lives in Boston, MA.</h3>
+	    			<p>I'm looking for a team where I can roll up my sleeve and code while still maintaining beautiful UI.</p>
+	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">Seet My Work</button>
+	    			<a class="btn ghost">See My Resume</a>
+    			</div>
     		</div>
 	    </div>
 
