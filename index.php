@@ -40,8 +40,8 @@
 	    			<h2>Hi, I'm Lucas.</h2>
 	    			<h3>I am an Interaction Designer &amp; Developer from Brazil who lives in Boston, MA.</h3>
 	    			<p>I'm looking for a team where I can roll up my sleeve and code while still maintaining beautiful UI.</p>
-	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">Seet My Work</button>
-	    			<a class="btn ghost">See My Resume</a>
+	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">See My Work</button>
+	    			<a class="btn ghost" target="_blank" href="./dist/docs/lucas-mosele-resume.pdf">Download My Resume</a>
     			</div>
     		</div>
 	    </div>
@@ -52,12 +52,13 @@
 				<figure class="description">
 					<h3>Maxwell Health</h3>
 					<ul class="tags">
-						<li>User Interface</li>
+						<li>Front-End </li>
 						<li>Information Architecture</li>
-						<li>Front End</li>
+						<li>Interaction Design</li>
 					</ul>
-					<p>I was responsible for developing and designing Maxwell Health's multiple corporate websites. I focused on bringing the platforms from legacy code to scalable stylesheets, consistently modern design, and redesigned information architecture on the back end.</p>
-					<a class="btn ghost" href="case.php">See Case Study</a>
+					<p>I am responsible for developing, designing, and maintaining Maxwell Health's multiple corporate websites and overall public web presence. I focused on bringing the platforms from legacy code to scalable stylesheets, consistently modern design, and redesigned information architecture on the back end.</p>
+					<a class="btn ghost" href="maxwell.php">Website Case Study</a>
+					<a class="btn ghost" target="_blank" href="https://medium.com/@l_mosele/the-process-behind-our-end-of-year-report-bc6a71b0aca6#.mvo8kgik2">Yearly Report Case Study</a>
 				</figure>
 			</div>
 	    </div>
@@ -73,7 +74,7 @@
 						<li>Interaction Design</li>
 					</ul>
 					<p>As part of our product team, I worked on defining all brand UX guidelines, communicating with engineers, user testing, and designing user interfaces.</p>
-					<a class="btn ghost" href="case.php">See Case Study</a>
+					<a class="btn ghost" href="salt.php">Product Case Study</a>
 				</figure>
 			</div>
 	    </div>
@@ -89,7 +90,7 @@
 						<li>Interaction Design</li>
 					</ul>
 					<p>I was brought on to lead the design of the world's first car seat customizer ecommerce tool. We worked closely with their team and branding guidelines to create a uniquely Cosi shopping experience.</p>
-					<a class="btn ghost" href="case.php">See Case Study</a>
+					<a class="btn ghost" href="maxicosi.php">See Case Study</a>
 				</figure>
 			</div>
 	    </div>

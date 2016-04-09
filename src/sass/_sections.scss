@@ -15,6 +15,7 @@
     color: $color1;
   }
 }
+// =============================== MAXWELL HEALTH
 #home.fp-viewing-2 {
   background: $color2;
   transition: background .6s ease;
@@ -39,6 +40,22 @@
     color: $color2;
   }
 }
+#maxwell {
+  a.return,
+  .popout a,
+  .mobile-trigger .fa,
+  .mobile-popout li a,
+  .header h1 
+   {
+    color: $color2;
+  }
+  #nav-icon span,
+  .double-bounce1, 
+  .double-bounce2 {
+    background: $color2;
+  }
+}
+// =============================== SALT
 #home.fp-viewing-3 {
   background: $color3;
   transition: background .6s ease;
@@ -63,6 +80,22 @@
     color: $color3;
   }
 }
+#salt {
+  a.return,
+  .popout a,
+  .mobile-trigger .fa,
+  .mobile-popout li a,
+  .header h1 
+   {
+    color: $color3;
+  }
+  #nav-icon span,
+  .double-bounce1, 
+  .double-bounce2 {
+    background: $color3;
+  }
+}
+
 #home.fp-viewing-4 {
   background: $color4;
   transition: background .6s ease;
@@ -87,6 +120,22 @@
     color: $color4;
   }
 }
+#cosi {
+  a.return,
+  .popout a,
+  .mobile-trigger .fa,
+  .mobile-popout li a,
+  .header h1 
+   {
+    color: $color4;
+  }
+  #nav-icon span,
+  .double-bounce1, 
+  .double-bounce2 {
+    background: $color4;
+  }
+}
+
 #home.fp-viewing-5 {
   background: $color5;
   transition: background .6s ease;

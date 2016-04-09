@@ -31,7 +31,6 @@ a.btn {
   -ms-transition: background ease-in-out 0.2s;
   -o-transition: background ease-in-out 0.2s;
   transition: background ease-in-out 0.2s;
-
 }
 
 button.btn.ghost,
@@ -228,7 +227,7 @@ body #nav-icon span {
     width: 600px;
     height: 350px;
     background:  
-      url("../img/mh-1.png");
+      url("../img/maxwell/mh-1.png");
       background-size: cover;
     .s {
       display: block
@@ -238,7 +237,7 @@ body #nav-icon span {
     width: 600px;
     height: 350px;
     background:  
-      url("../img/mh-2.png");
+      url("../img/maxwell/mh-2.png");
       background-size: cover;
     .s {
       display: block
@@ -248,7 +247,7 @@ body #nav-icon span {
     width: 600px;
     height: 350px;
     background:  
-      url("../img/mh-3.png");
+      url("../img/maxwell/mh-3.png");
       background-size: cover;
     .s {
       display: block
@@ -274,7 +273,7 @@ body #nav-icon span {
     width: 100%;
     height: 900px;
     background:  
-      url("../img/salt-1.png");
+      url("../img/salt/salt-1.png");
     background-size: cover !important;
     .s {
       display: block
@@ -313,7 +312,7 @@ body #nav-icon span {
     width: 100%;
     height: 844px;
     background:  
-      url("../img/mc-1.png");
+      url("../img/cosi/mc-1.png");
     background-size: cover !important;
     .s {
       display: block
@@ -351,4 +350,57 @@ body #nav-icon span {
   }
 }
 
+
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  display: block;
+  margin: 0 auto;
+  left: 0%;
+  right: 0%;
+  top: 40%;
+  display: none;
+}
+@include tablet {
+  .spinner {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+  }
+}
+.spinner.loading {
+  display: block;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: $color0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { transform: scale(0.0) }
+  50% { transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+  }
+}
 

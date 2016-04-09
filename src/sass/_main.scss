@@ -1,0 +1,392 @@
+#home{
+  overflow-x: hidden;
+  background: $color0;
+  transition: background .6s ease;
+}
+#content {
+  z-index: $z8;
+  overflow-x: hidden;
+}
+#bg {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  z-index: $z1;
+}
+#geometry {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  z-index: $z2;
+}
+@include tablet {
+  #geometry {
+    display: none !important;
+  }
+}
+
+
+.center {
+  text-align: center;
+}
+
+// ==================== SECTION
+.section .container { 
+	width: 96%;
+  margin: 0 auto;
+  opacity: 0;
+  z-index: $z8;
+  transition: all .6s $bounce;
+  transform: translate3d(0, 10%, 0);
+}
+.section.active .container { 
+  opacity: 1;
+  transition: all .6s $bounce;
+  transform: translate3d(0, -10%, 0);
+}
+.middle {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  h2 {
+    font-size: 4em;
+    line-height: 1.3em;
+    font-weight: 800;
+    font-weight: 700;
+    text-shadow: 4px 4px 10px rgba(0,0,0, .05);
+  }
+  h3 {
+    font-size: 1.2em;
+    text-shadow: 4px 4px 10px rgba(0,0,0, .05);
+  }
+  p {
+    font-size: 1.1em;
+    text-shadow: 4px 4px 10px rgba(0,0,0, .05);
+  }
+  .ghost {
+    margin-top: 40px;
+  }
+  .ghost:hover {
+    box-shadow: 4px 4px 4px rgba(0,0,0, .1);
+  }
+}
+@include tablet {
+  .middle {
+    text-align: left;
+    h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+// ==================== FLOATER
+.floater {
+  position: absolute;
+  z-index: $z9;
+  width: 400px;
+  overflow-x: hidden;
+  text-align: center;
+  left: 10%;
+  top: 15%;
+  height: auto;
+  padding: 20px;
+  background: white;
+  overflow-y: hidden;
+  box-shadow: 4px 4px 10px rgba(0,0,0, .1);
+  transition: all .2s $bounce;
+}
+.floater.visible {
+  transform: translate3d(0, 0, 0);
+  transition: all .5s ease;
+}
+.floater-companion {
+  position: fixed;
+  z-index: $z3;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  transition: all .5s ease;
+}
+@include tablet {
+  .floater {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+  }
+  .floater-companion {
+    display: none;
+  }
+}
+
+
+
+.description {
+  max-width: 100%;
+  margin: 0 auto;
+  transition: all .5s ease;
+  h3 {
+    font-size: 1.9em;
+    line-height: 1em;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #d3d3d3;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: .5em;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+  li:not(:nth-child(2)) {
+    padding: 5px;
+    display: inline-block;
+    font-size: .8em;
+    color: #d3d3d3;
+  }
+  li:nth-child(2) {
+    padding: 6px;
+    display: inline-block;
+    font-size: .8em;
+    color: #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+  }
+  p {
+    weight: 400;
+    color: #d3d3d3;
+    font-size: 1.1em;
+  }
+  .ghost {
+    min-width: 70%;
+    color: #d3d3d3;
+    border: 1px solid #d3d3d3;
+  }
+}
+@include tablet {
+  .description {
+    h3 {
+      font-size: 1.5em;
+    }
+    ul {
+      display: none;
+    }
+  }
+}
+// ==================== MENU
+.popout {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  background: white;
+  z-index: $z10;
+  padding-right: 100px;
+  transform: translateX(89%);
+  box-shadow: 4px 4px 10px rgba(0,0,0, .1);
+  transition: all 600ms $bounce;
+  ul {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+  }
+  li {
+    display: inline-block;
+    padding: 20px;
+  }
+  a:not(.trigger){
+    text-transform: uppercase;
+    padding: 30px;
+    color: $color0;
+  }
+  a:not(.trigger):hover {
+    padding: 30px;
+    cursor: url(../img/cursor.png), auto;
+  }
+}
+  .popout.open {
+    transform: translateX(12%);
+    transition: all 600ms ease;
+  }
+@include tablet {
+  .popout {
+    display: none;
+  }
+}
+
+.mobile-trigger {
+  display: none;
+  .fa {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    font-size: 1.2em;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    z-index: $z10;
+    text-align: center;
+    color: $color0;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 4px 4px 10px rgba(0,0,0, .2);
+  }
+}
+  .mobile-popout {
+    position: fixed;
+    top: 0;
+    display: block;
+    z-index: $z10;
+    height: auto;
+    width: 100%;
+    padding-top: 30%;
+    margin: 0 auto;
+    transform: translateX(200%);
+    transition: transform 2s ease;
+    li {
+      padding: 20px 40px 20px 40px;
+      max-width: 70%;
+      margin: 0 auto;
+      margin-top: 20px;
+      text-align: center;
+      background: white;
+      transform: translateX(180%);
+      transition: all 1s $bounce;
+    }
+    li:first-child {
+      transition: all 1.1s $bounce;
+    }
+    li:nth-child(2) {
+      transition: all .9s $bounce;
+    }
+    li:nth-child(3) {
+      transition: all .6s $bounce;
+    }
+    li:nth-child(4) {
+      transition: all .3s $bounce;
+    }
+    a {
+      color: $color0;
+      text-transform: uppercase;
+    }
+  }
+
+  .mobile-popout.open {
+    transform: translateX(0%);
+    transition: transform .2s ease;
+    li {
+      transform: translateX(0%);
+      transition: all 1s $bounce;
+    } 
+    li:first-child {
+      transition: all 1.1s $bounce;
+    }
+    li:nth-child(2) {
+      transition: all .9s $bounce;
+    }
+    li:nth-child(3) {
+      transition: all .6s $bounce;
+    }
+    li:nth-child(4) {
+      transition: all .3s $bounce;
+    }
+  }
+  .mobile-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    background: #333;
+    opacity: 0.0;
+    z-index: $z9;
+    transition: all .3s ease;
+    display: none;
+  }
+  .mobile-bg.open {
+    display:block;
+    opacity: 0.6;
+    transition: all .3s ease;
+  }
+  @include tablet {
+    .mobile-trigger {
+      display: block;
+    }
+  }
+
+
+.tile {
+  position: relative;
+  display: inline-block;
+  z-index: $z8;
+  max-width: 500px;
+  overflow-x: hidden;
+  height: 400px;
+  background: white;
+  color: black;
+  margin: 10px;
+  overflow-y: hidden;
+  box-shadow: 4px 4px 10px rgba(0,0,0, .1);
+  transition: all .2s $bounce;
+  .preview {
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    background: gray;
+    float: left;
+    border-right: 1px solid #d3d3d3;
+    background: url(../img/majestic/majestic-1.png);
+    background-size: cover;
+  }
+  .text {
+    width: 50%;
+    float: right;
+    color: black;
+    padding: 20px 10px 10px 0px;
+    margin-left: 10px;
+    text-align: left;
+     h3 {
+      font-size: 1.1em;
+      line-height: 1em;
+      text-transform: uppercase;
+      color: #d3d3d3;
+      padding-bottom: .5em;
+      border-bottom: 1px solid #d3d3d3;
+      margin-bottom: .5em;
+    }
+    p {
+      weight: 400;
+      color: #d3d3d3;
+      font-size: 1.1em;
+    }
+    span {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      text-transform: uppercase;
+      font-size: .8em;
+      .fa {
+         transform: translate(20%, 0);
+         transition: all .5s ease;
+      }
+    }
+  }
+}
+.tile:hover .fa {
+  transform: translate(100%, 0) !important;
+  transition: all .5s ease;
+}
+

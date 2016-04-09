@@ -40,7 +40,7 @@ $(document).ready(function() {
         controlArrows: false,
         verticalCentered: true,
         resize : false,
-        paddingTop: '3em',
+        paddingTop: '1.5em',
         paddingBottom: '10px',
         fixedElements: '.popout, .mobile-popout',
         responsiveWidth: 640,

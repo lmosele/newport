@@ -1,18 +1,16 @@
-#case {
+body {
 	height: 100%;
 	width: 100%;
 }
 
-#case .popout {
+.popout {
 	box-shadow: none;
-	color: $color3 !important;
 }
 
 a.return {
 	position: fixed;
 	left: 2%;
 	top: 0%;
-	color: $color0;
 	font-size: 1em;
 	padding: 20px;
 }
@@ -21,16 +19,31 @@ a.return {
 article {
 	max-width: 1024px;
 	margin: 0 auto;
-	.header {
-		font-size: 3em;
+}
+.header {
+	padding-top: 15%;
+	text-align: center;
+	.logo {
+		height: 80px;
 		text-align: center;
-		padding-top: 15%;
+	}
+	h1 {
+		font-size: 3em;
+		margin-top: 50px;
+	}
+	.btn.ghost {
+		display: block;
+		width: 40%;
+		margin: 0 auto;
+		color: black;
+		margin-top: 20px;
+		border-color: black;
 	}
 	.tags {
 	    list-style: none;
 	   	margin: 0;
-	    margin-top: 2em;
-	    text-align: center;
+	    margin-top: 30px;
+	    margin-bottom: 30px;
 	    li:not(:nth-child(2)) {
 		    padding: 5px;
 		    display: inline-block;
@@ -46,8 +59,8 @@ article {
 		    border-left: 1px solid #d3d3d3;
 		  }
 	  }
-	  
 }
+
 .case-text-container {
 	display: block;
 	margin: 10px;
@@ -67,9 +80,9 @@ article {
 	    line-height: 2rem;
 	    margin-top: 2em;
 	}
-	img {
+	img, video {
 		margin-top: 40px;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		text-align: center;
 		width: 100%;
 	}
@@ -80,6 +93,11 @@ article {
 	    text-align: center;
 	    width: 100%;
 	    margin-top: 0;
+	}
+	.btn.ghost {
+		width: 50%;
+		color: black;
+		border-color: black;
 	}
 }
 .float {
@@ -94,7 +112,7 @@ article {
 	float: right;
 }
 
-#case footer {
+footer {
 	border-top: 1px solid #d3d3d3;
 	width: 100%;
 	height: 450px;
@@ -108,7 +126,7 @@ article {
 		font-size: 1.5em;
 		margin: 20px;
 	}
-	.ghost {
+	.btn.ghost {
 		text-align: center;
 		color: #333;
 		border-color: #333;
