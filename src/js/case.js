@@ -13,6 +13,9 @@ $(".popout").hover(function() {
 $(".mobile-trigger").click(function() {
     $(".mobile-popout, .mobile-bg").toggleClass("open");
 });
+$(".mobile-bg").click(function() {
+    $(".modal, .mobile-bg, .mobile-popout").removeClass("open");
+});
 
 // Change document title on tabout
 var original = document.title;

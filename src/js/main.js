@@ -56,10 +56,10 @@ $(document).ready(function() {
             // var leavingSection = $(this);
             if(index == 1 && direction == 'down'){
                 canvas.fadeOut();
-                canvas.remove();
+                // canvas.remove();
                 $(".grid").addClass("show");
             } else if(index == 2 && direction == 'up'){
-                // canvas.fadeIn();
+                canvas.fadeIn();
                 $(".grid").removeClass("show");
             }
 
@@ -88,16 +88,28 @@ $(document).ready(function() {
 // Tile Modals logic
 $("a").click(function() {
     if (this.href.indexOf('majestic') != -1) {
+        
+        $.ajax({
+           url: '../src/includes/_modal.php',
+           success: function(html) {
+              $(".modal").append(html);
+              $(".modal, .mobile-bg").toggleClass("open");
+           }
+        });
+        
+    }
+    if (this.href.indexOf('mayhem') != -1) {
         $(".modal, .mobile-bg").toggleClass("open");
     }
-    if (this.href.indexOf('otherthing') != -1) {
-        alert("other thing!");
-    }
-});
-$(".mobile-bg").click(function() {
-    $(".modal, .mobile-bg, .mobile-popout").removeClass("open");
+    // if($('.modal').is('.open')) {
+    // $('#home').addClass('noscroll');
+    // }
+    // if(!$('.modal').is('.open')) {
+    //     $('#home').removeClass('noscroll');
+    // } 
 });
 
+    
 
 // pop menu out on hover
 $(".popout").hover(function() {
@@ -106,6 +118,13 @@ $(".popout").hover(function() {
 }); //mobile
 $(".mobile-trigger").click(function() {
     $(".mobile-popout, .mobile-bg").toggleClass("open");
+    if ($(".modal").hasClass('open')) {
+        $(".modal").removeClass("open");
+        $(".mobile-bg").addClass("open");
+    }
+});
+$(".mobile-bg").click(function() {
+    $(".modal, .mobile-bg, .mobile-popout").removeClass("open");
 });
 
 // Change document title on tabout

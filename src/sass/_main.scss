@@ -29,7 +29,9 @@
   }
 }
 
-
+.noscroll {
+  overflow: hidden !important;
+}
 .center {
   text-align: center;
 }
@@ -125,6 +127,11 @@
   }
   .floater-companion {
     display: none;
+  }
+}
+@include mobile {
+  .floater {
+    width: 95%;
   }
 }
 

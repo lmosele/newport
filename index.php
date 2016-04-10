@@ -11,9 +11,8 @@
 			<li class="mock4"><span class="s"></span></li>
 		</ul>
 	</div>
-	<div class="modal">
-		<h1>Hello World</h1>
-	</div>
+	<div class="modal"></div>
+
 <!-- CONTROLS -->
 	<div class="arrows">
 		<button class="btn arrow" onclick="$.fn.fullpage.moveSectionUp();"><i class="fa fa-chevron-up"></i></button>
@@ -108,7 +107,7 @@
 						<li>User Interface</li>
 						<li>Interaction Design</li>
 					</ul>
-					<p>I worked with Trellis to design the UX and UI of AllCell's massive new Ecommerce site. I defined all architecture from the product experience to the community and forum sites.</p>
+					<p>I worked with Trellis to design the UX and UI of AllCell's entire new Ecommerce experience. I defined all architecture and UI guidelines from the product experience to the community and forum sites.</p>
 					<a class="btn ghost" target="_blank" href="https://www.allcells.com/">Home Page</a>
 					<a class="btn ghost" target="_blank" href="http://www.allcells.com/products/">Products</a>
 					<a class="btn ghost" target="_blank" href="https://www.allcells.com/forum/products/">Forum</a>
@@ -135,10 +134,10 @@
 				</div>
 			</a>
 	    </div>
+
 	</div>
 
-
-
+	
 
 
 	<!-- SCRIPTS -->

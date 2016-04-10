@@ -39,10 +39,10 @@
 
 				<h2>The Process</h2>
 				<p>After several weeks of carefully deprecating old code and moving towards better practices like SASSifying our stylesheets, compressing &amp; concatenating JS files, and templating with PHP I arrived at the point where a redesign was finally possible. The streamlining of the front-end also meant that maintenance time was halved, and the templating meant that new sales pages could be created in a tenth of the time.</p>
-				<p>Once implemented on a templatized footer across the website, our analytics showed that about 20% of our traffic was via Internet Explorer. This meant that I had to maintain similar levels of our brands playfulness within the home page while still remaining accessible to the later versions of IE. I achieved this with constant testing on <a href="http://blindbrowser.com/" target="_blank">Blind Browser</a> and <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a> VMs</p>
+				<p>Once implemented on a templatized footer across the website, our analytics showed that about 20% of our traffic was via Internet Explorer. This meant that I had to maintain similar levels of our brand's personality within the home page while still remaining accessible to the later versions of IE. I achieved this with constant testing on <a href="http://blindbrowser.com/" target="_blank">Blind Browser</a> and <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a> VMs</p>
 
 				<h2>The Design</h2>
-				<p>After hundreds of sticky notes and months prototyping across out entire marketing presence we successfully designed the new partner landing pages, sales sites, home page, and product marketing pages. We focused on clean design while still maintaining the playful-yet-sophisticated visual language.</p>
+				<p>After hundreds of sticky notes and months prototyping across our entire marketing presence we successfully designed the new partner landing pages, sales sites, home page, and product marketing pages. We focused on clean design while still maintaining the playful-yet-sophisticated visual language.</p>
 
 				<img class="appear fadeInUp" alt="landing page" role="presentation" src="dist/img/maxwell/mh-3.png">
 				<span role="description">Partner Landing Page</span>
