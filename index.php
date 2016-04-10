@@ -11,6 +11,9 @@
 			<li class="mock4"><span class="s"></span></li>
 		</ul>
 	</div>
+	<div class="modal">
+		<h1>Hello World</h1>
+	</div>
 <!-- CONTROLS -->
 	<div class="arrows">
 		<button class="btn arrow" onclick="$.fn.fullpage.moveSectionUp();"><i class="fa fa-chevron-up"></i></button>
@@ -47,7 +50,7 @@
 	    </div>
 
 	    <!-- SECTION 2 -->
-	    <div class="section">
+	    <div class="section" id="work">
 	    	<div class="floater">
 				<figure class="description">
 					<h3>Maxwell Health</h3>
@@ -96,28 +99,45 @@
 	    </div>
 
 	    <!-- SECTION 5 -->
-	    <div class="section middle">
-			<a href="#" class="tile">
-				<div class="preview"></div>
+	    <div class="section">
+			<div class="floater">
+				<figure class="description">
+					<h3>AllCells</h3>
+					<ul class="tags">
+						<li>User Experience</li>
+						<li>User Interface</li>
+						<li>Interaction Design</li>
+					</ul>
+					<p>I worked with Trellis to design the UX and UI of AllCell's massive new Ecommerce site. I defined all architecture from the product experience to the community and forum sites.</p>
+					<a class="btn ghost" target="_blank" href="https://www.allcells.com/">Home Page</a>
+					<a class="btn ghost" target="_blank" href="http://www.allcells.com/products/">Products</a>
+					<a class="btn ghost" target="_blank" href="https://www.allcells.com/forum/products/">Forum</a>
+				</figure>
+			</div>
+	    </div>
+
+	    <!-- SECTION 6 -->
+	    <div class="section middle" id="play">
+			<a href="#majestic" class="tile">
+				<div class="preview majestic"></div>
 				<div class="text">
 					<h3>Majestic Casual App</h3>
 					<p>Concept App for the music channel Majestic Casual designed using Sketch &amp; Flinto</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
 				</div>
 			</a>
-			<a href="#" class="tile">
-				<div class="preview"></div>
+			<a href="#otherthing" class="tile">
+				<div class="preview mayhem"></div>
 				<div class="text">
-					<h3>Majestic Casual App</h3>
-					<p>Concept App for the music channel Majestic Casual designed using Sketch &amp; Flinto</p>		
+					<h3>Model Mayhem</h3>
+					<p>A quick PS5 mockup animated in Flinto of what I'd imagine Model Mayhem's app would look like.</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
 				</div>
 			</a>
 	    </div>
-
-
-
 	</div>
+
+
 
 
 

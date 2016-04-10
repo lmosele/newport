@@ -63,9 +63,9 @@ $(document).ready(function() {
                 $(".grid").removeClass("show");
             }
 
-            if(index == 4 && direction == 'down'){
+            if(index == 5 && direction == 'down'){
                 $(".grid").removeClass("show");
-            } else if(index == 5 && direction == 'up'){
+            } else if(index == 6 && direction == 'up'){
                 $(".grid").addClass("show");
             }
          
@@ -73,7 +73,11 @@ $(document).ready(function() {
             var idx = Math.abs(index - nextIndex)*2.5; 
             $.fn.fullpage.setScrollingSpeed(idx*100);
         },
-        // afterLoad: function(anchorLink, index){},
+        afterLoad: function(anchorLink, index){
+            if(index == 6){
+                $(".grid").removeClass("show");
+            } 
+        },
         // afterRender: function(){},
         // afterResize: function(){},
         // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
@@ -81,13 +85,25 @@ $(document).ready(function() {
     });
 });
 
+// Tile Modals logic
+$("a").click(function() {
+    if (this.href.indexOf('majestic') != -1) {
+        $(".modal, .mobile-bg").toggleClass("open");
+    }
+    if (this.href.indexOf('otherthing') != -1) {
+        alert("other thing!");
+    }
+});
+$(".mobile-bg").click(function() {
+    $(".modal, .mobile-bg, .mobile-popout").removeClass("open");
+});
 
 
 // pop menu out on hover
 $(".popout").hover(function() {
     $(".popout").toggleClass("open");
     $("#nav-icon").toggleClass("open");
-});
+}); //mobile
 $(".mobile-trigger").click(function() {
     $(".mobile-popout, .mobile-bg").toggleClass("open");
 });

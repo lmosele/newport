@@ -2,17 +2,14 @@
 #home.fp-viewing-1-aboutme {
   background: $color1;
   transition: background .6s ease;
-  .popout a {
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
     color: $color1;
   }
   #nav-icon span {
     background: $color1;
-  }
-  .mobile-trigger .fa {
-    color: $color1;
-  }
-  .mobile-popout li a {
-    color: $color1;
   }
 }
 // =============================== MAXWELL HEALTH
@@ -27,25 +24,21 @@
     border-color: $color2 !important;
     transition: all .6s ease;
   }
-  .popout a {
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
     color: $color2;
   }
   #nav-icon span {
     background: $color2;
-  }
-  .mobile-trigger .fa {
-    color: $color2;
-  }
-  .mobile-popout li a {
-    color: $color2;
   }
 }
 #maxwell {
   a.return,
   .popout a,
   .mobile-trigger .fa,
-  .mobile-popout li a,
-  .header h1 
+  .mobile-popout li a
    {
     color: $color2;
   }
@@ -67,25 +60,21 @@
     border-color: $color3 !important;
     transition: all .6s ease;
   }
-  .popout a {
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
     color: $color3;
   }
   #nav-icon span {
     background: $color3;
-  }
-  .mobile-trigger .fa {
-    color: $color3;
-  }
-  .mobile-popout li a {
-    color: $color3;
   }
 }
 #salt {
   a.return,
   .popout a,
   .mobile-trigger .fa,
-  .mobile-popout li a,
-  .header h1 
+  .mobile-popout li a
    {
     color: $color3;
   }
@@ -107,25 +96,21 @@
     border-color: $color4 !important;
     transition: all .6s ease;
   }
-  .popout a {
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
     color: $color4;
   }
   #nav-icon span {
     background: $color4;
-  }
-  .mobile-trigger .fa {
-    color: $color4;
-  }
-  .mobile-popout li a {
-    color: $color4;
   }
 }
 #cosi {
   a.return,
   .popout a,
   .mobile-trigger .fa,
-  .mobile-popout li a,
-  .header h1 
+  .mobile-popout li a
    {
     color: $color4;
   }
@@ -136,27 +121,46 @@
   }
 }
 
+// =============================== Allcells
 #home.fp-viewing-5 {
   background: $color5;
   transition: background .6s ease;
-  .popout a {
+  .description h3,
+  .description p,
+  .description li,
+  .description .ghost {
+    color: $color5 !important;
+    border-color: $color5 !important;
+    transition: all .6s ease;
+  }
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
     color: $color5;
   }
   #nav-icon span {
     background: $color5;
   }
-  .text h3, 
-  .text p,
-  .text span {
-    border-color: $color5;
-    color: $color5;
+}
+
+// =============================== Majestic
+#home.fp-viewing-6 {
+  background: $color6;
+  transition: background .6s ease;
+  .text h3,
+  .text p, 
+  .text span,
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
+    color: $color6;
   }
-  .mobile-menu .fa {
-    color: $color5;
-  }
-  .mobile-popout li a {
-    color: $color1;
+  #nav-icon span {
+    background: $color6;
   }
 }
+
 
 

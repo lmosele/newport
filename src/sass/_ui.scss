@@ -338,15 +338,54 @@ body #nav-icon span {
   }
 }
 
+
+//
+// SECTION 4 - Allcells
+//
+.fp-viewing-5 {
+  .grid.show {
+    width: 928px;
+    transform: translateY(-27%) rotateX(60deg) rotateZ(-50deg);
+    transition: all 2s ease;
+  }
+  .mock1 {
+    width: 100%;
+    height: 600px;
+    background:  
+      url("../img/allcells/ac-1.png");
+    background-size: cover !important;
+    .s {
+      display: block
+    }
+  }
+  .mock2 {
+    display: none;
+    .s {
+      display: none;
+    }
+  }
+  .mock3 {
+    display: none;
+    .s {
+      display: none;
+    }
+  }
+  .mock4 {
+    display: none;
+    .s {
+      display: none;
+    }
+  }
+}
+
 @include monitor {
-  .fp-viewing-2 .grid.show {
-    transform: translateY(-20%) rotateX(60deg) rotateZ(-50deg);
-  }
-  .fp-viewing-3 .grid.show {
-    transform: translateY(-20%) rotateX(60deg) rotateZ(-50deg);
-  }
+  .fp-viewing-2 .grid.show,
+  .fp-viewing-3 .grid.show,
   .fp-viewing-4 .grid.show {
     transform: translateY(-20%) rotateX(60deg) rotateZ(-50deg);
+  }
+  .fp-viewing-5 .grid.show {
+    transform: translateY(-25%) rotateX(60deg) rotateZ(-50deg);
   }
 }
 
