@@ -166,7 +166,7 @@
 					<span>See More <i class="fa fa-external-link"></i></span>
 				</div>
 			</a>
-			<a href="http://photography.lmosele.com" class="tile">
+			<a href="http://photography.lmosele.com" target="_blank" class="tile">
 				<div class="preview photo"></div>
 				<div class="text">
 					<h3>Photography Portfolio</h3>
@@ -177,7 +177,7 @@
 	    </div>
 
 	     <!-- SECTION 9 -->
-	    <div class="section middle">
+	    <div class="section middle" id="about">
 				<div class="tile bio">
 					<div class="preview bio"></div>
 					<div class="text">

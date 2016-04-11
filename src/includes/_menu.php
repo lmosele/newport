@@ -11,7 +11,7 @@
  			<li><a href="#work">Work</a></li>
  			<li><a href="#play">Play</a></li>
  			<li><a href="#about">About</a></li>
- 			<li><a href="#contact">Contact</a></li>
+ 			<li><a href="./dist/docs/lucas-mosele-resume.pdf" target="_blank">Resume</a></li>
  		</ul>
  	</nav>
 
@@ -23,5 +23,5 @@
 		<li><a href="#work">Work</a></li>
 		<li><a href="#play">Play</a></li>
 		<li><a href="#about">About</a></li>
-		<li><a href="#contact">Contact</a></li>
+		<li><a href="./dist/docs/lucas-mosele-resume.pdf" target="_blank">Resume</a></li>
 	</ul>	
