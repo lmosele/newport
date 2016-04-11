@@ -20,7 +20,7 @@
     border-right: 1px solid #d3d3d3;
   }
   .text {
-    width: 50%;
+    width: 52%;
     float: right;
     color: black;
     padding: 20px 10px 10px 0px;
@@ -74,6 +74,21 @@
 .preview.majestic {
     background: url(../img/majestic/majestic-1.png);
     background-size: cover;
+}
+.preview.mayhem {
+    background: url(../img/mayhem/mayhem.jpg);
+    background-size: cover;
+}
+.preview.gatsby {
+    background: url(../img/print/gatsby-1.jpg);
+    background-size: cover;
+    background-position: 51%;
+}
+.preview.starwars {
+    background: url(../img/print/starwars-1.png);
+    background-size: cover;
+    background-position: 51%;
+
 }
 
 .tile:hover .fa {

@@ -42,6 +42,12 @@ a.btn.ghost {
   font-family: $body;
   transition: box-shadow ease;
 }
+button.btn.ghost.full,
+a.btn.ghost.full {
+  display: block;
+  margin-top: 1em;
+  width: 100%;
+}
 
 button.btn:hover,
 a.btn:hover {
@@ -63,7 +69,7 @@ a.btn:hover {
 
 .arrows {
   position: fixed;
-  right: 2%;
+  left: 2%;
   vertical-align: center;
   top: 45%;
   bottom: 55%;

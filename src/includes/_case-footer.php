@@ -1,7 +1,7 @@
 	<footer>
 		<div class="container">
 		<h4>Like what you see?</h4>
-		<a class="btn ghost" href="#">See More Work</a>
+		<a class="btn ghost" href="index.php#work">See More Work</a>
 		<a class="btn ghost" href="#">Contact Me</a>
 		</div>
 	</footer>

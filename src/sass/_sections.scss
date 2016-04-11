@@ -155,13 +155,14 @@
   .mobile-popout li a,
   .mobile-trigger .fa
    {
-    color: $color6;
+    color: #505050;
   }
   #nav-icon span {
     background: $color6;
   }
 }
-#majestic {
+#majestic,
+#mayhem {
   a.return {
     color: white;
   }
@@ -169,14 +170,31 @@
   .mobile-trigger .fa,
   .mobile-popout li a
    {
-    color: $color6;
+    color: #505050;
   }
   #nav-icon span,
   .double-bounce1, 
   .double-bounce2 {
-    background: $color6;
+    background: #505050;
   }
 }
 
+// =============================== Print Designs
+#home.fp-viewing-7 {
+  background: $color7;
+  transition: background .6s ease;
+  .text h3,
+  .text p, 
+  .text span,
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
+    color: #505050;
+  }
+  #nav-icon span {
+    background: $color7;
+  }
+}
 
 

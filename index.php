@@ -31,7 +31,7 @@
 	    				See My Work
 	    			</button>
 	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSlideRight();">
-	    				About Me <i class="left fa fa-chevron-right"></i>
+	    				Who Am I? <i class="left fa fa-chevron-right"></i>
 	    			</button>
 	    		</div>
 	    	</div>
@@ -39,10 +39,12 @@
     		<div class="slide" data-anchor="aboutme">
     			<div class="container">
 	    			<h2>Hi, I'm Lucas.</h2>
-	    			<h3>I am an Interaction Designer &amp; Developer from Brazil who lives in Boston, MA.</h3>
-	    			<p>I'm looking for a team where I can roll up my sleeve and code while still maintaining beautiful UI.</p>
-	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">See My Work</button>
-	    			<a class="btn ghost" target="_blank" href="./dist/docs/lucas-mosele-resume.pdf">Download My Resume</a>
+	    			<h3>I am an Interaction Designer &amp; Developer from Brazil living and working from Boston, MA.</h3>
+	    			<div class="container small">
+		    			<a class="btn ghost full" target="_blank" href="./dist/docs/lucas-mosele-resume.pdf">Resume <i class="left fa fa-download"></i></a>
+		    			<button class="btn ghost full" onclick="$.fn.fullpage.moveSectionDown();">About Me</button>
+		    			<button class="btn ghost full" onclick="$.fn.fullpage.moveSectionDown();">My Work</button>
+	    			</div>
     			</div>
     		</div>
 	    </div>
@@ -119,15 +121,15 @@
 			<a href="majestic.php" class="tile">
 				<div class="preview majestic"></div>
 				<div class="text">
-					<h3>Majestic Casual App</h3>
-					<p>Concept App for the music channel Majestic Casual designed using Sketch &amp; Flinto</p>		
+					<h3>Majestic Casual WIP</h3>
+					<p>Work-in-Progress App design for the music channel Majestic Casual designed using Sketch &amp; Flinto</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
 				</div>
 			</a>
-			<a href="#otherthing" class="tile">
+			<a href="mayhem.php" class="tile">
 				<div class="preview mayhem"></div>
 				<div class="text">
-					<h3>Model Mayhem</h3>
+					<h3>Model Mayhem App</h3>
 					<p>A quick PS5 mockup animated in Flinto of what I'd imagine Model Mayhem's app would look like.</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
 				</div>
