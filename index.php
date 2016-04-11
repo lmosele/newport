@@ -142,21 +142,56 @@
 				<div class="preview starwars"></div>
 				<div class="text">
 					<h3>Star Wars Art Deco</h3>
-					<p>It's a goal of mine to illustrate my favorite planets from the Star Wars mythos, this is what I have so far.</p>
+					<p>I'm currently challenging myself to work on illustrating my favorite planets from Star Wars in 1920's travel poster style.</p>
 					<span>See More <i class="fa fa-external-link"></i></span>
 				</div>
 			</a>
 			<a href="https://www.behance.net/gallery/25486739/GREAT-GATSBY-POSTER" target="_blank" class="tile">
 				<div class="preview gatsby"></div>
 				<div class="text">
-					<h3>Great Gatsby Illustration</h3>
-					<p>An illustration I made after reading The Great Gatsby.</p>
+					<h3>Great Gatsby test</h3>
+					<p>A poster based off of a book cover (not Great Gatsby) that I saw in the library, the character was based off of an old theater poster from the same era.</p>
 					<span>See More <i class="fa fa-external-link"></i></span>
 				</div>
 			</a>
 	    </div>
 
-	</div>
+	     <!-- SECTION 8 -->
+	    <div class="section middle">
+			<a href="http://www.moddb.com/mods/eras-of-the-mercenaries" target="_blank" class="tile">
+				<div class="preview eotm"></div>
+				<div class="text">
+					<h3>Eras of The Mercenaries</h3>
+					<p>A 3 year project to modify PetroGlyph's Empire At War game, I worked tirelessly with a community of artists, as well as modelling and designing my own assets.</p>		
+					<span>See More <i class="fa fa-external-link"></i></span>
+				</div>
+			</a>
+			<a href="http://photography.lmosele.com" class="tile">
+				<div class="preview photo"></div>
+				<div class="text">
+					<h3>Photography Portfolio</h3>
+					<p>A weekend project to design my responsive and performance-friendly photography portfolio.</p>		
+					<span>See More <i class="fa fa-external-link"></i></span>
+				</div>
+			</a>
+	    </div>
+
+	     <!-- SECTION 9 -->
+	    <div class="section middle">
+				<div class="tile bio">
+					<div class="preview bio"></div>
+					<div class="text">
+						<h3>Looking for Someone?</h3>
+						<p>I'm a designer, developer, photographer, teacher and all-around self-learner. Whether it's a mobile app, enterprise site, or game UI, I'm willing to bring over 6 years of design experience to the table. I'm looking for the sort of diverse team where I talk about favorite architects one second and least favorite programming languages the next.</p>	
+						<ul>
+							<li><a href="https://www.instagram.com/300iso/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+							<li><a href="https://twitter.com/l_mosele" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+							<li><a href="https://www.linkedin.com/in/lucasmosele" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin</a></li>
+							<li><a href="https://www.behance.net/lmosele" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i>Behance</a></li>
+						</ul>	
+						<a href="mailto:lucasmosele@gmail.com" class="btn ghost"><i class="fa fa-envelope" aria-hidden="true"></i>E-mail Me</a>
+					</div>
+		</div>
 
 	
 

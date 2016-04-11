@@ -74,7 +74,7 @@ $(document).ready(function() {
             $.fn.fullpage.setScrollingSpeed(idx*100);
         },
         afterLoad: function(anchorLink, index){
-            if(index == 6 || 7){
+            if(index == 6 || index == 7 || index == 8 || index == 9) {
                 $(".grid").removeClass("show");
             } 
         },

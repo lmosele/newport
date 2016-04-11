@@ -23,7 +23,7 @@
     width: 52%;
     float: right;
     color: black;
-    padding: 20px 10px 10px 0px;
+    padding: 20px 20px 10px 0px;
     margin-left: 10px;
     text-align: left;
      h3 {
@@ -71,6 +71,12 @@
     }
   }
 }
+a.tile:hover .fa {
+  transform: translate(100%, 0) !important;
+  transition: all .5s ease;
+}
+
+
 .preview.majestic {
     background: url(../img/majestic/majestic-1.png);
     background-size: cover;
@@ -88,12 +94,63 @@
     background: url(../img/print/starwars-1.png);
     background-size: cover;
     background-position: 51%;
-
+}
+.preview.eotm {
+    background: url(../img/other/eotm-1.jpg);
+    background-size: cover;
+    background-position: 92%;
+}
+.preview.photo {
+    background: url(../img/other/photo-1.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+.preview.bio {
+    background: url(../img/self.jpg);
+    background-size: cover;
+    background-position: 50%;
 }
 
-.tile:hover .fa {
-  transform: translate(100%, 0) !important;
-  transition: all .5s ease;
-}
 
+// BIO
+.tile.bio {
+  max-width: 960px;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  h3 {
+    margin-top: 20px;
+  }
+  ul {
+    text-align: left;
+  }
+  li {
+    padding: 5px;
+  }
+  a {
+    color: #505050;
+  }
+  a:hover .fa {
+    color: $color9;
+  }
+  .ghost {
+    float: right;
+    color: #505050;
+    border-color: #505050;
+  }
+}
+@include tablet {
+  .tile.bio {
+    padding: 10px;
+    height: auto;
+    padding-bottom: 30px;
+    .text {
+      float: none;
+      margin: 0 auto;
+    }
+    p {
+      display: block;
+    }
+  }
+}
 

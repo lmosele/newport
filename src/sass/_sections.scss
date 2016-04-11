@@ -196,5 +196,39 @@
     background: $color7;
   }
 }
+// =============================== Other 
+#home.fp-viewing-8 {
+  background: $color8;
+  transition: background .6s ease;
+  .text h3,
+  .text p, 
+  .text span,
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
+    color: #505050;
+  }
+  #nav-icon span {
+    background: $color8;
+  }
+}
+// =============================== Bio 
+#home.fp-viewing-9 {
+  background: $color9;
+  transition: background .6s ease;
+  .text h3,
+  .text p, 
+  .text span,
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
+    color: #505050;
+  }
+  #nav-icon span {
+    background: $color9;
+  }
+}
 
 
