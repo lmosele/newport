@@ -29,4 +29,3 @@ $(window).blur(function() {
 });
 
 new WOW().init();
-

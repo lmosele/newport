@@ -86,28 +86,23 @@ $(document).ready(function() {
 });
 
 // Tile Modals logic
-$("a").click(function() {
-    if (this.href.indexOf('majestic') != -1) {
-        
-        $.ajax({
-           url: '../src/includes/_modal.php',
-           success: function(html) {
-              $(".modal").append(html);
-              $(".modal, .mobile-bg").toggleClass("open");
-           }
-        });
-        
-    }
-    if (this.href.indexOf('mayhem') != -1) {
-        $(".modal, .mobile-bg").toggleClass("open");
-    }
-    // if($('.modal').is('.open')) {
-    // $('#home').addClass('noscroll');
-    // }
-    // if(!$('.modal').is('.open')) {
-    //     $('#home').removeClass('noscroll');
-    // } 
-});
+// $("a").click(function() { 
+//     if (this.href.indexOf('majestic') != -1) {
+//         var loaded = false;
+//         $.ajax({
+//            url: '../src/includes/_modal.php',
+//            success: function(html) {
+//               $(".modal, .mobile-bg").toggleClass("open");
+//               if (loaded) return;
+//               $(".modal").append(html);
+//               loaded = true;
+//            }
+//         });   
+//     }
+//     if (this.href.indexOf('mayhem') != -1) {
+//         $(".modal, .mobile-bg").toggleClass("open");
+//     }
+// });
 
     
 

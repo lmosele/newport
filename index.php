@@ -11,7 +11,6 @@
 			<li class="mock4"><span class="s"></span></li>
 		</ul>
 	</div>
-	<div class="modal"></div>
 
 <!-- CONTROLS -->
 	<div class="arrows">
@@ -117,7 +116,7 @@
 
 	    <!-- SECTION 6 -->
 	    <div class="section middle" id="play">
-			<a href="#majestic" class="tile">
+			<a href="majestic.php" class="tile">
 				<div class="preview majestic"></div>
 				<div class="text">
 					<h3>Majestic Casual App</h3>
@@ -131,6 +130,26 @@
 					<h3>Model Mayhem</h3>
 					<p>A quick PS5 mockup animated in Flinto of what I'd imagine Model Mayhem's app would look like.</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
+				</div>
+			</a>
+	    </div>
+
+	     <!-- SECTION 7 -->
+	    <div class="section middle">
+			<a href="https://www.behance.net/gallery/25486943/STAR-WARS-ART-DECO-POSTERS-(PT-1)" target="_blank" class="tile">
+				<div class="preview starwars"></div>
+				<div class="text">
+					<h3>Star Wars Art Deco</h3>
+					<p>It's a goal of mine to illustrate my favorite planets from the Star Wars mythos, this is what I have so far.</p>
+					<span>See More <i class="fa fa-external-link"></i></span>
+				</div>
+			</a>
+			<a href="https://www.behance.net/gallery/25486739/GREAT-GATSBY-POSTER" target="_blank" class="tile">
+				<div class="preview gatsby"></div>
+				<div class="text">
+					<h3>Great Gatsby Illustration</h3>
+					<p>An illustration I made after reading The Great Gatsby.</p>
+					<span>See More <i class="fa fa-external-link"></i></span>
 				</div>
 			</a>
 	    </div>
