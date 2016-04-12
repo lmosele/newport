@@ -42,8 +42,8 @@
 	    			<h3>I am an Interaction Designer &amp; Developer from Brazil living and working from Boston, MA.</h3>
 	    			<div class="container small">
 		    			<a class="btn ghost full" target="_blank" href="./dist/docs/lucas-mosele-resume.pdf">Resume <i class="left fa fa-download"></i></a>
-		    			<button class="btn ghost full" onclick="$.fn.fullpage.moveSectionDown();">About Me</button>
 		    			<button class="btn ghost full" onclick="$.fn.fullpage.moveSectionDown();">My Work</button>
+		    			<a class="btn ghost full" href="#about" >About Me</a>
 	    			</div>
     			</div>
     		</div>
