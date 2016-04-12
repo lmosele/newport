@@ -182,7 +182,7 @@
 					<div class="preview bio"></div>
 					<div class="text">
 						<h3>Looking for Someone?</h3>
-						<p>I'm a designer, developer, photographer, teacher and all-around self-learner. Whether it's a mobile app, enterprise site, or game UI, I'm willing to bring over 6 years of design experience to the table. I'm looking for the sort of diverse team where I talk about favorite architects one second and least favorite programming languages the next.</p>	
+						<p>I'm a designer, developer, photographer, teacher and all-around self-learner. Whether it's a mobile app, enterprise site, or game UI, I'm willing to bring over 6 years of design experience to the table. I'm looking for the sort of diverse team where we can talk about favorite architects one second and least favorite programming languages the next.</p>	
 						<ul>
 							<li><a href="https://www.instagram.com/300iso/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
 							<li><a href="https://twitter.com/l_mosele" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
@@ -200,6 +200,7 @@
 	<script type="text/javascript" src="dist/js/jquery-3-alpha.min.js"></script>
 	<script type="text/javascript" src="dist/js/jquery.fullpage.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.min.js"></script>
+	<?php include_once("src/includes/_script.php") ?>
 	
 </body>
 </html>
