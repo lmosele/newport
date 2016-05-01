@@ -24,7 +24,7 @@
 				
 				<p>Maxwell Health is an HR and benefits platform that combines the management and enrollment of benefits into one software experience. While still a relatively young company, it has made a splash in a market in dire need of innovation. </p>
 				<h2>The Case - Corporate Website</h2>
-				<p>Maxwell Health's entire marketing model revolves around inbound and partnership development. As the sole front-end developer assigned to the marketing team, I was responsible for brainstorming, designing, and developing any and all projects that did not involve engineering. The first of these was the redesign of our corporate website, whose main purpose is to funnel leads into sign-ups.</p>
+				<p>As the sole front-end developer assigned to the marketing team, I was responsible for brainstorming, designing, and developing any and all projects that did not involve engineering. The first of these was the redesign of our corporate website, whose main purpose is to funnel leads into sign-ups.</p>
 
 				<p>The older site was a great representation of our brand, but in the end it suffered from serious performance/accessibility issues like loading over a dozen scripts and stylesheets, uncompressed video, and dozens of gifs &amp; pngs. The total request time was ~8s on a high speed connection. My job was to get to reduce load time, increase signups, and redesign the website for a fresh new look.</p>
 

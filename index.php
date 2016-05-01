@@ -26,12 +26,13 @@
 	    	<!-- main section -->
 	    	<div class="slide" data-anchor="main">
 	    		<div class="container">
-	    			<h2>The Full Spectrum Designer You didn't know you needed.</h2>
+	    			<h2>The Full Spectrum Designer You Didn't Know You Needed.</h2>
+	    			<span>(Just Kidding)</span>
 	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">
 	    				See My Work
 	    			</button>
 	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSlideRight();">
-	    				Who Am I? <i class="left fa fa-chevron-right"></i>
+	    				Who I Am <i class="left fa fa-chevron-right"></i>
 	    			</button>
 	    		</div>
 	    	</div>
@@ -39,7 +40,7 @@
     		<div class="slide" data-anchor="aboutme">
     			<div class="container">
 	    			<h2>Hi, I'm Lucas.</h2>
-	    			<h3>I am an Interaction Designer &amp; Developer from Brazil living and working from Boston, MA.</h3>
+	    			<h3>I am a multi-disciplinary designer from Brazil living and working from Boston, MA.</h3>
 	    			<div class="container small">
 		    			<a class="btn ghost full" target="_blank" href="./dist/docs/lucas-mosele-resume.pdf">Resume <i class="left fa fa-download"></i></a>
 		    			<button class="btn ghost full" onclick="$.fn.fullpage.moveSectionDown();">My Work</button>
@@ -130,7 +131,7 @@
 				<div class="preview mayhem"></div>
 				<div class="text">
 					<h3>Model Mayhem App</h3>
-					<p>A quick PS5 mockup animated in Flinto of what I'd imagine Model Mayhem's app would look like.</p>		
+					<p>A branding/interaction mockup in Flinto of what I'd imagine Model Mayhem's app would look like.</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
 				</div>
 			</a>
@@ -149,7 +150,7 @@
 			<a href="https://www.behance.net/gallery/25486739/GREAT-GATSBY-POSTER" target="_blank" class="tile">
 				<div class="preview gatsby"></div>
 				<div class="text">
-					<h3>Great Gatsby test</h3>
+					<h3>Great Gatsby Poster</h3>
 					<p>A poster based off of a book cover (not Great Gatsby) that I saw in the library, the character was based off of an old theater poster from the same era.</p>
 					<span>See More <i class="fa fa-external-link"></i></span>
 				</div>
@@ -181,8 +182,9 @@
 				<div class="tile bio">
 					<div class="preview bio"></div>
 					<div class="text">
-						<h3>Looking for Someone?</h3>
-						<p>I'm a designer, developer, photographer, teacher and all-around self-learner. Whether it's a mobile app, enterprise site, or game UI, I'm willing to bring over 6 years of design experience to the table. I'm looking for the sort of diverse team where we can talk about favorite architects one second and least favorite programming languages the next.</p>	
+						<h3>About Me</h3>
+						<p>I'm a UX/UI Designer with Front-End chops who loves working in diverse teams with passionate people.  <br><br>When I'm not building awesome products I'm a freelance photographer &amp; urban explorer. I also teach web &amp; UX design at Startup Institute! You can reach me via:
+						 </p>	
 						<ul>
 							<li><a href="https://www.instagram.com/300iso/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
 							<li><a href="https://twitter.com/l_mosele" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
@@ -194,13 +196,14 @@
 		</div>
 
 	
-
+	<div id="awwwards" class="nominee white left">
+	<a href="http://www.awwwards.com/sites/lucas-mosele-ui-ux-designer-developer" target="_blank">Awwwards</a>
+	</div>
 
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src="dist/js/jquery-3-alpha.min.js"></script>
 	<script type="text/javascript" src="dist/js/jquery.fullpage.min.js"></script>
 	<script type="text/javascript" src="dist/js/main.min.js"></script>
-	<?php include_once("src/includes/_script.php") ?>
 	
 </body>
 </html>
