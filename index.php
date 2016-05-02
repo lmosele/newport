@@ -1,6 +1,6 @@
 <?php echo file_get_contents("src/includes/_head.php"); 
 	  echo file_get_contents("src/includes/_menu.php"); ?>
-<body id="home">
+<body id="home" class="fade">
 
 <!-- MOCKUPS -->
 	<div class="floater-companion">
@@ -10,6 +10,10 @@
 			<li class="mock3"><span class="s"></span></li>
 			<li class="mock4"><span class="s"></span></li>
 		</ul>
+		<div class="spinner loading">
+		  <div class="double-bounce1"></div>
+		  <div class="double-bounce2"></div>
+		</div>
 	</div>
 
 <!-- CONTROLS -->
@@ -26,8 +30,7 @@
 	    	<!-- main section -->
 	    	<div class="slide" data-anchor="main">
 	    		<div class="container">
-	    			<h2>The Full Spectrum Designer You Didn't Know You Needed.</h2>
-	    			<span>(Just Kidding)</span>
+	    			<h2>The Full Spectrum Designer You Didn't Know You Needed</h2>
 	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">
 	    				See My Work
 	    			</button>
