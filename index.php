@@ -43,7 +43,7 @@
     		<div class="slide" data-anchor="aboutme">
     			<div class="container">
 	    			<h2>Hi, I'm Lucas.</h2>
-	    			<h3>I am a multi-disciplinary designer from Brazil living and working from Boston, MA.</h3>
+	    			<h3>I am a UI/UX designer and developer from Brazil living and working from Boston, MA.</h3>
 	    			<div class="container small">
 		    			<a class="btn ghost full" target="_blank" href="./dist/docs/lucas-mosele-resume.pdf">Resume <i class="left fa fa-download"></i></a>
 		    			<button class="btn ghost full" onclick="$.fn.fullpage.moveSectionDown();">My Work</button>
@@ -60,10 +60,10 @@
 					<h3>Maxwell Health</h3>
 					<ul class="tags">
 						<li>Front-End </li>
-						<li>Information Architecture</li>
+						<li>Product Development</li>
 						<li>Interaction Design</li>
 					</ul>
-					<p>I am responsible for developing, designing, and maintaining Maxwell Health's multiple corporate websites and overall public web presence. I focused on bringing the platforms from legacy code to scalable stylesheets, consistently modern design, and redesigned information architecture on the back end.</p>
+					<p>I am responsible for developing, designing, and maintaining Maxwell Health's multiple corporate websites and overall public web presence as well as being part of our engineering team. I focused on bringing the platforms from legacy code to scalable stylesheets, consistently modern design, and redesigned information architecture.</p>
 					<a class="btn ghost" href="maxwell.php">Website Case Study</a>
 					<a class="btn ghost" target="_blank" href="https://medium.com/@l_mosele/the-process-behind-our-end-of-year-report-bc6a71b0aca6#.mvo8kgik2">Yearly Report Case Study</a>
 				</figure>
