@@ -63,7 +63,7 @@
 						<li>Product Development</li>
 						<li>Interaction Design</li>
 					</ul>
-					<p>I am responsible for developing, designing, and maintaining Maxwell Health's multiple corporate websites and overall public web presence as well as being part of our engineering team. I focused on bringing the platforms from legacy code to scalable stylesheets, consistently modern design, and redesigned information architecture.</p>
+					<p>At Maxwell Health I help the engineering team build, design, and develop their large-scale HR platform. As a crossfunctional member of design &amp; engineering I also build all marketing web presence, ranging from client facing work to internal microsites.</p>
 					<a class="btn ghost" href="maxwell.php">Website Case Study</a>
 					<a class="btn ghost" target="_blank" href="https://medium.com/@l_mosele/the-process-behind-our-end-of-year-report-bc6a71b0aca6#.mvo8kgik2">Yearly Report Case Study</a>
 				</figure>
@@ -96,7 +96,7 @@
 						<li>User Interface</li>
 						<li>Interaction Design</li>
 					</ul>
-					<p>I was brought on to lead the design of the world's first car seat customizer ecommerce tool. We worked closely with their team and branding guidelines to create a uniquely Cosi shopping experience.</p>
+					<p>I was brought on to lead the design of the world's first car seat customizer ecommerce tool. I worked closely with their team and Trellis to create a uniquely Cosi shopping experience.</p>
 					<a class="btn ghost" href="maxicosi.php">See Case Study</a>
 				</figure>
 			</div>
