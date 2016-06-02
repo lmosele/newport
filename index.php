@@ -30,7 +30,7 @@
 	    	<!-- main section -->
 	    	<div class="slide" data-anchor="main">
 	    		<div class="container">
-	    			<h2>The Full Spectrum Designer You Didn't Know You Needed.</h2>
+	    			<h2>I'm here to kick some Sass.</h2>
 	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">
 	    				See My Work
 	    			</button>
