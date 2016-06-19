@@ -3,7 +3,7 @@ $(window).on('load', function() {
   $("#home").removeClass("fade");
 });
 $(document).ready(function() {
-
+  console.log('Hello There! Welcome to my portfolio. I assume you\'re a developer if you\'re checking out my code. To save you the trouble, this page was built using fullpage.js & a lot Jquery, but nothing too crazy. I\'m looking for a team that\'s passionate about looking under the hood and puts a priority on quality products that actually help people. If you\'re a mission driven company or founder who\s interested in chatting shoot me an email at lucasmosel@gmail.com or tweet me at @l_mosele to let me know you saw this message!   ');
   var body = $("#home");
   var canvas = $("canvas");
   var mockup = $(".allcells")
