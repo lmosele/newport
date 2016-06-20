@@ -19,7 +19,6 @@
             <a id="portraitFilter" href="index.php">Portrait</a>
             <a id="streetFilter" href="street.php">Street</a>
             <a id="lifeFilter" href="lifestyle.php">Life</a>
-            <a href="https://blog.lmosele.com">Blog</a>
             <a id="contact" href="contact.php">Contact</a>
         </div>
 

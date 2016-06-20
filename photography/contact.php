@@ -1,5 +1,4 @@
 <?php include 'module/_head.php' ?>
-   <!-- data-0="opacity:.9" data-500="opacity:.0" -->
   <body>
 
     <?php include 'module/_navbar.php' ?>
