@@ -21,7 +21,6 @@
             <a id="streetFilter" href="street.php">Street</a>
             <a id="rates" href="lifestyle.php">Life</a>
             <a id="lifeFilter" href="rates.php">Rates</a>
-            <a id="rates" href="http:https://www.instagram.com/luke_mosele/">Instagram</a>
         </div>
 
       </nav>
