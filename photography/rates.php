@@ -24,7 +24,7 @@
 
         <a class="rate" href="mailto:lucasmosele@gmail.com?subject=Agency Package">
           <h3>Agency Package <span class="price" title="price">$500 - $675</span></h3>
-          <p>The Agency package includes a themed portrait-set of edited photos as well as hair and make-up (add $100) and potential studio cost (add +75) </p>
+          <p>The Agency package includes a themed portrait-set of edited photos as well as hair and make-up (add $100) and studio cost (add +75) </p>
         </a>
 
         <hr/>
@@ -36,7 +36,7 @@
 
         <a class="rate" href="mailto:lucasmosele@gmail.com?subject=Pet Portrait">
           <h3>Pet Portrait<span class="price" title="price">$50 - $100</span></h3>
-          <p>Perfect for those looking to immortalize their favorite family members, pet portraits are now available, travel costs not included. Prints of all sizes can be provided for a fee.</p>
+          <p>Perfect for those looking to preserve memories of their favorite family members, pet portraits are now available, travel costs not included. Prints of all sizes can be provided for a fee.</p>
         </a>
 
         <hr/>
@@ -48,7 +48,7 @@
 
         <a class="rate" href="mailto:lucasmosele@gmail.com?subject=Wedding Dress Package">
           <h3>Wedding Dress Package<span class="price" title="price">$500 - $675</span></h3>
-          <p>For brides who want to immortalize memories of their wedding day. Similar to the Agency Package but on location with MUA/Hair if required.</p>
+          <p>For brides who want to model the special dress in an editorial style shoot. Similar to the Agency Package but on location with MUA/Hair if required.</p>
         </a>
 
         <a class="rate" href="mailto:lucasmosele@gmail.com?subject=Wedding Package">

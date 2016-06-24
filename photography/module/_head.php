@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <title>Lucas Mosele | Photography</title>
-    <meta name="description" content="Lucas Mosele is a Boston Based fashion, street, and lifestyle photographer that works with small boutique brands to build a creative identity.">
-    <meta name="keywords" content="best, photographer, boston, massachusetts, portrait, senior, fashion, commercial">
+    <title>Lucas Mosele | Portrait, Fashion &amp; Event Photography</title>
+    <meta name="description" content="Lucas Mosele is a Boston portrait, street, and lifestyle photographer that works with you to build a creative identity and capture your favorite memories.">
+    <meta name="keywords" content="best, photographer, boston, massachusetts, portrait, senior, fashion, commercial, family, event, wedding">
     <meta name="author" content="Lucas Mosele">
     <link rel="icon" type="image/png" href="img/src/favicon.png">
     <link rel="stylesheet" href="css/screen.css" />

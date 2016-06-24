@@ -8,6 +8,7 @@
             <a id="streetFilter" href="street.php">Street</a>
             <a id="lifeFilter" href="lifestyle.php">Life</a>
             <a id="rates" href="rates.php">Rates</a>
+            <a id="rates" href="https://www.instagram.com/luke_mosele/" target="_blank">Instagram</a>
         </div>
       </nav>
 
@@ -20,6 +21,7 @@
             <a id="streetFilter" href="street.php">Street</a>
             <a id="rates" href="lifestyle.php">Life</a>
             <a id="lifeFilter" href="rates.php">Rates</a>
+            <a id="rates" href="http:https://www.instagram.com/luke_mosele/">Instagram</a>
         </div>
 
       </nav>
