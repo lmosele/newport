@@ -7,7 +7,7 @@
             <a id="portraitFilter" href="index.php">Portrait</a>
             <a id="streetFilter" href="street.php">Street</a>
             <a id="lifeFilter" href="lifestyle.php">Life</a>
-            <a id="contact" href="contact.php">Contact</a>
+            <a id="rates" href="rates.php">Rates</a>
         </div>
       </nav>
 
@@ -18,8 +18,8 @@
         <div class="filters">
             <a id="portraitFilter" href="index.php">Portrait</a>
             <a id="streetFilter" href="street.php">Street</a>
-            <a id="lifeFilter" href="lifestyle.php">Life</a>
-            <a id="contact" href="contact.php">Contact</a>
+            <a id="rates" href="lifestyle.php">Life</a>
+            <a id="lifeFilter" href="rates.php">Rates</a>
         </div>
 
       </nav>
