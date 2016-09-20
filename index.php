@@ -30,7 +30,7 @@
 	    	<!-- main section -->
 	    	<div class="slide" data-anchor="main">
 	    		<div class="container">
-	    			<h2>I'm here to kick some Sass.</h2>
+	    			<h2>Hi, I'm Lucas.</h2>
 	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">
 	    				See My Work
 	    			</button>
@@ -42,7 +42,6 @@
 	    	<!-- about me -->
     		<div class="slide" data-anchor="aboutme">
     			<div class="container">
-	    			<h2>Hi, I'm Lucas.</h2>
 	    			<h3>I am a UI/UX designer and developer from Brazil living and working from Boston, MA.</h3>
 	    			<div class="container small">
 		    			<a class="btn ghost full" target="_blank" href="./dist/docs/lucas-mosele-resume.pdf">Resume <i class="left fa fa-download"></i></a>
