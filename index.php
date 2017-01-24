@@ -199,9 +199,9 @@
 		</div>
 
 	
-	<div id="awwwards" class="nominee white left">
+<!-- 	<div id="awwwards" class="nominee white left">
 	<a href="http://www.awwwards.com/sites/lucas-mosele-ui-ux-designer-developer" target="_blank">Awwwards</a>
-	</div>
+	</div> -->
 
 	<!-- SCRIPTS -->
 	<script type="text/javascript" src="dist/js/jquery-3-alpha.min.js"></script>
