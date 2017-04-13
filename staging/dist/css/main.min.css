@@ -5398,10 +5398,15 @@ a {
     top: 0;
     transform: rotate(-45deg); }
 
-.footer {
-  height: 300px;
+.section-blue.footer {
+  height: 250px;
   background: #0078BD;
-  color: #fff; }
+  color: #fff;
+  padding-top: 40px; }
+
+.footer-copyright {
+  margin-top: 20px;
+  text-align: right; }
 
 .footer-container {
   padding-top: 40px;
@@ -5416,6 +5421,15 @@ a {
       border-right: 1px solid white; }
     .footer-container > .columns:last-of-type {
       border: 0; }
+
+@media (max-width: 959px) {
+  .section-blue.footer {
+    height: auto; }
+  .footer-container {
+    display: none; }
+  .footer-copyright {
+    width: 100%;
+    text-align: center; } }
 
 .row.fullwidth {
   max-width: 100%; }
