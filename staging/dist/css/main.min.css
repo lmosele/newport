@@ -5200,7 +5200,7 @@ a {
   .button-row a + a,
   .button-row button + button {
     margin-left: 20px; }
-  @media (min-width: 640px) and (max-width: 959px) {
+  @media (max-width: 959px) {
     .button-row a + a,
     .button-row button + button {
       margin-left: 0; } }
@@ -5252,7 +5252,7 @@ a {
   width: 100%;
   max-width: 100%; }
 
-@media (min-width: 640px) and (max-width: 959px) {
+@media (max-width: 959px) {
   .button-row {
     width: 100%; }
     .button-row a, .button-row button {
@@ -5363,7 +5363,7 @@ a {
   right: 50px;
   display: none; }
 
-@media (min-width: 640px) and (max-width: 959px) {
+@media (max-width: 959px) {
   .mobile-nav,
   .toggle-wrapper {
     display: block; }
@@ -5475,7 +5475,7 @@ a {
     font-size: 0.9rem;
     margin-bottom: 15px; }
 
-@media (min-width: 640px) and (max-width: 959px) {
+@media (max-width: 959px) {
   .banner .banner-container {
     padding: 10px;
     text-align: center; }
@@ -5607,7 +5607,7 @@ body {
     .value-prop-links .value-prop-link-item:hover .icon {
       fill: #F0A202; }
 
-@media (min-width: 640px) and (max-width: 959px) {
+@media (max-width: 959px) {
   .team-tile-image {
     width: 100%;
     min-height: 250px; } }
