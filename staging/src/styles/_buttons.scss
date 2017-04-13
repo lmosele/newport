@@ -1,0 +1,95 @@
+.button-row {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	a + a,
+	button + button {
+		margin-left: 20px;
+	}
+	@include tablet {
+		a + a,
+		button + button {
+			margin-left: 0;
+		}
+	}
+}
+
+%abstract-button {
+	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: $fontmobile;
+	padding: 10px;
+	min-width: 150px;
+	min-height: 40px;
+	text-align: center;
+	background-color: gray;
+	text-transform: uppercase;
+}
+
+.orange-button {
+	@extend %abstract-button;
+	background-color: $orange;
+	color: $white;
+	border: 1px solid white;
+	&:hover {
+		background-color: lighten($orange,10%);
+		color: white;
+	}
+}
+
+.blue-button {
+	@extend %abstract-button;
+	background-color: $blue;
+	color: $white;
+	border: 1px solid $blue;
+	&:hover {
+		border-color: $white;
+		color: $white;
+	}
+}
+
+.ghost-button {
+	@extend %abstract-button;
+	background-color: transparent;
+	&.blue {
+		color: $blue;
+		border: 1px solid $blue;
+		&:hover {
+			border-color: $white;
+			color: $white;
+		}
+	}
+	&.white {
+		color: $white;
+		border: 1px solid $white;
+		&:hover {
+			border-color: $blue;
+			color: $blue;
+		}
+	}
+}
+.fullwidth {
+	width: 100%;
+	max-width: 100%;
+}
+
+@include tablet {
+	.button-row {
+		width: 100%;
+		a, button {
+			display: block;
+			width: 100%;
+		}
+	}
+	.ghost-button,
+	.blue-button,
+	.orange-button {
+		display: block;
+		width: 100%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+
+

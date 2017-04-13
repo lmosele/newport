@@ -1,0 +1,61 @@
+// Page specific styles
+
+// HOME
+.team-tile-image {
+	min-height: 600px;
+	height: 100%;
+	background-color: gray;
+	background-image: url('../img/team-mosaic.png');
+	background-size: cover;
+	background-attachment: contain;
+}
+
+.home-slider {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.value-prop-links {
+	margin-top: 40px;
+	.value-prop-link-item {
+		.icon {
+			display: block;
+			margin: 0 auto;
+			max-width: 60px;
+			fill: $blue;
+		}
+		span {
+			display: block;
+		}
+		&:hover {
+			color: $orange;
+			.icon {
+				fill: $orange;
+			}
+		}
+	}
+}
+@include tablet {
+	.team-tile-image {
+		width: 100%;
+		min-height: 250px;
+	}
+}
+
+// ORDER TITLE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
