@@ -54,13 +54,13 @@
 
 .section-white {
 	color: $black;
-	padding-top: 80px;
+	padding-top: 50px;
 	padding-bottom: 80px;
 }
 
 .section-blue {
 	color: $white;
-	padding-top: 80px;
+	padding-top: 50px;
 	padding-bottom: 80px;
 	background-color: $blue;
 	@include gradient($blue, darken($blue, 10%));
@@ -77,6 +77,25 @@
 }
 
 
+.link-list {
+	ul {
+		margin-left: 10px;
+	}
+	a {
+		font-size: $fontmobile;
+	}
+}
+@include tablet {
+	.link-list {
+		a {
+			line-height: $linehuge;
+			font-size: $fontmobile;
+			padding: 10px;
+			width: 100%;
+			background-color: $lightblue;
+		}
+	}
+}
 
 ::-webkit-scrollbar {
   width: 10px;

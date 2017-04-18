@@ -5435,7 +5435,7 @@ a {
   max-width: 100%; }
 
 .banner {
-  background: white;
+  background: #0078BD;
   min-height: 200px;
   max-height: 500px;
   padding-bottom: 100px;
@@ -5553,12 +5553,12 @@ a {
 
 .section-white {
   color: #333;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 80px; }
 
 .section-blue {
   color: #fff;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 80px;
   background-color: #0078BD;
   background-color: #0068a4;
@@ -5574,6 +5574,20 @@ a {
   .section.no-pad > .columns {
     padding-left: 10px;
     padding-right: 10px; } }
+
+.link-list ul {
+  margin-left: 10px; }
+
+.link-list a {
+  font-size: 0.9rem; }
+
+@media (max-width: 959px) {
+  .link-list a {
+    line-height: 3.3rem;
+    font-size: 0.9rem;
+    padding: 10px;
+    width: 100%;
+    background-color: #F3F8FB; } }
 
 ::-webkit-scrollbar {
   width: 10px;
