@@ -1,0 +1,15 @@
+<svg version="1.1" class="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 75.3 110.4" style="enable-background:new 0 0 75.3 110.4;" xml:space="preserve">
+<filter  id="AI_GaussianBlur_4">
+	<feGaussianBlur  stdDeviation="10"></feGaussianBlur>
+</filter>
+
+<g>
+	<g id="sameStar_1_" class="star1">
+		<polygon class="star2" points="67,55.2 45.4,63.4 37.6,98.1 29.9,63.4 8.2,55.2 29.9,46.9 37.6,12.3 45.4,46.9 		"/>
+	</g>
+	<g id="sameStar_2_">
+		<polygon class="star3" points="67,55.2 45.4,63.4 37.6,98.1 29.9,63.4 8.2,55.2 29.9,46.9 37.6,12.3 45.4,46.9 		"/>
+	</g>
+</g>
+</svg>

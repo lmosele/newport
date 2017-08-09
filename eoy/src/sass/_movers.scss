@@ -1,0 +1,509 @@
+%building {
+    display: inline-block;
+    width: 18%;
+    position: absolute;
+    bottom: 25%;
+    z-index: $z3;
+}
+
+
+.main {
+    display: block; 
+    z-index: $z3;
+    position: fixed;
+    height: 400px;
+    bottom: 0%;
+    right: 0px;
+    width: 300%;
+    transition: all 1s;
+    #building1 {
+        @extend %building;
+        right: 0%;
+    }
+    #building2 {
+        @extend %building;
+        right: 39%;
+        width: 19%;
+    }
+    #building3 {
+        @extend %building;
+        width: 19%;
+        right: 79.6%;
+    }
+     #building4 {
+        @extend %building;
+        width: 30%;
+        right: 128%;
+        bottom: 26%;
+    }
+
+    #road {
+        display: block; 
+        z-index: $z2;
+        position: fixed;
+        bottom: -1%;
+        right:-3%;
+        // max-height: 40%;
+        width: 160%;
+        transition: all 1s;
+    }
+}
+// Necessary evil to keep road aligned with buildings
+@include supermonitor {
+    %building {
+        bottom: 45%;
+    }  
+    .main #building4 {
+        bottom: 45%;
+    } 
+}
+@include larger-monitor {
+  %building {
+        bottom: 40%;
+    }  
+    .main #building4 {
+        bottom: 40%;
+    } 
+}
+@include large-monitor {
+  %building {
+        bottom: 33%;
+    }  
+    .main #building4 {
+        bottom: 33%;
+    } 
+}
+@include monitor {
+  %building {
+        bottom: 28%;
+    }
+    .main #building4 {
+        bottom: 28%;
+    }   
+}
+@include desktop {
+  %building {
+        bottom: 23%;
+    }  
+    .main #building4 {
+        bottom: 23%;
+    }  
+}
+@include laptop {
+  %building {
+        bottom: 18%;
+    }  
+    .main #building4 {
+        bottom: 18%;
+    }  
+}
+@include tablet {
+  %building {
+        bottom: 13%;
+    }  
+    .main #building4 {
+        bottom: 13%;
+    }  
+    #starfield {
+        display: none;
+    }
+
+}
+@include mobile {
+  %building {
+        bottom: 8%;
+    }  
+    .main #building4 {
+        bottom: 8%;
+    }  
+}
+
+
+.main-position {
+    transform: translate3d(0%,200%,0) !important;
+    transition: transform 1.5s easein;
+}
+.main-position2 {
+    transform: translate3d(0%,0,0) !important;
+    transition: transform 1.5s easein;
+}   
+.main-position3 {
+    transform: translate3d(40%,0,0) !important;
+    transition: transform 1.5s easein;
+}
+.main-position4 {
+    transform: translate3d(80%,0,0) !important;
+    transition: transform 1.5s easein;
+}
+.main-position5 {
+    transform: translate3d(120%,0,0) !important;
+    transition: transform 1.5s easein;
+}
+.main-position6 {
+    transform: translate3d(120%,200%,0) !important;
+    transition: transform 1.5s easein;
+}
+
+
+
+
+
+// =================== BACKGROUND
+#background1 {
+	display: block; 
+	z-index: $z1;
+    position: fixed;
+    bottom: 15%;
+    width: 250%;
+	transition: all .5s ease-in-out;
+    // transition-delay: .5s;
+	#bg1 {
+		z-index: $z1;
+		bottom: 0%;
+	    right: -5%;
+	}
+}
+#background2 {
+    display: block; 
+    z-index: $z1;
+    position: fixed;
+    bottom: 0%;
+    width: 250%;
+    transition: all .5s ease-in-out;
+    
+    #bg2 {
+        z-index: $z2;
+        bottom: 0%;
+        right: -5%;
+    }
+}
+
+// peek in, slowly move
+.bg-position {
+    transform: translate3d(-55%,82%,0) !important;
+    transition: transform 1s ease-in;
+}
+.bg-position2 {
+    transform: translate3d(-55%,50%,0) !important;
+    transition: transform 1.5s easein;
+}   
+.bg-position3 {
+    transform: translate3d(-50%,50%,0) !important;
+    transition: transform 1.5s easein;
+}
+.bg-position4 {
+    transform: translate3d(-45%,50%,0) !important;
+    transition: transform 1.5s easein;
+}
+.bg-position5 {
+    transform: translate3d(-40%,50%,0) !important;
+    transition: transform 1.5s easein;
+}
+.bg-position6 {
+    transform: translate3d(-40%,82%,0) !important;
+    transition: transform 1.5s easein;
+}
+
+
+
+// ============== VEHICLE PROPERTIES
+.vehicles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    bottom: 0;
+    z-index: $z8;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+@include large-monitor {
+    .vehicles {
+        bottom: 3%;
+    }
+}
+@include monitor {
+    .vehicles {
+        bottom: 1%;
+    }
+}
+@include laptop {
+    .vehicles {
+        bottom: -2%;
+    }
+}
+@include tablet {
+    .vehicles {
+        display: none;
+    }
+}
+.car1 {
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    z-index: $z9;
+    width: 8%;
+    transform: translate3d(-500%,0,0); 
+    transition: transform 10s ease-in;
+}
+.car2 {
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    z-index: $z9;
+    width: 8%;
+    transform: translate3d(-500%,0,0); 
+    transition: transform 10s ease-in;
+}
+.car3 {
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+    z-index: $z8;
+    width: 7.8%;
+    transform: translate3d(-500%,0,0); 
+    transition: transform 10s ease-in;
+}
+.car4 {
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    z-index: $z9;
+    width: 8%;
+    transform: translate3d(-500%,0,0); 
+    transition: transform 10s ease-in;
+}
+.truck1 {
+    position: absolute;
+    bottom: 5.5%;
+    left: 10%;
+    z-index: $z8;
+    width: 10%;
+    transform: translate3d(-500%,0,0); 
+    transition: transform 10s ease-in;
+}
+.truck2 {
+    position: absolute;
+    bottom: 4.8%;
+    left: 10%;
+    z-index: $z8;
+    width: 25%;
+    transform: translate3d(-500%,0,0); 
+    transition: transform 10s ease-in;
+}
+.duckboat {
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    z-index: $z8;
+    width: 20%;
+    transform: translate3d(-500%,0,0); 
+    transition: transform 10s ease-in;
+}
+
+.driveSlow {
+    transform: translate3d(1300%,0,0);
+    transition: transform 16s ease-in;
+}
+.drive {
+    transform: translate3d(1300%,0,0);
+    transition: transform 12s ease-in;
+}
+.drive2x {
+    transform: translate3d(1300%,0,0);
+    transition: transform 6.5s ease-in;
+}
+
+.road-position-start {
+    transform: translate3d(-55%,82%,0) !important;
+    transition: transform 1s ease-in;
+}
+.road-position-end {
+    transform: translate3d(-40%,82%,0) !important;
+    transition: transform 1.5s easein;
+}
+
+// Vehicle driving across screen
+@-webkit-keyframes driveacross1 {
+    0%   {transform: translate3d(-20%,0,0)}
+    100% {transform: translate3d(-200%,0,0)}
+}
+@-webkit-keyframes driveacross2 {
+    0%   {transform: translate3d(-20%,0,0)}
+    100% {transform: translate3d(-130%,0,0)}
+}
+
+// ============== SKY PROPERTIES
+#sky {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: $z0;
+    -webkit-transition: all 2.5s ease;
+    -moz-transition: all 2.5s ease;
+    -o-transition: all 2.5s ease;
+    transition: all 2.5s ease;
+}
+.cloud1 {
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    z-index: 10;
+    width: 19%;
+    animation: cloud1 100s infinite;
+}
+.cloud3 {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    z-index: 10;
+    width: 14%;
+    animation: cloud3 120s infinite;
+}
+.cloud2 {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    z-index: 10;
+    width: 10%;
+    animation: cloud2 90s infinite;
+}
+.cloud4 {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    z-index: 10;
+    width: 20%;
+    animation: cloud4 90s infinite;
+}
+
+#otherClouds {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: $z1;
+    // -webkit-transition: all .5s ease;
+    // -moz-transition: all .5s ease;
+    // -o-transition: all .5s ease;
+    // transition: all .5s ease;
+}
+.cloud5 {
+    position: absolute;
+    top: 5%;
+    right: 40%;
+    z-index: 10;
+    width: 12%;
+    animation: cloud5 180s infinite;
+}
+.cloud6 {
+    position: absolute;
+    top: 15%;
+    right: 40%;
+    z-index: 10;
+    width: 8%;
+    animation: cloud5 180s infinite;
+}
+.cloud7 {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    z-index: 10;
+    width: 11%;
+    animation: cloud6 100s infinite;
+}
+.cloud8 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 10;
+    width: 8%;
+    animation: cloud5 180s infinite;
+}
+.star {
+    display: none;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    z-index: 10;
+    width: 1.5%;
+    animation: fadein 2s forwards;
+}
+#starField {
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
+}
+
+// PASSIVE ANIM
+@-webkit-keyframes cloud1 {
+    0%   {transform: translate3d(-0%,0,0)}
+    100% {transform: translate3d(-50%,0,0)}
+}
+
+@-webkit-keyframes cloud2 {
+    0%   {transform: translate3d(-0%,0,0)}
+    100% {transform: translate3d(100%,0,0)}
+}
+@-webkit-keyframes cloud3 {
+    0%   {transform: translate3d(-0%,0,0)}
+    100% {transform: translate3d(-200%,0,0)}
+}
+@-webkit-keyframes cloud4 {
+    0%   {transform: translate3d(-0%,0,0)}
+    100% {transform: translate3d(100%,0,0)}
+}
+@-webkit-keyframes cloud5 {
+    0%   {transform: translate3d(-0%,0,0)}
+    100% {transform: translate3d(300%,0,0)}
+}
+@-webkit-keyframes cloud6 {
+    0%   {transform: translate3d(-0%,0,0)}
+    100% {transform: translate3d(-300%,0,0)}
+}
+@-webkit-keyframes fadein {
+    0%   {opacity:0.0}
+    100% {opacity:1.0}
+}
+
+// ACTIVE ANIM
+@-webkit-keyframes flyleft {
+    0%   {transform: translate3d(-0%,0,0)}
+    100% {transform: translate3d(-300%,0,0)}
+}
+@-webkit-keyframes flyleft-return {
+    0%   {transform: translate3d(-300%,0,0)}
+    100% {transform: translate3d(0%,0,0)}
+}
+@-webkit-keyframes flyright {
+    0%   {transform: translate3d(-0%,0,0)}
+    100% {transform: translate3d(300%,0,0)}
+}
+@-webkit-keyframes flyright-return {
+    0%   {transform: translate3d(300%,0,0)}
+    100% {transform: translate3d(0%,0,0)}
+}
+
+// NO SKROLLR CASE
+#sky.noSkrollr {
+    background:linear-gradient( 180deg, rgb(169,217,239) 10%, rgb(250,250,250) );
+}
+#bg1.noSkrollr {
+    fill:rgba(158,200,229,.5);
+}
+#bg2.noSkrollr {
+    fill:rgba(149,189,217,.95);
+}
+.st18.noSkrollr {
+    fill:rgba(193,204,202,1);
+}
+.star.noSkrollr {
+    display: none;
+}
+
+
