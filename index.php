@@ -65,7 +65,8 @@
 					</ul>
 					<p>At Maxwell Health I help the engineering team build, design, and develop their large-scale HR platform. As a crossfunctional member of design &amp; engineering I also build all marketing web presence, ranging from client facing work to internal microsites.</p>
 					<a class="btn ghost" href="maxwell.php">Website Case Study</a>
-					<a class="btn ghost" target="_blank" href="https://medium.com/@l_mosele/the-process-behind-our-end-of-year-report-bc6a71b0aca6#.mvo8kgik2">Yearly Report Case Study</a>
+					<a class="btn ghost" href="http://lmosele.com/eoy/">Yearly Report Demo</a>
+					<a class="btn ghost" target="_blank" href="https://medium.com/@l_mosele/the-process-behind-our-end-of-year-report-bc6a71b0aca6#.mvo8kgik2">Report Case Study</a>
 				</figure>
 			</div>
 	    </div>
