@@ -1,4 +1,5 @@
 Disallow: /
 
 Disallow: /eoy/
+Disallow: /staging/
 

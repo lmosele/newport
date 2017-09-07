@@ -1,0 +1,410 @@
+// unfortunately these have to be manually done since they're so randomized
+
+
+.relieved-homepage,
+.sbly-homepage {
+	.splash-container {
+		position: relative;
+		svg {
+			position: absolute;
+			z-index: $z9;
+		}
+		.swiggle {
+			right: -11%;
+		}
+		.chevron {
+			top: 50%;
+			right: -1%;
+		}
+		.arch {
+			bottom: -3%;
+			right: 50%;
+		}
+		.dot-grid {
+			max-width: 33%;
+			bottom: -20%;
+			right: 3%;
+		}
+		@include desktop {
+			.swiggle {
+				right: 50%;
+				top: -3%;
+			}
+		}
+		@include tablet {
+			.swiggle {
+				right: 50%;
+				top: -3%;
+			}
+			.dot-grid {
+				bottom: 40%;
+				right: 5%;
+			}
+			.chevron {
+				top: 20%;
+				right: -3%;
+			}
+			.arch {
+				bottom: 50%;
+				right: 97%;
+			}
+		}
+		@include mobile {
+			.dot-grid {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.relieved-homepage .splash-container {
+	.swiggle {
+		path {
+			fill: $pink;
+		}
+	}
+	.dot-grid {
+		path {
+			fill: $orange;
+		}
+	}
+}
+.sbly-homepage .splash-container {
+	.swiggle {
+		path {
+			fill: $tealBlue;
+		}
+	}
+	.chevron {
+		path {
+			fill: $green;
+		}
+	}
+	.arch {
+		path {
+			fill: $tealBlue;
+		}
+	}
+	.dot-grid {
+		path {
+			fill: $tealBlue;
+		}
+	}
+}
+
+.relieved-sponsored-post,
+.sbly-sponsored-post {
+	.sponsored-post-section {
+		svg {
+			position: absolute;
+			z-index: $z9;
+		}
+		@include laptop {
+			.dot-grid-triangle {
+				display: none;
+			}
+		}
+		@include mobile {
+			.half-dot-grid {
+				height: 50%;
+			}
+		}
+	}
+}
+
+.relieved-sponsored-post .sponsored-post-section {
+	.dot-grid-triangle {
+		right: 0%;
+		top: 50%;
+		max-width: 20%;
+		path {
+			fill: $orange;
+		}
+	}
+	.half-dot-grid {
+		left: 5%;
+		bottom: -15%;
+		max-width: 20%;
+		path {
+			fill: $orange;
+		}
+	}
+}
+.sbly-sponsored-post .sponsored-post-section {
+	.dot-grid-triangle {
+		right: 0%;
+		top: 50%;
+		max-width: 20%;
+		path {
+			fill: $tealGreen;
+		}
+	}
+	.half-dot-grid {
+		left: 5%;
+		bottom: -15%;
+		max-width: 20%;
+		path {
+			fill: $blue;
+		}
+	}
+}
+
+.large-post-1-sbly,
+.large-post-2-sbly,
+.large-post-3-sbly,
+.large-post-4-sbly,
+.large-post-1-relieved,
+.large-post-2-relieved,
+.large-post-3-relieved,
+.large-post-4-relieved {
+	svg {
+		position: absolute;
+		z-index: $z9;
+	}
+}
+
+.large-post-1-relieved,
+.large-post-1-sbly {
+	.triple-swiggle {
+		right: -1.5%;
+		top: 10%;
+	}
+	.triangle {
+		top: -3%;
+		left: -3%;
+	}
+	@include tablet {
+		.triple-swiggle {
+			display: none;
+		}
+		.triangle {
+			top:-9%;
+			left: 90%;
+		}
+	}
+}
+
+.large-post-1-sbly {
+	.triple-swiggle {
+		path {
+			stroke: $green;
+			fill: $green;
+		}
+	}
+	.triangle {
+		path {
+			fill: $tealGreen;
+		}
+	}
+}
+.large-post-1-relieved {
+	.triple-swiggle {
+		path {
+			stroke: $pink;
+			fill: $pink;
+		}
+	}
+	.triangle {
+		path {
+			fill: $orange;
+		}
+	}
+}
+
+
+.large-post-2-sbly {
+	.zigzag {
+		path {
+			stroke: $blue;
+		}
+	}
+	.scalene-triangle {
+		path: {
+			fill: $tealBlue;
+		}
+	}
+	.circledot {
+		path: {
+			fill: $orange;
+		}
+	}
+}
+.large-post-2-relieved {
+	.zigzag {
+		path {
+			stroke: $hotpink;
+		}
+	}
+	.scalene-triangle {
+		path: {
+			fill: $orange;
+		}
+	}
+	.circledot {
+		path: {
+			fill: $orange;
+		}
+	}
+}
+.large-post-2-sbly,
+.large-post-2-relieved {
+	.zigzag {
+		left: -1%;
+		bottom: 5%;
+	}
+	.scalene-triangle {
+		top: -6%;
+		right: -5%;
+	}
+	.circledot {
+		right: -1%;
+		top: 10%;
+	}
+	@include laptop {
+		.scalene-triangle {
+			display: none;
+		}
+		.zigzag {
+			bottom: 70%;
+		}
+	}
+	@include tablet {
+		.zigzag {
+			display: none;
+		}
+	}
+}
+
+.large-post-3-sbly,
+.large-post-3-relieved {
+	.ghost-square {
+		left: -1%;
+		top: 20%;
+	}
+	.ghost-triangle {
+		right: -1%;
+		top: 10%;
+	}
+	@include laptop {
+		.ghost-square {
+			display: none;
+		}
+		.ghost-triangle {
+			left: -3%;
+			top: 30%;
+		}
+	}
+}
+.large-post-4-sbly,
+.large-post-4-relieved {
+	.ghost-circle {
+		bottom: 5%;
+		right: -1%;
+	}
+	.swiggle {
+		bottom: 5%;
+		left: -2%;
+	}
+	.zigzag2 {
+		top: 40%;
+		right: -2%;
+	}
+	@include laptop {
+		.zigzag2,
+		.swiggle {
+			display: none;
+		}
+		.ghost-circle {
+			bottom: 80%;
+			right: -3%;
+		}
+	}
+}
+
+.large-post-3-sbly {
+	.ghost-square {
+		path {
+			stroke: $blue;
+		}
+	}
+	.ghost-triangle {
+		path {
+			stroke: $tealGreen
+		}
+	}
+}
+.large-post-3-relieved {
+	.ghost-square {
+		path {
+			stroke: $orange;
+		}
+	}
+	.ghost-triangle {
+		path {
+			stroke: $hotpink
+		}
+	}
+}
+
+.large-post-4-sbly {
+	.ghost-circle {
+		path {
+			stroke: $tealGreen;
+		}
+	}
+	.swiggle {
+		path {
+			stroke: $tealGreen;
+			fill: $tealGreen;
+		}
+	}
+	.zigzag2 {
+		path {
+			stroke: $gray
+		}
+	}
+}
+
+.large-post-4-relieved {
+	.ghost-circle {
+		path {
+			stroke: $pink;
+		}
+	}
+	.swiggle {
+		path {
+			stroke: $orange;
+			fill: $orange;
+		}
+	}
+	.zigzag2 {
+		path {
+			stroke: $orange
+		}
+	}
+}
+
+
+// Article widgets
+.swiggle-and-grid {
+	svg {
+		position: absolute;
+		z-index: $z9;
+	}
+	.half-dot-grid {
+		bottom: -10%;
+		right: 5%;
+	}
+	.swiggle {
+		left: -3%;
+		top: 5%;
+	}
+	@include tablet {
+		.half-dot-grid,
+		.swiggle {
+			display: none;
+		}
+	}
+}
+

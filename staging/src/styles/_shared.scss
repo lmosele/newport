@@ -1,0 +1,699 @@
+// Section Styling
+.section {
+  @include inner-padding($globalpadding);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  // background-color: gray;
+  .section-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+  }
+  .pattern-background {
+    @include inner-padding($globalpadding);
+    background-color: $gray;
+    background-size: cover;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  &.fullwidth {
+    padding: 0;
+  }
+  @include tablet {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+// Post Styling
+[class*="post-title"] {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $orange;
+    cursor: pointer;    
+  }
+}
+.post-title {
+  h1, h2 {
+    font-weight: 900;
+  }
+  h3, h4, h5 {
+    font-weight: 600;
+  }
+}
+.post-title-large {
+  h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+.post-crumb-datetime {
+  font-family: $headline;
+  font-size: $fontmobile;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.post-crumb-category {
+  // if used as text instead of image:
+  &.with-text {
+    padding-bottom: 20px;
+    .post-crumb-link {
+      @include accent-style($fontpink);
+      font-size: $fontlarge;
+      &:hover {
+        cursor: pointer;
+        font-style: initial;
+      }
+    }
+  }
+}
+.post-image-container {
+  padding: 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  .post-image {
+    object-fit: contain;
+    img {
+      margin-bottom: -10px;
+    }
+    &:hover {
+      opacity: .8;
+    }
+  }
+  .post-image-slug {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    z-index: $z5;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    img {
+      max-width: 80%;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    &.bottom {
+      max-width: 50%;
+      bottom: -5px;
+    }
+    &.top {
+      top: 0;
+      @include tablet {
+        max-width: 100%;
+        width: 100%;
+      }
+      @include mobile {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    // for text category slugs:
+    &.full {
+      @include accent-style($fontpink);
+      width: 100%;
+      bottom: -5px;
+      padding-top: 10px;
+      padding-left: 0;
+    }
+    
+  }
+}
+
+.post-author-slug {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: $grey;
+  font-family: $headline;
+  .author-slug-title {
+    em {
+      font-family: $body;
+      margin-right: 3px;
+      margin-left: 3px;
+    }
+  }
+  .author-slug-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 60px;
+    margin-right: 5px;
+  }
+  &.slug-large {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .author-slug-image {
+      width: 56px;
+      height: 56px;
+      border-radius: 100px;
+      margin-right: 10px;
+    }
+  }
+  &.slug-extra-large {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: initial;
+    .author-details {
+      margin-left: 10px;
+      font-family: $body;
+      color: $black;
+    }
+    .author-slug-image {
+      width: 56px;
+      height: 56px;
+      border-radius: 100px;
+      margin-right: 10px;
+    }
+  }
+  &.article-bio {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid $lightgray;
+    border-bottom: 1px solid $lightgray;
+    text-align: initial;
+    .author-slug-image {
+        width: 90px;
+        height: 90px;
+        border-radius: 100px;
+        margin-right: 20px;
+      }
+    .author-details {
+      font-family: $body;
+      color: $black;
+      .author-slug-title {
+        font-size: 1.3em;
+        font-weight: 800;
+      }
+      .author-slug-contact {
+        font-family: $headline;
+        color: $gray;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.trending-title {
+  font-family: $body;
+  font-style: italic;
+  color: $orange;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $lightgrey;
+}
+.trending-button {
+  margin: 0 auto;
+}
+.trending-posts-list {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  li {
+    counter-increment: step-counter;
+    &::before {
+      content: counter(step-counter); // PURE SORCERY
+      font-family: $accent;
+      font-size: $fontxlarger;
+      color: $orange;
+      width: 10px;
+    }
+  }
+}
+
+
+// Post Specific Styles
+.post-listing {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $lightgrey;
+  }
+  .post-image-container {
+    background-color: white;
+    .post-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .post-title {
+    font-size: 0.9em;
+  }
+  .post-crumb-datetime {
+    font-size: 0.8em;
+  }
+}
+
+.post-trending {
+  display: inline-flex;
+  margin-bottom: 30px;
+  > .row {
+    margin-left: 20px;
+  }
+  .post-author-slug {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid $lightgrey;
+  }
+}
+
+.post-medium {
+  padding: 0;
+  background-color: white;
+  .post-details {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .post-author-slug {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $lightgrey;
+  }
+  @include tablet {
+    display: inline-flex;
+    .post-details {
+      padding-left: 30px;
+    }
+    .post-image-slug {
+      display: none
+    }
+    .post-image-container {
+      max-width: 30%;
+    }
+  }
+}
+
+.post-small {
+  @extend .post-medium;
+  .post-title {
+    font-size: .8em;
+  }
+  .post-author-slug {
+    margin-top: 10px;
+  }
+  @include tablet {
+    margin-bottom: 30px;
+    .post-image-container {
+      max-width: 30%;
+    }
+  }
+  @include mobile {
+    .post-author-slug {
+      display: none;
+    }
+  }
+}
+
+.post-large {
+  display: flex;
+  position: relative;
+  align-items: center;  
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-right: 40px;
+  .post-title {
+    margin-bottom: 20px;
+  }
+  .post-author-slug {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $lightgrey;
+  }
+  .post-details {
+    max-width: 350px;
+    background-color: white;
+    position: absolute;
+    bottom: -100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: $z8
+  }
+  .post-crumb-category {
+    padding-bottom: 10px;
+    .post-crumb-link.width-text {
+      font-size: $fontbase;
+    }
+  }
+  @include laptop {
+    .post-details {
+      bottom: initial;
+      right: 0;
+    }
+  }
+  @include mobile {
+    padding-left: 0;
+    padding-right: 0;
+    flex-flow: wrap;
+    .post-details {
+      max-width: 100%;
+      position: relative;
+    }
+  }
+  // if large posts share a row, wrap them early
+  &.split-column {
+    padding-right: 10px;
+    padding-left: 10px;
+    @include laptop {
+      padding-left: 0;
+      padding-right: 0;
+      flex-flow: wrap;
+      .post-details {
+        max-width: 100%;
+        position: relative;
+      }
+    }
+  }
+}
+
+.splash {
+  @include inner-padding($globalpadding);
+  padding-top: ($nav-height*2);
+  padding-bottom: $nav-height;
+  overflow:inherit;
+  .splash-container {
+    background-color: white;
+    width: 100%;
+    min-height: 500px;
+  }
+  .splash-details {
+    position: relative;
+    padding: 40px;
+  }
+  .splash-image-container {
+    background-color: gray;
+    background-size: cover;
+    background-position: 50%;
+  }
+  &.sbly-homepage {
+    background-color: $blueBG;
+  }
+  &.relieved-homepage {
+    background-color: $tanBG;
+  }
+  @include laptop {
+    .splash-image-container {
+      min-height: 300px;
+    }
+  }
+  @include mobile {
+    .post-description {
+      display: none;
+    }
+  }
+}
+
+
+// Misc
+.subscribe-block {
+  background-color: $blueBG;
+  text-align: center;
+  color: $blue;
+  padding: 20px;
+  .subscribe-block-title {
+    font-size: $fontlarger;
+    margin-bottom: 20px;
+  }
+  .subscribe-block-subtitle {
+    font-size: $fontbase;
+    margin-bottom: 20px;
+  }
+  &.ad-relieved {
+    background-color: $tanBG;
+    color: $orange;
+  }
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  position: relative;
+  .input-group-field {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .input-group-submit {
+    @extend .reset-button;
+    position: absolute;
+    color: white;
+    background-color: $blue;
+    height: 50px;
+    padding: 15px;
+    border-radius: 30px;
+    right: 0;
+    &:hover {
+      background-color: lighten($blue, 10%);
+    }
+  }
+}
+
+.ad-relieved .input-group-submit {
+  background-color: $hotpink;
+}
+
+
+
+// Buttons
+.ghost-button-orange {
+  padding: 10px 20px;
+  border: 1px solid $orange;
+  color: $orange;
+  background-color: white;
+  &:hover {
+    background-color: $orange;
+    color: white;
+  }
+}
+.button-orange {
+  padding: 10px 20px;
+  color: white;
+  background-color: $orange;
+  &:hover {
+    background-color: lighten($orange, 10%);
+    color: white;
+  }
+}
+.button-pink {
+  padding: 10px 20px;
+  color: white;
+  background-color: $pink;
+  &:hover {
+    background-color: lighten($pink, 10%);
+    color: white;
+  }
+}
+.button-tealblue {
+  padding: 10px 20px;
+  color: white;
+  background-color: $tealBlue;
+  &:hover {
+    background-color: lighten($tealBlue, 10%);
+    color: white;
+  }
+}
+.button-green {
+  padding: 10px 20px;
+  color: white;
+  background-color: $lightgreen;
+  &:hover {
+    background-color: lighten($lightgreen, 10%);
+    color: white;
+  }
+}
+
+.button-blue {
+  padding: 15px 20px;
+  color: white;
+  background-color: $blue;
+  border-radius: 3px;
+  &.like-button {
+    &:before {
+      content: url('../img/like-icon.svg');
+      width: 10px;
+      height: 10px;
+      margin-right: 6px;
+    }
+  }
+  
+  &:hover {
+    background-color: lighten($blue, 10%);
+  }
+}
+
+
+.recommended-posts {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  .recommended-posts-title {
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: $orange;
+  }
+  .row {
+    margin: 0;
+  }
+}
+
+// logo list for nav and footer
+.brands-list {
+  li {
+    display: inline-flex;
+  }
+  .brand-logo {
+    margin-right: 40px;
+    max-width: 100px;
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
+
+.ad-small {
+  text-align: center;
+  padding: 20px;
+  background-color: $lightgrey;
+  background-size: cover;
+  background-position: 50%;
+  min-height: 400px;
+  position: relative;
+  z-index: $z0;
+  &.sticky-ad {
+    position: sticky;
+  }
+  .ad-small-like-button,
+  .ad-small-title {
+    z-index: $z3;
+  }
+  .ad-small-title {
+    font-family: $headline;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &::after {
+    content: '';
+    z-index: -10;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  @include laptop {
+    min-height: 200px
+  }
+  &.horizontal {
+    min-height: 50px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    .ad-small-title {
+      max-width: 70%;
+      margin-right: 30px;
+    }
+    .ad-small-like-button {
+      height: 40px;
+      padding: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 44px;
+    }
+    @include tablet {
+      text-align: center;
+      display: initial;
+      .ad-small-title {
+        max-width: 100%;
+      }
+    }
+
+  }
+}
+
+.article-ad-horizontal {
+  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .article-ad-caption {
+    background-color: #D8D8D8;
+    text-align: center;
+    color: $gray;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8em;
+  }
+  &.standalone-horizontal {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    max-width: 60%;
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+}
+
+.article-ad-vertical {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 70px;
+  margin-bottom: 20px;
+  .article-ad-caption {
+    background-color: #D8D8D8;
+    text-align: center;
+    color: $gray;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+.content-recommended-posts {
+  .subscribe-block {
+    margin-top: 0;
+    background-color: #D8D8D8;
+    .subscribe-block-title {
+      font-size: 1.2em;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

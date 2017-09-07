@@ -1,0 +1,109 @@
+.home-nav {
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: $z10;
+  .home-nav-container {
+    @include inner-padding($globalpadding);
+    height: $nav-height;
+  }
+  .brands-list {
+    text-align: center;
+  }
+}
+
+.home-nav-logo {
+  .nav-logo-backup {
+    position: absolute;
+    opacity: 0;
+  }
+  &.relieved-logo img {
+    max-width: 80%;
+  }
+}
+.home-nav-icons {
+  a,
+  button {
+    margin-right: 20px;
+  }
+  .home-nav-hamburger-toggle {
+    display: none;
+    &:before {
+      content: url('../img/hamburger-blue.svg');
+      width: 10px;
+      height: 10px;
+    }
+    &.menu-open {
+      &:before {
+        content: url('../img/hamburger-x-blue.svg');
+        width: 10px;
+        height: 10px;
+      }
+    }
+    @include tablet {
+      display: inline-flex;
+    }
+  }
+}
+
+.relieved-navbar {
+  .home-nav-hamburger-toggle:before {
+      content: url('../img/hamburger-orange.svg');
+    &.menu-open:before {
+      content: url('../img/hamburger-x-orange.svg');
+    }
+  }
+}
+
+
+
+.links-list {
+  .nav-link {
+    font-family: $nav;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+      color: $orange;
+    }
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+  &.category-nav {
+    .nav-link {
+      color: $orange;
+      position: relative;
+      a {
+        letter-spacing: 0.4px;
+        font-weight: bold;
+      }
+    }
+    .nav-link:hover:after {
+      content: '';
+      bottom: -37px;
+      position: absolute;
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: $orange;
+    }
+  }
+  @include laptop {
+    .nav-link {
+      font-size: 0.8em;
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+    }
+  }
+  @include tablet {
+    .nav-link {
+      font-size: 0.7em;
+      &:not(:last-of-type) {
+        margin-right: 5px;
+      }
+    }
+  }
+}

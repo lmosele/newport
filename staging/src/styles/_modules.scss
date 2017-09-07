@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500|PT+Serif:400,400i,700,700i|Playfair+Display:400,400i|Poppins:400,400i,500,500i,600,700,900');
+
+// main fonts
+$nav: 'Oswald', Helvetica, Verdana, Arial, sans-serif;
+$headline: 'Poppins', Helvetica, Verdana, Arial, sans-serif;
+$body: 'PT Serif', 'Times New Roman', serif; 
+$accent: 'Playfair Display', 'Times New Roman', serif; 
+
+$pink: #EF98C3;
+$hotpink: #FE5196;
+$fontpink: #FF3A97;
+$orange: #F77062;
+$green: #189DA0;
+$lightgreen: #2AF598;
+
+$blue: #174A8F;
+$fadedBlue: #325F9D;
+$blueBG: #F2F9FF;
+$homeHacksBlue: #21D8FB;
+$tealBlue: #3BEFF3;
+$tealGreen: #4CDEBB;
+
+$tanBG: #FAF7F4; 
+$gray: #909090;
+$grey: $gray;
+$lightgray: #ECECEC;
+$lightgrey: $lightgray;
+$black: #2E2E2E;
+
+$blueoverlay: 	   rgba(104, 167, 185, 0.4);
+$whiteoverlay:     rgba(255,255,255,0.5);
+$blackoverlay:     rgba(0,0,0,0.5);
+
+// ** Master Container Width **
+$masterwidth:      1440px;
+$globalpadding:    60px;
+$containerwidth:   $masterwidth - ($globalpadding*2);
+$nav-height:       100px;
+
+// ** Font Sizes **
+$fontsmaller:      0.5em;
+$fontsmall:        0.6em;
+$fontmobile:       0.9em;
+$fontbase:         1.0em;
+$fontlarge:        1.2em;
+$fontlarger:       1.5em;
+$fontxlarger:      2.0em;
+$fonthuge:         2.2em;
+// ** Line Heights **
+$linesmall:        $fontsmall*1.5;
+$linebase:         $fontbase*1.5;
+$linelarge:        $fontlarge*1.5;
+$linelarger:       $fontlarger*1.2;
+$linexlarger:      $fontxlarger*1.2;
+$linehuge:         $fonthuge*1.5;
+
+// ** Z-index Scale **
+$z0:  0;
+$z1:  10;
+$z2:  20;
+$z3:  30;
+$z4:  40;
+$z5:  50;
+$z6:  60;
+$z7:  70;
+$z8:  80;
+$z9:  90;
+$z10: 100;
+
+
+// Styling Breakpoints
+$tinyscreen:        36em;
+$mobilescreen:      48em; // 768px
+$mediumscreen:      60em;
+$largescreen:       64em;  
+$xlargescreen:      90em; // 1440
+
+// Flexbox breakpoints
+$gridsm: 48em;
+$gridmd: 60em;
+$gridlg: 72em;
+
+
+// Mixins
+@mixin mobile { 
+  @media (max-width: #{$tinyscreen - .1em}) {
+    @content;
+  }
+}
+@mixin tablet { 
+  @media (max-width: #{$mobilescreen - .1em}) {
+    @content;
+  }
+}
+@mixin laptop { 
+  @media (max-width: #{$mediumscreen - .1em}) {
+    @content;
+  }
+}
+@mixin desktop { 
+  @media (max-width: #{$largescreen - .1em}) {
+    @content;
+  }
+}

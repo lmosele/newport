@@ -1,0 +1,115 @@
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+}
+html, html a {
+  -webkit-font-smoothing: antialiased !important;
+}
+html, body {
+  height: 100%;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: $fontbase;
+  position: relative;
+  color: $black;
+}
+h1, h2, h3, h4, h5, li, a {
+  font-weight: 400;
+  font-family: $headline;
+  letter-spacing: -0.83px;
+}
+
+// PRESET TAGS
+a { 
+  text-decoration: none; 
+  color: inherit;
+}
+a img { border: none; }
+img {
+  max-width: 100%;
+/*  width: auto;
+*/  height: auto;
+}
+ul,ol, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+i {
+  margin-right: 10px;
+  font-size: 1em;
+}
+em {
+  font-style: italic;
+}
+b {
+  font-style: bold;
+}
+
+// TYPOGRAPHY
+h1,h2 {
+  margin: 0;
+  text-transform: capitalize;
+  line-height: 44px;
+}
+h3,h4,h5 {
+  // font-weight: 600;
+  line-height: $linebase
+}
+p, span {
+  font-family: $body;
+}
+p,ul,ol,li,a,span {
+  line-height: $linebase;
+}
+h1 {
+  font-size: $fonthuge;
+}
+h2 {
+  font-size: $fontxlarger;
+}
+h3 {
+  font-size: $fontlarger;
+  margin: 0;
+}
+h4 {
+  font-size: $fontlarge;
+  margin: 0;
+}
+p {
+  font-size: $fontbase;
+  line-height: $linebase;
+}
+a {
+  font-size: $fontbase;
+  line-height: $linebase;
+  text-decoration: none;
+}
+
+@include mobile {
+  h1 {
+    font-size: $fontxlarger;
+  }
+  h2 {
+    font-size: $fontlarger;
+  }
+  h3 {
+    font-size: $fontlarge;
+  }
+}

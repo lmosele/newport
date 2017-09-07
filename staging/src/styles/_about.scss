@@ -1,0 +1,192 @@
+.about-page-section-title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: $fadedBlue;
+	color: white;
+	font-family: $headline;
+	margin: 0 auto;
+	font-weight: 600;
+	font-size: 2em;;
+	width: fit-content;
+}
+.about-blue-section,
+.about-properties-section, 
+.about-legal-section, {
+	@include inner-padding($globalpadding);
+	position: relative;
+}
+
+.about-blue-section {
+	padding-top: $nav-height*2;
+	padding-bottom: $nav-height;
+	background-color: $blueBG;
+	.about-header {
+		position: relative;
+		margin-bottom: $nav-height;
+		.about-page-section-title {
+			position: absolute;
+			bottom: -5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	.about-details-container {
+		position: absolute;
+		bottom: 30%;
+		left: 5%;
+		color: white;
+		img {
+			display: block;
+		}
+		.about-page-title {
+			font-weight: 700;
+			font-size: 3em;
+			letter-spacing: .1em;
+			margin-top: 10px;
+		}
+	}
+}
+
+.about-text-container {
+	display: block;
+	max-width: 640px;
+	margin: 0 auto;
+	font-size: 1.1em;
+	b {
+		font-weight: 600;
+	}
+	.about-text-subheader {
+		text-align: center;
+		font-family: $accent;
+		font-style: italic;
+		font-size: 1.3em;
+		text-transform: initial;
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+}
+
+.about-breakaway {
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	.about-breakaway-image-container {
+		position: relative;
+	}
+	.breakaway-image-title {
+		position: absolute;
+		bottom: 15%;
+		color: white;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+	}
+	.about-breakaway-text-container {
+		display: flex;
+		p {	
+			font-size: 1.2em;
+			margin-top: 0;
+			align-self: flex-end;
+		}
+		@include tablet {
+			p {
+				margin-top: 20px;
+			}
+		}
+	}
+	&.right-image {
+		text-align: right;
+		.breakaway-image-title {
+			left: 10%;		
+		}
+		@include tablet {
+			text-align: left;
+		}
+	}
+	&.left-image {
+		text-align: left;
+		.breakaway-image-title {
+			right: 10%;		
+		}
+	}
+	
+}
+
+
+.about-properties-section {
+	padding-top: $nav-height;
+	.about-page-section-title {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+}
+.properties-header-image {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.properties-header-description {
+	font-size: 1.1em;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.property-description {
+	max-width: 1070px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	&:not(:last-of-type) {
+		border-bottom: 1px solid $lightgray;
+	}
+	.property-text-container {
+		padding-left: 20px;
+	}
+	.property-image {
+		max-height: 264px;
+		max-width: 264px;
+	}
+	.property-logo {
+		min-width: 200px;
+		max-height: 80px;
+	}
+	.visit-button {
+		margin-top: 20px;
+		min-width: 200px;
+	}
+	@include tablet {
+		text-align: center;
+		border-bottom: 1px solid $lightgray;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.property-text-container {
+			padding: 0;		
+			margin: 0 auto;
+		}
+		.property-image {
+			display: none;
+		}
+	}
+}
+
+.about-legal-section {
+	border-top: 1px solid $lightgray;
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.about-text-container {
+		a {
+			text-transform: underline;
+			color: #086FD1;
+		}
+	}
+	.legal-section-header {
+		text-align: center;
+		color: $blue;
+		font-size: 1.5em;
+		
+	}
+}
+

@@ -1,0 +1,112 @@
+// UTILS
+
+@mixin inner-padding($padding) {
+  padding-left: $padding;
+  padding-right: $padding;
+  @include desktop {
+      padding-left: $padding - 10px;
+      padding-right: $padding - 10px;
+  }
+  @include laptop {
+      padding-left: $padding - 30px;
+      padding-right: $padding - 30px;
+  }
+  @include mobile {
+      padding-left: $padding - 40px;
+      padding-right: $padding - 40px;
+  }
+}
+
+@mixin accent-style($color) {
+  font-family: $accent;
+  font-style: italic;
+  color: $color;
+}
+
+// laptop
+.show-laptop {
+    display: none;
+  }
+@include laptop {
+  .hide-laptop {
+    display: none;
+  }
+  .show-laptop {
+    display: block;
+  }
+}
+
+// tablet
+.show-tablet {
+    display: none;
+  }
+@include tablet {
+  .hide-tablet {
+    display: none;
+  }
+  .show-tablet {
+    display: block;
+  }
+}
+
+// mobile
+.show-mobile {
+    display: none;
+  }
+@include mobile {
+  .hide-mobile {
+    display: none;
+  }
+  .show-mobile {
+    display: block;
+  }
+}
+
+.text-orange {
+  color: $orange;
+}
+.text-pink {
+  color: $pink;
+}
+.text-blue {
+  color: $blue;
+}
+
+// if you need old school list styles
+.reset-list {
+  margin-left: 10px;
+  li {
+    line-height: 1.9em;
+    margin-bottom: 5px;
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+    &:before {
+      content: "\25A0";
+      margin-right: 5px;
+    }
+  }
+}
+.reset-button {
+  background:none;
+  color:inherit;
+  border:none; 
+  padding:0;
+  font: inherit;
+  cursor: pointer;
+  box-shadow: none;
+  outline-offset: 0;
+  outline: none;
+}
+
+
+// Gradient mixin
+@mixin gradient($from-color, $to-color) {
+  background-color: mix($from-color, $to-color); /* Fallback */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from-color), to($to-color));
+  background-image: -webkit-linear-gradient(top, $from-color, $to-color); 
+  background-image:    -moz-linear-gradient(top, $from-color, $to-color);
+  background-image:     -ms-linear-gradient(top, $from-color, $to-color);
+  background-image:      -o-linear-gradient(top, $from-color, $to-color);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$from-color}', EndColorStr='#{$to-color}')";
+}

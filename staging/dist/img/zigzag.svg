@@ -1,0 +1,6 @@
+<svg class="zigzag" width="54" height="12" viewBox="0 0 54 12" xmlns="http://www.w3.org/2000/svg">
+  <title>
+    zigzag
+  </title>
+  <path  d="M1 2.2l6.44 8 6.44-8 6.45 8 6.44-8 6.44 8 6.47-8 6.46 8 6.46-8" stroke-width="2" stroke="#2B6FCA" fill="none"/>
+</svg>

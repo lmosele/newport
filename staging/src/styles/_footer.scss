@@ -1,0 +1,20 @@
+footer {
+	@include inner-padding($globalpadding);
+	height: auto;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background-color: $blue;;
+	color: white;
+	.footer-brands {
+		margin-bottom: 30px;
+	}
+	.footer-legal-links {
+		padding-top: 40px;
+		border-top: 1px solid rgba(255,255,255,0.4);
+	}
+	.brand-logo {
+    .logo-relieved path {
+      fill: $blue;
+    }
+  }
+}
