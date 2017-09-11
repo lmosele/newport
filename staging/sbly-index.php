@@ -217,6 +217,51 @@
 								</div>
 							</div>
 						</li>
+						<li class="post-listing">
+							<div class="row">
+								<div class="post-image-container col-xs-2">
+									<a href="#{post link}" class="post-image" alt="{post title}">
+										<img src="./dist/img/photos/listing1.png">
+									</a>
+								</div>
+								<div class="post-details col-xs-10">
+									<a href="#{post link}" class="post-title">
+										<h3>Sponsored Post Title</h3>
+									</a>
+									<span class="post-crumb-datetime">July 5th 2017</span>
+								</div>
+							</div>
+						</li>
+						<li class="post-listing">
+							<div class="row">
+								<div class="post-image-container col-xs-2">
+									<a href="#{post link}" class="post-image" alt="{post title}">
+										<img src="./dist/img/photos/listing1.png">
+									</a>
+								</div>
+								<div class="post-details col-xs-10">
+									<a href="#{post link}" class="post-title">
+										<h3>Sponsored Post Title</h3>
+									</a>
+									<span class="post-crumb-datetime">July 5th 2017</span>
+								</div>
+							</div>
+						</li>
+						<li class="post-listing">
+							<div class="row">
+								<div class="post-image-container col-xs-2">
+									<a href="#{post link}" class="post-image" alt="{post title}">
+										<img src="./dist/img/photos/listing1.png">
+									</a>
+								</div>
+								<div class="post-details col-xs-10">
+									<a href="#{post link}" class="post-title">
+										<h3>Sponsored Post Title</h3>
+									</a>
+									<span class="post-crumb-datetime">July 5th 2017</span>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
