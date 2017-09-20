@@ -174,7 +174,7 @@
 
 	  <aside class="content-recommended-posts hide-tablet col-xs-12 col-sm-3">
 			<div class="subscribe-block ad-relieved">
-				<h4 class="subscribe-block-title">Stay Updated w/SBLY</h4>
+				<h4 class="subscribe-block-title">Stay Updated w/<b>SBLY</b></h4>
 				<h5 class="subscribe-block-subtitle">Get uplifting and insightful news daily.</h5>
 				<div class="subscribe-block-input input-group">
 					<input class="input-group-field" type="text" placeholder="enter your email address" name="subscribeBlockEmail">

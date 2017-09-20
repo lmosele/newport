@@ -5,6 +5,7 @@
 <body>
 
   <?php echo file_get_contents("./src/modules/_relieved-navbar.php") ?>
+  <?php echo file_get_contents("./src/modules/_sharethis.php") ?>
 
   <main class="page-container row">
 		<header class="content-splash col-xs-12 center-xs">

@@ -8,9 +8,12 @@
 
 	<section class="about-blue-section">
 		<header class="about-header">
-  		<img class="content-splash-image" src="./dist/img/photos/about-header1.jpg" />
+			<div class="about-image-container">
+				<img class="content-splash-image" src="./dist/img/photos/about-header1.jpg" />
+  			<img class="about-logo-tablet" src="./dist/img/logo-sbly-white.svg">
+			</div>
   		<div class="about-details-container">
-  			<img src="./dist/img/logo-sbly-white.svg">
+  			<img class="about-logo-desktop" src="./dist/img/logo-sbly-white.svg">
 	  		<h1 class="about-page-title">Stories worth sharing</h1>
   		</div>
 			<h2 class="about-page-section-title">
