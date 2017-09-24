@@ -1,4 +1,7 @@
 // UTILS
+body.noscroll {
+  overflow: hidden;
+}
 
 @mixin inner-padding($padding) {
   padding-left: $padding;
@@ -97,6 +100,7 @@
   box-shadow: none;
   outline-offset: 0;
   outline: none;
+  font-family: $headline;
 }
 
 

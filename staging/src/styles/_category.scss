@@ -2,7 +2,7 @@
 	@include inner-padding($globalpadding);
 	background-color: $tanBG;
 	padding-top: ($nav-height*1.2);
-  padding-bottom: $nav-height;
+  padding-bottom: $nav-height/2;
 }
 
 .category-callout,
@@ -42,11 +42,12 @@
   	min-height: 300px;
 	}
 	.post-image-slug {
-		font-family: $headline;
+		font-family: $nav;
 		color: $orange;
 		font-weight: 600;
 		text-transform: uppercase;
 		padding: 10px;
+		letter-spacing: 0.08em;
 	}
 }
 .callout-details {
@@ -65,9 +66,9 @@
   &:active,
   &:focus {
   	transition: all .2s ease-in;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.28);
-		-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.28);
-		box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.28);  
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);
+		box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);  
   }
 }
 

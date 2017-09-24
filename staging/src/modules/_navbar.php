@@ -36,7 +36,36 @@
           <img src="./dist/img/search-icon-blue.svg" alt="{site name}">
         </button>
         <!-- .menu-open class toggles hamburger to "x"-->
-        <button class="reset-button home-nav-hamburger-toggle"></button>
+        <button class="reset-button home-nav-hamburger-toggle" id="menuToggle"></button>
       </div>
     </div>
   </nav>
+
+  <div class="mobile-nav-container home-mobile-nav middle-xs">
+   <ul class="mobile-brands-list center-xs">
+      <li style="background-image:  url(./dist/img/photos/mobile-relieved-bg.jpg);">
+        <a href="#" class="mobile-brand-menu">
+          <img class="mobile-brand-logo" src="./dist/img/logo-relieved-white.svg" alt="logo" />
+          <div class="mobile-brand-subtitle">Cooking has never been easier</div>
+        </a>
+      </li>
+      <li style="background-image:  url(./dist/img/photos/mobile-sweetsavory-bg.jpg);">
+        <a href="#" class="mobile-brand-menu">
+          <img class="mobile-brand-logo" src="./dist/img/logo-sweet-white.svg" alt="logo" />
+          <div class="mobile-brand-subtitle">Cooking has never been easier</div>
+        </a>
+      </li>
+      <li style="background-image:  url(./dist/img/photos/mobile-animalchannel-bg.jpg);">
+        <a href="#" class="mobile-brand-menu">
+          <img class="mobile-brand-logo" src="./dist/img/logo-animal-chan-white.svg" alt="logo" />
+          <div class="mobile-brand-subtitle">Cooking has never been easier</div>
+        </a>
+      </li>
+      <li style="background-image:  url(./dist/img/photos/mobile-homehacks-bg.jpg);">
+        <a href="#" class="mobile-brand-menu">
+          <img class="mobile-brand-logo" src="./dist/img/logo-homehacks-white.svg" alt="logo" />
+          <div class="mobile-brand-subtitle">Cooking has never been easier</div>
+        </a>
+      </li>
+    </ul>
+  </div>

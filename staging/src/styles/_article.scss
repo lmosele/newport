@@ -26,6 +26,36 @@
   	padding: 0;
   }
 }
+.share-this-widget {
+	position: fixed;
+	top: 50%;
+	color: white;
+	background-color: $blue;
+	width: 80px;
+	z-index: $z10;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: .9em;
+	font-weight: 600;
+	transition: .3s transform ease-out;
+	transform: translateX(-10%);
+	&:hover {
+		cursor: pointer;
+		transition: .3s transform ease-in;
+		transform: translateX(0%);
+	}
+	img {
+		margin: 0 auto;
+		margin-bottom: 5px;
+		display: block;
+	}
+	@include tablet {
+		display: none;
+	}
+}
 
 .page-container {
 	padding-top: ($nav-height*1.2);
@@ -76,6 +106,8 @@
 }
 .content-details-container {
 	position: relative;
+	margin: 0 auto;
+	max-width: 910px;
 	.content-title {
 		font-weight: 700;
 		margin-bottom: 20px;
@@ -96,19 +128,21 @@
 }
 
 .content-article {
-	font-size: $fontbase;
+	font-size: 18px;
 	color: $black;
-	line-height: 2em;
+	line-height: 30px;
 	.article-text-subheader,
 	.article-text-foreword {
 		font-family: $headline;
-		font-size: 1.3em;
+		font-size: 24px;
 	}
 	.article-text-subheader {
+		font-weight: 700;
 		line-height: 2em;
 	}
 	.article-text-foreword {
-		font-weight: 700;
+		font-weight: 600;
+		line-height: 35px;
 	}
 	.article-media {
 		position: relative;
@@ -142,7 +176,7 @@
 		border-left: 2px solid $orange;
 		padding-left: 20px;
 		font-size: 1.8em;
-		line-height: (1.8*1.5)em;
+		line-height: 44px;
 	}	
 	.article-text-link {
 		font-family: $body;
