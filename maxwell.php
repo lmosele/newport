@@ -35,7 +35,7 @@
 
 				<h2>The Research</h2>
 				<p>The first thing I needed to understand was our infrastructure. It was important to know the spillover between the corporate website and other domains that lived on the same server. In other words, I needed to know what resources were shared between our marketing sites, and what could be safely changed/removed. </p>
-				<p>The second step was understanding our audience. It was clear that brokers comprised the majority of our traffic, but we weren't very clear on what their behavior was (as our analytics was improperly implemented).</p>
+				<p>The second step was understanding our audience. We communicated with brokers (our main clients at the time) and started to understand where their priorities lay. When</p>
 
 				<h2>The Process</h2>
 				<p>After several weeks of carefully deprecating old code and moving towards better practices like SASSifying our stylesheets, compressing &amp; concatenating JS files, and templating with PHP I arrived at the point where a redesign was finally possible. The streamlining of the front-end also meant that maintenance time was halved, and the templating meant that new sales pages could be created in a tenth of the time.</p>

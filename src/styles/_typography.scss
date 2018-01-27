@@ -12,6 +12,7 @@ html[xmlns] .clearfix {
   -webkit-text-size-adjust: none;
   outline: none;
   -webkit-font-smoothing: antialiased;
+  font-family: $body;
 }
 html, html a {
   -webkit-font-smoothing: antialiased !important;

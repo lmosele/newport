@@ -11,7 +11,7 @@ $(document).ready(function() {
     //Navigation
     menu: '#menu',
     lockAnchors: true,
-    anchors: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'],
+    anchors: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['Home', 'Maxi Cosi', 'AllCells',],
@@ -33,7 +33,7 @@ $(document).ready(function() {
     continuousVertical: false,
     normalScrollElements: '#skrollr-body',
     scrollOverflow: false,
-    touchSensitivity: 10,
+    touchSensitivity: 4,
     normalScrollElementTouchThreshold: 3,
 
     //Accessibility
@@ -112,7 +112,7 @@ $(document).ready(function() {
 
 
 // pop menu out on hover
-$(".popout").hover(function() {
+$(".popout").click(function() {
   $(".popout").toggleClass("open");
   $("#nav-icon").toggleClass("open");
 }); //mobile

@@ -14,7 +14,7 @@
 	<meta name="MobileOptimized" content="640">
     <meta name="description" content="Lucas Mosele is a UX/UI Front-End Developer and Interaction Designer for hire working in Boston, MA.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="dist/css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

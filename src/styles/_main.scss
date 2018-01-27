@@ -236,6 +236,9 @@
     display: inline-block;
     padding: 20px;
   }
+  a:hover {
+    cursor: pointer;
+  }
   a:not(.trigger){
     text-transform: uppercase;
     padding: 30px;
@@ -243,7 +246,6 @@
   }
   a:not(.trigger):hover {
     padding: 30px;
-    cursor: url(../img/cursor.png), auto;
   }
 }
   .popout.open {

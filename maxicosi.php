@@ -42,6 +42,7 @@
 				<h2>The Results</h2>
 				<p>The product was received <a href="http://www.prnewswire.com/news-releases/maxi-cosi-introduces-first-custom-designable-car-seat-300067915.html" target="_blank"> positively</a>, and is still their main product line to this day.</p>
 
+				<img class="appear fadeInUp" role="presentation" src="dist/img/cosi/press.png">
 
 				<img class="appear fadeInUp" alt="photoshop mockup" role="presentation" src="dist/img/cosi/mc-4.png">
 				<div class="center">

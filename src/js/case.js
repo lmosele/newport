@@ -10,7 +10,7 @@ $(window).on('load', function() {
 });
 
 // pop menu out on hover
-$(".popout").hover(function() {
+$(".popout").click(function() {
   $(".popout").toggleClass("open");
   $("#nav-icon").toggleClass("open");
 });

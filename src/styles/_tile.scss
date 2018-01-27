@@ -105,12 +105,47 @@ a.tile:hover .fa {
     background-size: cover;
     background-position: 50%;
 }
+.preview.forbes {
+    background: url(http://jmsc.hku.hk/revamp/wp-content/uploads/2017/11/Forbes.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+.preview.bostinno {
+    background: url(https://www.berklee.edu/sites/default/files/BostInno-square.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+.preview.SIB {
+    background: url(http://techmeetups.com/wp-content/uploads/2015/01/StartupInstitute-logo.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-color: black;
+}
 .preview.bio {
-    background: url(../img/self.jpg);
+    background: url(https://scontent.fbed1-1.fna.fbcdn.net/v/t31.0-8/1412632_789663574392551_891173963_o.jpg?oh=21cd4dca1dcbdab70bae0c98e0698766&oe=5AE94946);
     background-size: cover;
     background-position: 50%;
 }
 
+
+.tile.press {
+  max-width: 25vw;
+  .preview {
+    display: block;
+    height: 200px;
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: left;
+    span {
+      position: relative;
+      right: 0;
+    }
+  }
+}
 
 // BIO
 .tile.bio {
@@ -137,6 +172,7 @@ a.tile:hover .fa {
     float: right;
     color: #505050;
     border-color: #505050;
+    margin-top: -15px;
   }
 }
 @include tablet {

@@ -63,8 +63,8 @@
 						<li>Product Development</li>
 						<li>Interaction Design</li>
 					</ul>
-					<p>At Maxwell Health I help the engineering team build, design, and develop their large-scale HR platform. As a crossfunctional member of design &amp; engineering I also build all marketing web presence, ranging from client facing work to internal microsites.</p>
-					<a class="btn ghost" href="maxwell.php">Website Case Study</a>
+					<p>From landing pages, to customer support portals, to full page web applications, these are the projects I've worked on with an amazing team at Maxwell:</p>
+					<a class="btn ghost" href="maxwell.php">Corporate Site Case Study</a>
 					<a class="btn ghost" href="http://lmosele.com/eoy/">Yearly Report Demo</a>
 					<a class="btn ghost" target="_blank" href="https://medium.com/@l_mosele/the-process-behind-our-end-of-year-report-bc6a71b0aca6#.mvo8kgik2">Report Case Study</a>
 				</figure>
@@ -182,12 +182,12 @@
 	    </div>
 
 	     <!-- SECTION 9 -->
-	    <div class="section middle" id="about">
+			<div class="section middle" id="about">
 				<div class="tile bio">
 					<div class="preview bio"></div>
 					<div class="text">
 						<h3>About Me</h3>
-						<p>I'm a UX/UI Designer with Front-End chops who loves working in diverse teams with passionate people.  <br><br>When I'm not building awesome products I'm a freelance photographer &amp; urban explorer. I also teach web &amp; UX design at Startup Institute! You can reach me via:
+						<p>I'm a UX/UI Designer with Front-End chops who loves working in diverse teams with passionate people.  <br><br>When I'm not building products with an amazing team I'm a freelance photographer &amp; urban explorer. I also teach web &amp; UX design at Startup Institute! You can reach me via:
 						 </p>	
 						<ul>
 							<li><a href="https://www.instagram.com/300iso/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
@@ -197,7 +197,35 @@
 						</ul>	
 						<a href="mailto:lucasmosele@gmail.com" class="btn ghost"><i class="fa fa-envelope" aria-hidden="true"></i>E-mail Me</a>
 					</div>
+			</div>
 		</div>
+
+			 <!-- SECTION 10 -->
+	    <div class="section middle" id="press">
+		    	<a href="https://www.forbes.com/sites/tomaslaurinavicius/2016/10/31/first-speaking-engagement/#4efa11075293" target="_blank" class="tile press">
+						<div class="preview forbes"></div>
+						<div class="text">
+							<h3>11 Designers Share How They Got Their First Speaking Engagements</h3>
+							<span>Read More <i class="fa fa-external-link"></i></span>
+						</div>
+					</a>
+
+		    	<a href="https://www.startupinstitute.com/blog/2015-7-20-ideation-techniques" target="_blank" class="tile press">
+						<div class="preview SIB"></div>
+						<div class="text">
+							<h3>6 Principles To Inspire Ideationn</h3>
+							<span>Read More <i class="fa fa-external-link"></i></span>
+						</div>
+					</a>
+
+					<a href="https://www.americaninno.com/boston/hacking/" target="_blank" class="tile press">
+						<div class="preview bostinno"></div>
+						<div class="text">
+							<h3>For the Love of Startups</h3>
+							<span>Read More <i class="fa fa-external-link"></i></span>
+						</div>
+					</a>
+	    </div>
 
 	
 <!-- 	<div id="awwwards" class="nominee white left">
