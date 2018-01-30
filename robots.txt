@@ -2,4 +2,5 @@ Disallow: /
 
 Disallow: /eoy/
 Disallow: /staging/
+Disallow: /test/
 
