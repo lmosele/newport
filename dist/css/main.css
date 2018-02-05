@@ -690,6 +690,9 @@ a {
 .right.fa {
   margin-right: 10px; }
 
+.slide {
+  display: flex; }
+
 button.btn,
 a.btn {
   -webkit-appearance: none;
@@ -906,122 +909,122 @@ body #nav-icon span {
 .mock4 {
   transition: all 1s ease; }
 
-.fp-viewing-2 .grid.show {
+[class*="fp-viewing-2"] .grid.show {
   width: 800px;
   transform: translateY(5%) rotateX(60deg) rotateZ(-50deg);
   transition: all 2s ease; }
 
-.fp-viewing-2 .mock1 {
+[class*="fp-viewing-2"] .mock1 {
   width: 600px;
   height: 350px;
   background: url("../img/maxwell/mh-1.jpg");
   background-size: cover; }
-  .fp-viewing-2 .mock1 .s {
+  [class*="fp-viewing-2"] .mock1 .s {
     display: block; }
 
-.fp-viewing-2 .mock2 {
+[class*="fp-viewing-2"] .mock2 {
   width: 600px;
   height: 350px;
   background: url("../img/maxwell/mh-2.jpg");
   background-size: cover; }
-  .fp-viewing-2 .mock2 .s {
+  [class*="fp-viewing-2"] .mock2 .s {
     display: block; }
 
-.fp-viewing-2 .mock3 {
+[class*="fp-viewing-2"] .mock3 {
   width: 600px;
   height: 350px;
   background: url("../img/maxwell/mh-3.jpg");
   background-size: cover; }
-  .fp-viewing-2 .mock3 .s {
+  [class*="fp-viewing-2"] .mock3 .s {
     display: block; }
 
-.fp-viewing-2 .mock4 {
+[class*="fp-viewing-2"] .mock4 {
   display: none; }
-  .fp-viewing-2 .mock4 .s {
+  [class*="fp-viewing-2"] .mock4 .s {
     display: none; }
 
-.fp-viewing-3 .grid.show {
+[class*="fp-viewing-3"] .grid.show {
   width: 1048px;
   transform: translateY(-5%) rotateX(60deg) rotateZ(-50deg);
   transition: all 2s ease; }
 
-.fp-viewing-3 .mock1 {
+[class*="fp-viewing-3"] .mock1 {
   width: 100%;
   height: 900px;
   background: url("../img/salt/3.jpg");
   background-size: cover !important; }
-  .fp-viewing-3 .mock1 .s {
+  [class*="fp-viewing-3"] .mock1 .s {
     display: block; }
 
-.fp-viewing-3 .mock2 {
+[class*="fp-viewing-3"] .mock2 {
   display: none; }
-  .fp-viewing-3 .mock2 .s {
+  [class*="fp-viewing-3"] .mock2 .s {
     display: none; }
 
-.fp-viewing-3 .mock3 {
+[class*="fp-viewing-3"] .mock3 {
   display: none; }
-  .fp-viewing-3 .mock3 .s {
+  [class*="fp-viewing-3"] .mock3 .s {
     display: none; }
 
-.fp-viewing-3 .mock4 {
+[class*="fp-viewing-3"] .mock4 {
   display: none; }
-  .fp-viewing-3 .mock4 .s {
+  [class*="fp-viewing-3"] .mock4 .s {
     display: none; }
 
-.fp-viewing-4 .grid.show {
+[class*="fp-viewing-4"] .grid.show {
   width: 840px;
   transform: translateY(-5%) rotateX(60deg) rotateZ(-50deg);
   transition: all 2s ease; }
 
-.fp-viewing-4 .mock1 {
+[class*="fp-viewing-4"] .mock1 {
   width: 100%;
   height: 844px;
   background: url("../img/cosi/mc-1.png");
   background-size: cover !important; }
-  .fp-viewing-4 .mock1 .s {
+  [class*="fp-viewing-4"] .mock1 .s {
     display: block; }
 
-.fp-viewing-4 .mock2 {
+[class*="fp-viewing-4"] .mock2 {
   display: none; }
-  .fp-viewing-4 .mock2 .s {
+  [class*="fp-viewing-4"] .mock2 .s {
     display: none; }
 
-.fp-viewing-4 .mock3 {
+[class*="fp-viewing-4"] .mock3 {
   display: none; }
-  .fp-viewing-4 .mock3 .s {
+  [class*="fp-viewing-4"] .mock3 .s {
     display: none; }
 
-.fp-viewing-4 .mock4 {
+[class*="fp-viewing-4"] .mock4 {
   display: none; }
-  .fp-viewing-4 .mock4 .s {
+  [class*="fp-viewing-4"] .mock4 .s {
     display: none; }
 
-.fp-viewing-5 .grid.show {
+[class*="fp-viewing-5"] .grid.show {
   width: 928px;
   transform: translateY(-27%) rotateX(60deg) rotateZ(-50deg);
   transition: all 2s ease; }
 
-.fp-viewing-5 .mock1 {
+[class*="fp-viewing-5"] .mock1 {
   width: 100%;
   height: 600px;
   background: url("../img/allcells/ac-1.png");
   background-size: cover !important; }
-  .fp-viewing-5 .mock1 .s {
+  [class*="fp-viewing-5"] .mock1 .s {
     display: block; }
 
-.fp-viewing-5 .mock2 {
+[class*="fp-viewing-5"] .mock2 {
   display: none; }
-  .fp-viewing-5 .mock2 .s {
+  [class*="fp-viewing-5"] .mock2 .s {
     display: none; }
 
-.fp-viewing-5 .mock3 {
+[class*="fp-viewing-5"] .mock3 {
   display: none; }
-  .fp-viewing-5 .mock3 .s {
+  [class*="fp-viewing-5"] .mock3 .s {
     display: none; }
 
-.fp-viewing-5 .mock4 {
+[class*="fp-viewing-5"] .mock4 {
   display: none; }
-  .fp-viewing-5 .mock4 .s {
+  [class*="fp-viewing-5"] .mock4 .s {
     display: none; }
 
 @media (min-width: 1500px) {
@@ -1226,23 +1229,30 @@ body #nav-icon span {
       font-size: 1.2em; } }
 
 .floater {
-  position: absolute;
   z-index: 90;
-  width: 400px;
+  max-width: 400px;
   overflow-x: hidden;
   text-align: center;
-  left: 10%;
-  top: 15%;
+  margin-left: 10%;
   height: auto;
   padding: 20px;
   background: white;
   overflow-y: hidden;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .floater .ghost {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px; }
 
 .floater.visible {
   transform: translate3d(0, 0, 0);
   transition: all .5s ease; }
+
+.floater.full {
+  max-width: 80%;
+  margin: 0 auto;
+  overflow-y: scroll; }
 
 .floater-companion {
   position: fixed;
@@ -3232,21 +3242,21 @@ body #nav-icon span {
   #home.fp-viewing-1-aboutme #nav-icon span {
     background: #e94f37; }
 
-#home.fp-viewing-2 {
+#home[class*="fp-viewing-2"] {
   background: #5db9d1;
   transition: background .6s ease; }
-  #home.fp-viewing-2 .description h3,
-  #home.fp-viewing-2 .description p,
-  #home.fp-viewing-2 .description li,
-  #home.fp-viewing-2 .description .ghost {
+  #home[class*="fp-viewing-2"] .description h3,
+  #home[class*="fp-viewing-2"] .description p,
+  #home[class*="fp-viewing-2"] .description li,
+  #home[class*="fp-viewing-2"] .description .ghost {
     color: #5db9d1 !important;
     border-color: #5db9d1 !important;
     transition: all .6s ease; }
-  #home.fp-viewing-2 .popout a,
-  #home.fp-viewing-2 .mobile-popout li a,
-  #home.fp-viewing-2 .mobile-trigger .fa {
+  #home[class*="fp-viewing-2"] .popout a,
+  #home[class*="fp-viewing-2"] .mobile-popout li a,
+  #home[class*="fp-viewing-2"] .mobile-trigger .fa {
     color: #5db9d1; }
-  #home.fp-viewing-2 #nav-icon span {
+  #home[class*="fp-viewing-2"] #nav-icon span {
     background: #5db9d1; }
 
 #maxwell a.return,
@@ -3260,21 +3270,21 @@ body #nav-icon span {
 #maxwell .double-bounce2 {
   background: #5db9d1; }
 
-#home.fp-viewing-3 {
+#home[class*="fp-viewing-3"] {
   background: #009deb;
   transition: background .6s ease; }
-  #home.fp-viewing-3 .description h3,
-  #home.fp-viewing-3 .description p,
-  #home.fp-viewing-3 .description li,
-  #home.fp-viewing-3 .description .ghost {
+  #home[class*="fp-viewing-3"] .description h3,
+  #home[class*="fp-viewing-3"] .description p,
+  #home[class*="fp-viewing-3"] .description li,
+  #home[class*="fp-viewing-3"] .description .ghost {
     color: #009deb !important;
     border-color: #009deb !important;
     transition: all .6s ease; }
-  #home.fp-viewing-3 .popout a,
-  #home.fp-viewing-3 .mobile-popout li a,
-  #home.fp-viewing-3 .mobile-trigger .fa {
+  #home[class*="fp-viewing-3"] .popout a,
+  #home[class*="fp-viewing-3"] .mobile-popout li a,
+  #home[class*="fp-viewing-3"] .mobile-trigger .fa {
     color: #009deb; }
-  #home.fp-viewing-3 #nav-icon span {
+  #home[class*="fp-viewing-3"] #nav-icon span {
     background: #009deb; }
 
 #salt a.return,
@@ -3288,21 +3298,21 @@ body #nav-icon span {
 #salt .double-bounce2 {
   background: #009deb; }
 
-#home.fp-viewing-4 {
+#home[class*="fp-viewing-4"] {
   background: #dd0064;
   transition: background .6s ease; }
-  #home.fp-viewing-4 .description h3,
-  #home.fp-viewing-4 .description p,
-  #home.fp-viewing-4 .description li,
-  #home.fp-viewing-4 .description .ghost {
+  #home[class*="fp-viewing-4"] .description h3,
+  #home[class*="fp-viewing-4"] .description p,
+  #home[class*="fp-viewing-4"] .description li,
+  #home[class*="fp-viewing-4"] .description .ghost {
     color: #dd0064 !important;
     border-color: #dd0064 !important;
     transition: all .6s ease; }
-  #home.fp-viewing-4 .popout a,
-  #home.fp-viewing-4 .mobile-popout li a,
-  #home.fp-viewing-4 .mobile-trigger .fa {
+  #home[class*="fp-viewing-4"] .popout a,
+  #home[class*="fp-viewing-4"] .mobile-popout li a,
+  #home[class*="fp-viewing-4"] .mobile-trigger .fa {
     color: #dd0064; }
-  #home.fp-viewing-4 #nav-icon span {
+  #home[class*="fp-viewing-4"] #nav-icon span {
     background: #dd0064; }
 
 #cosi a.return,
@@ -3316,34 +3326,34 @@ body #nav-icon span {
 #cosi .double-bounce2 {
   background: #dd0064; }
 
-#home.fp-viewing-5 {
+#home[class*="fp-viewing-5"] {
   background: #8bc53f;
   transition: background .6s ease; }
-  #home.fp-viewing-5 .description h3,
-  #home.fp-viewing-5 .description p,
-  #home.fp-viewing-5 .description li,
-  #home.fp-viewing-5 .description .ghost {
+  #home[class*="fp-viewing-5"] .description h3,
+  #home[class*="fp-viewing-5"] .description p,
+  #home[class*="fp-viewing-5"] .description li,
+  #home[class*="fp-viewing-5"] .description .ghost {
     color: #8bc53f !important;
     border-color: #8bc53f !important;
     transition: all .6s ease; }
-  #home.fp-viewing-5 .popout a,
-  #home.fp-viewing-5 .mobile-popout li a,
-  #home.fp-viewing-5 .mobile-trigger .fa {
+  #home[class*="fp-viewing-5"] .popout a,
+  #home[class*="fp-viewing-5"] .mobile-popout li a,
+  #home[class*="fp-viewing-5"] .mobile-trigger .fa {
     color: #8bc53f; }
-  #home.fp-viewing-5 #nav-icon span {
+  #home[class*="fp-viewing-5"] #nav-icon span {
     background: #8bc53f; }
 
-#home.fp-viewing-6 {
+#home[class*="fp-viewing-6"] {
   background: #9013fe;
   transition: background .6s ease; }
-  #home.fp-viewing-6 .text h3,
-  #home.fp-viewing-6 .text p,
-  #home.fp-viewing-6 .text span,
-  #home.fp-viewing-6 .popout a,
-  #home.fp-viewing-6 .mobile-popout li a,
-  #home.fp-viewing-6 .mobile-trigger .fa {
+  #home[class*="fp-viewing-6"] .text h3,
+  #home[class*="fp-viewing-6"] .text p,
+  #home[class*="fp-viewing-6"] .text span,
+  #home[class*="fp-viewing-6"] .popout a,
+  #home[class*="fp-viewing-6"] .mobile-popout li a,
+  #home[class*="fp-viewing-6"] .mobile-trigger .fa {
     color: #505050; }
-  #home.fp-viewing-6 #nav-icon span {
+  #home[class*="fp-viewing-6"] #nav-icon span {
     background: #9013fe; }
 
 #majestic a.return,
@@ -3366,43 +3376,43 @@ body #nav-icon span {
 #mayhem .double-bounce2 {
   background: #505050; }
 
-#home.fp-viewing-7 {
+#home[class*="fp-viewing-7"] {
   background: #f3753a;
   transition: background .6s ease; }
-  #home.fp-viewing-7 .text h3,
-  #home.fp-viewing-7 .text p,
-  #home.fp-viewing-7 .text span,
-  #home.fp-viewing-7 .popout a,
-  #home.fp-viewing-7 .mobile-popout li a,
-  #home.fp-viewing-7 .mobile-trigger .fa {
+  #home[class*="fp-viewing-7"] .text h3,
+  #home[class*="fp-viewing-7"] .text p,
+  #home[class*="fp-viewing-7"] .text span,
+  #home[class*="fp-viewing-7"] .popout a,
+  #home[class*="fp-viewing-7"] .mobile-popout li a,
+  #home[class*="fp-viewing-7"] .mobile-trigger .fa {
     color: #505050; }
-  #home.fp-viewing-7 #nav-icon span {
+  #home[class*="fp-viewing-7"] #nav-icon span {
     background: #f3753a; }
 
-#home.fp-viewing-8 {
+#home[class*="fp-viewing-8"] {
   background: #f8bdce;
   transition: background .6s ease; }
-  #home.fp-viewing-8 .text h3,
-  #home.fp-viewing-8 .text p,
-  #home.fp-viewing-8 .text span,
-  #home.fp-viewing-8 .popout a,
-  #home.fp-viewing-8 .mobile-popout li a,
-  #home.fp-viewing-8 .mobile-trigger .fa {
+  #home[class*="fp-viewing-8"] .text h3,
+  #home[class*="fp-viewing-8"] .text p,
+  #home[class*="fp-viewing-8"] .text span,
+  #home[class*="fp-viewing-8"] .popout a,
+  #home[class*="fp-viewing-8"] .mobile-popout li a,
+  #home[class*="fp-viewing-8"] .mobile-trigger .fa {
     color: #505050; }
-  #home.fp-viewing-8 #nav-icon span {
+  #home[class*="fp-viewing-8"] #nav-icon span {
     background: #f8bdce; }
 
-#home.fp-viewing-9 {
+#home[class*="fp-viewing-9"] {
   background: #85ffc7;
   transition: background .6s ease; }
-  #home.fp-viewing-9 .text h3,
-  #home.fp-viewing-9 .text p,
-  #home.fp-viewing-9 .text span,
-  #home.fp-viewing-9 .popout a,
-  #home.fp-viewing-9 .mobile-popout li a,
-  #home.fp-viewing-9 .mobile-trigger .fa {
+  #home[class*="fp-viewing-9"] .text h3,
+  #home[class*="fp-viewing-9"] .text p,
+  #home[class*="fp-viewing-9"] .text span,
+  #home[class*="fp-viewing-9"] .popout a,
+  #home[class*="fp-viewing-9"] .mobile-popout li a,
+  #home[class*="fp-viewing-9"] .mobile-trigger .fa {
     color: #505050; }
-  #home.fp-viewing-9 #nav-icon span {
+  #home[class*="fp-viewing-9"] #nav-icon span {
     background: #85ffc7; }
 
 #home[class*="fp-viewing-10"] {

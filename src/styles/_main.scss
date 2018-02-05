@@ -113,23 +113,31 @@
 
 // ==================== FLOATER
 .floater {
-  position: absolute;
   z-index: $z9;
-  width: 400px;
+  max-width: 400px;
   overflow-x: hidden;
   text-align: center;
-  left: 10%;
-  top: 15%;
+  margin-left: 10%;
   height: auto;
   padding: 20px;
   background: white;
   overflow-y: hidden;
   box-shadow: 4px 4px 10px rgba(0,0,0, .1);
   transition: all .2s $bounce;
+  .ghost {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
 }
 .floater.visible {
   transform: translate3d(0, 0, 0);
   transition: all .5s ease;
+}
+.floater.full {
+  max-width: 80%;
+  margin: 0 auto;
+  overflow-y: scroll;
 }
 .floater-companion {
   position: fixed;

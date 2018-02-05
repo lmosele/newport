@@ -9,6 +9,10 @@
   margin-right: 10px;
 }
 
+.slide {
+  display: flex;
+}
+
 button.btn,
 a.btn {
   -webkit-appearance:none;-moz-appearance:none;border-radius:0;border-style:solid;border-width:0;cursor:pointer;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-weight:normal;line-height:normal;margin:0 0 1.25rem;position:relative;text-align:center;text-decoration:none;display:inline-block;padding:1rem 2rem 1.0625rem 2rem;font-size:1rem;background-color:#2ba6cb;border-color:#2285a2;color:#fff;transition:background-color 300ms ease-out
@@ -223,7 +227,7 @@ body #nav-icon span {
 //
 // SECTION 2 - Maxwell Health
 //
-.fp-viewing-2 {
+[class*="fp-viewing-2"] {
   .grid.show {
     width: 800px;
     transform: translateY(5%) rotateX(60deg) rotateZ(-50deg);
@@ -269,7 +273,7 @@ body #nav-icon span {
 //
 // SECTION 3 - SALT
 //
-.fp-viewing-3 {
+[class*="fp-viewing-3"] {
   .grid.show {
     width: 1048px;
     transform: translateY(-5%) rotateX(60deg) rotateZ(-50deg);
@@ -308,7 +312,7 @@ body #nav-icon span {
 //
 // SECTION 3 - Maxi Cosi
 //
-.fp-viewing-4 {
+[class*="fp-viewing-4"] {
   .grid.show {
     width: 840px;
     transform: translateY(-5%) rotateX(60deg) rotateZ(-50deg);
@@ -348,7 +352,7 @@ body #nav-icon span {
 //
 // SECTION 4 - Allcells
 //
-.fp-viewing-5 {
+[class*="fp-viewing-5"] {
   .grid.show {
     width: 928px;
     transform: translateY(-27%) rotateX(60deg) rotateZ(-50deg);

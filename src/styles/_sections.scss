@@ -13,7 +13,7 @@
   }
 }
 // =============================== MAXWELL HEALTH
-#home.fp-viewing-2 {
+#home[class*="fp-viewing-2"] {
   background: $color2;
   transition: background .6s ease;
   .description h3,
@@ -49,7 +49,7 @@
   }
 }
 // =============================== SALT
-#home.fp-viewing-3 {
+#home[class*="fp-viewing-3"] {
   background: $color3;
   transition: background .6s ease;
   .description h3,
@@ -85,7 +85,7 @@
   }
 }
 
-#home.fp-viewing-4 {
+#home[class*="fp-viewing-4"] {
   background: $color4;
   transition: background .6s ease;
   .description h3,
@@ -122,7 +122,7 @@
 }
 
 // =============================== Allcells
-#home.fp-viewing-5 {
+#home[class*="fp-viewing-5"] {
   background: $color5;
   transition: background .6s ease;
   .description h3,
@@ -145,7 +145,7 @@
 }
 
 // =============================== Majestic
-#home.fp-viewing-6 {
+#home[class*="fp-viewing-6"] {
   background: $color6;
   transition: background .6s ease;
   .text h3,
@@ -180,7 +180,7 @@
 }
 
 // =============================== Print Designs
-#home.fp-viewing-7 {
+#home[class*="fp-viewing-7"] {
   background: $color7;
   transition: background .6s ease;
   .text h3,
@@ -197,7 +197,7 @@
   }
 }
 // =============================== Other 
-#home.fp-viewing-8 {
+#home[class*="fp-viewing-8"] {
   background: $color8;
   transition: background .6s ease;
   .text h3,
@@ -214,7 +214,7 @@
   }
 }
 // =============================== Bio 
-#home.fp-viewing-9 {
+#home[class*="fp-viewing-9"] {
   background: $color9;
   transition: background .6s ease;
   .text h3,
