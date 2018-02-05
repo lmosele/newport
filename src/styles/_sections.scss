@@ -47,6 +47,9 @@
   .double-bounce2 {
     background: $color2;
   }
+  .callout {
+    color: $color2;
+  }
 }
 // =============================== SALT
 #home[class*="fp-viewing-3"] {
@@ -83,6 +86,9 @@
   .double-bounce2 {
     background: $color3;
   }
+  .callout {
+    color: $color3;
+  }
 }
 
 #home[class*="fp-viewing-4"] {
@@ -118,6 +124,9 @@
   .double-bounce1, 
   .double-bounce2 {
     background: $color4;
+  }
+  .callout {
+    color: $color4;
   }
 }
 

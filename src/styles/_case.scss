@@ -7,6 +7,34 @@ body {
 	box-shadow: none;
 }
 
+.pull-right {
+	display: inline-block;
+	width: 50%;
+	float: right;
+	margin: 10px;
+}
+
+.pull-left {
+	display: inline-block;
+	width: 50%;
+	float: left;
+	margin: 10px;
+}
+
+.list li {
+	list-style-type: initial;
+}
+
+.callout {
+	font-weight: 800;
+	font-size: 24px;
+	font-style: italic;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+}
+
+
 a.return {
 	position: fixed;
 	left: 2%;
@@ -86,7 +114,10 @@ article {
 		text-align: center;
 		width: 100%;
 	}
-	span {
+	a {
+		color: $color1;
+	}
+	.description {
 		display: block;
 	    font-size: .8em;
 	    color: gray;

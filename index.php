@@ -126,8 +126,8 @@
 			<a href="majestic.php" class="tile">
 				<div class="preview majestic"></div>
 				<div class="text">
-					<h3>Majestic Casual WIP</h3>
-					<p>Work-in-Progress App design for the music channel Majestic Casual designed using Sketch &amp; Flinto</p>		
+					<h3>Majestic Casual</h3>
+					<p>Work-in-Progress experimental music app for Majestic Casual, mostly used as an excuse to experiment with Flinto's animation tools</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
 				</div>
 			</a>
@@ -135,7 +135,7 @@
 				<div class="preview mayhem"></div>
 				<div class="text">
 					<h3>Model Mayhem App</h3>
-					<p>A branding/interaction mockup in Flinto of what I'd imagine Model Mayhem's app would look like.</p>		
+					<p>A quick and dirty draft concept I cold pitched to the world's largest social media for modeling talent.</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
 				</div>
 			</a>
@@ -147,7 +147,7 @@
 				<div class="preview starwars"></div>
 				<div class="text">
 					<h3>Star Wars Art Deco</h3>
-					<p>I'm currently challenging myself to work on illustrating my favorite planets from Star Wars in 1920's travel poster style.</p>
+					<p>I challenged myself to illustrate my favorite planets from Star Wars, early 1900s travel poster style, for Star Wars Day.</p>
 					<span>See More <i class="fa fa-external-link"></i></span>
 				</div>
 			</a>
@@ -155,7 +155,7 @@
 				<div class="preview gatsby"></div>
 				<div class="text">
 					<h3>Great Gatsby Poster</h3>
-					<p>A poster based off of a book cover (not Great Gatsby) that I saw in the library, the character was based off of an old theater poster from the same era.</p>
+					<p>A poster based based on the Art Deco movement, one of my favorite and most time consuming personal projects so far.</p>
 					<span>See More <i class="fa fa-external-link"></i></span>
 				</div>
 			</a>
@@ -167,7 +167,7 @@
 				<div class="preview eotm"></div>
 				<div class="text">
 					<h3>Eras of The Mercenaries</h3>
-					<p>A 3 year project to modify PetroGlyph's Empire At War game, I worked tirelessly with a community of artists, as well as modelling and designing my own assets.</p>		
+					<p>A 3 year project to modify PetroGlyph's Empire At War game, I worked tirelessly with a community of artists, as well as modeling and designing my own assets.</p>		
 					<span>See More <i class="fa fa-external-link"></i></span>
 				</div>
 			</a>
