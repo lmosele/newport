@@ -30,7 +30,7 @@
 	    	<!-- main section -->
 	    	<div class="slide" data-anchor="main">
 	    		<div class="container">
-	    			<h2>Hi, I'm Lucas.</h2>
+	    			<h2>More Than Just Pixels.</h2>
 	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">
 	    				See My Work
 	    			</button>
@@ -42,8 +42,8 @@
 	    	<!-- about me -->
     		<div class="slide" data-anchor="aboutme">
     			<div class="container">
-	    			<h2>UX/UI &amp; Development</h2>
-	    			<h3>I am a UI/UX designer and developer from Brazil living and working from Boston, MA.</h3>
+	    			<h2>My name's Lucas</h2>
+	    			<h3>I'm a UX/UI Engineer from Brazil living and working in Boston</h3>
 	    			<div class="container small">
 		    			<a class="btn ghost full" target="_blank" href="./dist/docs/lucas-mosele-resume.pdf">Resume <i class="left fa fa-download"></i></a>
 		    			<button class="btn ghost full" onclick="$.fn.fullpage.moveSectionDown();">My Work</button>
@@ -63,10 +63,13 @@
 						<li>Product Development</li>
 						<li>Interaction Design</li>
 					</ul>
-					<p>From landing pages, to customer support portals, to full page web applications, these are the projects I've worked on with an amazing team at Maxwell:</p>
-					<a class="btn ghost" href="maxwell.php">Corporate Site Case Study</a>
-					<a class="btn ghost" href="http://lmosele.com/eoy/">Yearly Report Demo</a>
-					<a class="btn ghost" target="_blank" href="https://medium.com/@l_mosele/the-process-behind-our-end-of-year-report-bc6a71b0aca6#.mvo8kgik2">Report Case Study</a>
+					<p>From full page web applications to marketing landing sites, these are the projects I've built designed and built with Maxwell over the course of the past 3 years.</p>
+					<a class="btn ghost" href="maxwell-kardia.php">Project Kardia</a>
+					<a class="btn ghost" href="maxwell.php">Corporate Site</a>
+					<a class="btn ghost" href="maxwell-ui.php">Maxwell UI</a>
+					<a class="btn ghost" href="max-mkt.php">Product Marketplace</a>
+					<!-- <a class="btn ghost" href="http://lmosele.com/eoy/">Yearly Report Demo</a> -->
+					<a class="btn ghost" target="_blank" href="https://medium.com/@l_mosele/the-process-behind-our-end-of-year-report-bc6a71b0aca6#.mvo8kgik2">EOY Tech Case Study</a>
 				</figure>
 			</div>
 	    </div>

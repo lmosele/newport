@@ -3622,11 +3622,12 @@ body {
   list-style-type: initial; }
 
 .callout {
-  font-weight: 800;
+  font-weight: 300;
   font-size: 24px;
   font-style: italic;
   color: #333;
   padding: 20px;
+  line-height: 35px;
   text-align: center; }
 
 a.return {
