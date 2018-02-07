@@ -3352,8 +3352,21 @@ body #nav-icon span {
   #home[class*="fp-viewing-5"] #nav-icon span {
     background: #8bc53f; }
 
+#home[class*="fp-viewing-7"] {
+  background: #f3753a;
+  transition: background .6s ease; }
+  #home[class*="fp-viewing-7"] .text h3,
+  #home[class*="fp-viewing-7"] .text p,
+  #home[class*="fp-viewing-7"] .text span,
+  #home[class*="fp-viewing-7"] .popout a,
+  #home[class*="fp-viewing-7"] .mobile-popout li a,
+  #home[class*="fp-viewing-7"] .mobile-trigger .fa {
+    color: #505050; }
+  #home[class*="fp-viewing-7"] #nav-icon span {
+    background: #f3753a; }
+
 #home[class*="fp-viewing-6"] {
-  background: #9013fe;
+  background: #549788;
   transition: background .6s ease; }
   #home[class*="fp-viewing-6"] .text h3,
   #home[class*="fp-viewing-6"] .text p,
@@ -3363,6 +3376,19 @@ body #nav-icon span {
   #home[class*="fp-viewing-6"] .mobile-trigger .fa {
     color: #505050; }
   #home[class*="fp-viewing-6"] #nav-icon span {
+    background: #549788; }
+
+#home[class*="fp-viewing-8"] {
+  background: #9013fe;
+  transition: background .6s ease; }
+  #home[class*="fp-viewing-8"] .text h3,
+  #home[class*="fp-viewing-8"] .text p,
+  #home[class*="fp-viewing-8"] .text span,
+  #home[class*="fp-viewing-8"] .popout a,
+  #home[class*="fp-viewing-8"] .mobile-popout li a,
+  #home[class*="fp-viewing-8"] .mobile-trigger .fa {
+    color: #505050; }
+  #home[class*="fp-viewing-8"] #nav-icon span {
     background: #9013fe; }
 
 #majestic a.return,
@@ -3385,34 +3411,8 @@ body #nav-icon span {
 #mayhem .double-bounce2 {
   background: #505050; }
 
-#home[class*="fp-viewing-7"] {
-  background: #f3753a;
-  transition: background .6s ease; }
-  #home[class*="fp-viewing-7"] .text h3,
-  #home[class*="fp-viewing-7"] .text p,
-  #home[class*="fp-viewing-7"] .text span,
-  #home[class*="fp-viewing-7"] .popout a,
-  #home[class*="fp-viewing-7"] .mobile-popout li a,
-  #home[class*="fp-viewing-7"] .mobile-trigger .fa {
-    color: #505050; }
-  #home[class*="fp-viewing-7"] #nav-icon span {
-    background: #f3753a; }
-
-#home[class*="fp-viewing-8"] {
-  background: #f8bdce;
-  transition: background .6s ease; }
-  #home[class*="fp-viewing-8"] .text h3,
-  #home[class*="fp-viewing-8"] .text p,
-  #home[class*="fp-viewing-8"] .text span,
-  #home[class*="fp-viewing-8"] .popout a,
-  #home[class*="fp-viewing-8"] .mobile-popout li a,
-  #home[class*="fp-viewing-8"] .mobile-trigger .fa {
-    color: #505050; }
-  #home[class*="fp-viewing-8"] #nav-icon span {
-    background: #f8bdce; }
-
 #home[class*="fp-viewing-9"] {
-  background: #85ffc7;
+  background: #f8bdce;
   transition: background .6s ease; }
   #home[class*="fp-viewing-9"] .text h3,
   #home[class*="fp-viewing-9"] .text p,
@@ -3422,10 +3422,10 @@ body #nav-icon span {
   #home[class*="fp-viewing-9"] .mobile-trigger .fa {
     color: #505050; }
   #home[class*="fp-viewing-9"] #nav-icon span {
-    background: #85ffc7; }
+    background: #f8bdce; }
 
 #home[class*="fp-viewing-10"] {
-  background: #4f37e9;
+  background: #85ffc7;
   transition: background .6s ease; }
   #home[class*="fp-viewing-10"] .text h3,
   #home[class*="fp-viewing-10"] .text p,
@@ -3433,8 +3433,21 @@ body #nav-icon span {
   #home[class*="fp-viewing-10"] .popout a,
   #home[class*="fp-viewing-10"] .mobile-popout li a,
   #home[class*="fp-viewing-10"] .mobile-trigger .fa {
-    color: #4f37e9; }
+    color: #505050; }
   #home[class*="fp-viewing-10"] #nav-icon span {
+    background: #85ffc7; }
+
+#home[class*="fp-viewing-11"] {
+  background: #4f37e9;
+  transition: background .6s ease; }
+  #home[class*="fp-viewing-11"] .text h3,
+  #home[class*="fp-viewing-11"] .text p,
+  #home[class*="fp-viewing-11"] .text span,
+  #home[class*="fp-viewing-11"] .popout a,
+  #home[class*="fp-viewing-11"] .mobile-popout li a,
+  #home[class*="fp-viewing-11"] .mobile-trigger .fa {
+    color: #4f37e9; }
+  #home[class*="fp-viewing-11"] #nav-icon span {
     background: #4f37e9; }
 
 .tile {
@@ -3525,6 +3538,16 @@ a.tile:hover .fa {
   background: url(../img/other/eotm-1.jpg);
   background-size: cover;
   background-position: 92%; }
+
+.preview.succotash {
+  background: url(../img/other/succotash.png);
+  background-size: cover;
+  background-position: 55%; }
+
+.preview.propaganda {
+  background: url(../img/other/propaganda.jpg);
+  background-size: cover;
+  background-position: 54%; }
 
 .preview.photo {
   background: url(../img/other/photo-1.jpg);

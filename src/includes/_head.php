@@ -3,7 +3,7 @@
       xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 	<meta charset="utf-8" />
-	<title>Lucas Mosele | UX/UI Designer &amp; Developer</title>
+	<title>Lucas Mosele | UX/UI Designer &amp; Engineer</title>
     <meta property="og:url" content="http://lmosele.com" />
 	<meta property="og:type" content="portfolio" />
 	<meta property="og:title" content="Lucas Mosele || UI/UX Portfolio" />

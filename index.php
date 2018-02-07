@@ -124,25 +124,24 @@
 			</div>
 	    </div>
 
-	    <!-- SECTION 6 -->
 	    <div class="section middle" id="play">
-			<a href="majestic.php" class="tile">
-				<div class="preview majestic"></div>
-				<div class="text">
-					<h3>Majestic Casual</h3>
-					<p>Work-in-Progress experimental music app for Majestic Casual, mostly used as an excuse to experiment with Flinto's animation tools</p>		
-					<span>See More <i class="fa fa-chevron-right"></i></span>
-				</div>
-			</a>
-			<a href="mayhem.php" class="tile">
-				<div class="preview mayhem"></div>
-				<div class="text">
-					<h3>Model Mayhem App</h3>
-					<p>A quick and dirty draft concept I cold pitched to the world's largest social media for modeling talent.</p>		
-					<span>See More <i class="fa fa-chevron-right"></i></span>
-				</div>
-			</a>
-	    </div>
+				<a href="https://www.behance.net/gallery/61521727/Project-Succotash" target="_blank" class="tile">
+					<div class="preview succotash"></div>
+					<div class="text">
+						<h3>Project Succotash</h3>
+						<p>A weekend project with friends to design a Machine Learning enabled web application that teaches you skills using only free online material.</p>		
+						<span>See More <i class="fa fa-external-link"></i></span>
+					</div>
+				</a>
+				<a href="https://medium.com/@l_mosele/fighting-misinformation-with-design-81b991e86c9e" target="_blank" class="tile">
+					<div class="preview propaganda"></div>
+					<div class="text">
+						<h3>Fighting Propaganda With Design</h3>
+						<p>A thought piece I wrote on social media's propaganda problem and how we can approach the problem with design thinking</p>		
+						<span>See More <i class="fa fa-external-link"></i></span>
+					</div>
+				</a>
+		   </div>
 
 	     <!-- SECTION 7 -->
 	    <div class="section middle">
@@ -163,6 +162,29 @@
 				</div>
 			</a>
 	    </div>
+
+	      <!-- SECTION 8 -->
+
+	      	    <!-- SECTION 6 -->
+	    <div class="section middle">
+			<a href="majestic.php" class="tile">
+				<div class="preview majestic"></div>
+				<div class="text">
+					<h3>Majestic Casual</h3>
+					<p>Work-in-Progress experimental music app for Majestic Casual, mostly used as an excuse to experiment with Flinto's animation tools</p>		
+					<span>See More <i class="fa fa-chevron-right"></i></span>
+				</div>
+			</a>
+			<a href="mayhem.php" class="tile">
+				<div class="preview mayhem"></div>
+				<div class="text">
+					<h3>Model Mayhem App</h3>
+					<p>A quick and dirty draft concept I cold pitched to the world's largest social media for modeling talent.</p>		
+					<span>See More <i class="fa fa-chevron-right"></i></span>
+				</div>
+			</a>
+	    </div>
+	   
 
 	     <!-- SECTION 8 -->
 	    <div class="section middle">
@@ -185,7 +207,7 @@
 	    </div>
 
 	     <!-- SECTION 9 -->
-			<div class="section middle" id="about">
+			<div class="section middle" id="about" name="about">
 				<div class="tile bio">
 					<div class="preview bio"></div>
 					<div class="text">

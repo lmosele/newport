@@ -153,8 +153,43 @@
   }
 }
 
-// =============================== Majestic
+
+// =============================== Print Designs
+#home[class*="fp-viewing-7"] {
+  background: $color7;
+  transition: background .6s ease;
+  .text h3,
+  .text p, 
+  .text span,
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
+    color: #505050;
+  }
+  #nav-icon span {
+    background: $color7;
+  }
+}
+// =============================== work 
 #home[class*="fp-viewing-6"] {
+  background: #549788;
+  transition: background .6s ease;
+  .text h3,
+  .text p, 
+  .text span,
+  .popout a,
+  .mobile-popout li a,
+  .mobile-trigger .fa
+   {
+    color: #505050;
+  }
+  #nav-icon span {
+    background: #549788;
+  }
+}
+// =============================== Majestic
+#home[class*="fp-viewing-8"] {
   background: $color6;
   transition: background .6s ease;
   .text h3,
@@ -187,26 +222,8 @@
     background: #505050;
   }
 }
-
-// =============================== Print Designs
-#home[class*="fp-viewing-7"] {
-  background: $color7;
-  transition: background .6s ease;
-  .text h3,
-  .text p, 
-  .text span,
-  .popout a,
-  .mobile-popout li a,
-  .mobile-trigger .fa
-   {
-    color: #505050;
-  }
-  #nav-icon span {
-    background: $color7;
-  }
-}
-// =============================== Other 
-#home[class*="fp-viewing-8"] {
+// =============================== work2 
+#home[class*="fp-viewing-9"] {
   background: $color8;
   transition: background .6s ease;
   .text h3,
@@ -223,7 +240,7 @@
   }
 }
 // =============================== Bio 
-#home[class*="fp-viewing-9"] {
+#home[class*="fp-viewing-10"] {
   background: $color9;
   transition: background .6s ease;
   .text h3,
@@ -241,7 +258,7 @@
 }
 
 // =============================== Press 
-#home[class*="fp-viewing-10"] {
+#home[class*="fp-viewing-11"] {
   background: $colorpress;
   transition: background .6s ease;
   .text h3,
