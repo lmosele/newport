@@ -117,7 +117,7 @@
 						<li>Interaction Design</li>
 					</ul>
 					<p>I worked with Trellis to design the UX and UI of AllCell's entire new Ecommerce experience. I defined all architecture and UI guidelines from the product experience to the community and forum sites.</p>
-					<a class="btn ghost" target="_blank" href="./allcells.php">Home Page</a>
+					<a class="btn ghost" target="_blank" href="./allcells.php">See Case Study</a>
 				</figure>
 			</div>
 	    </div>
