@@ -3352,6 +3352,20 @@ body #nav-icon span {
   #home[class*="fp-viewing-5"] #nav-icon span {
     background: #8bc53f; }
 
+#allcells a.return,
+#allcells .popout a,
+#allcells .mobile-trigger .fa,
+#allcells .mobile-popout li a {
+  color: #8bc53f; }
+
+#allcells #nav-icon span,
+#allcells .double-bounce1,
+#allcells .double-bounce2 {
+  background: #8bc53f; }
+
+#allcells .callout {
+  color: #8bc53f; }
+
 #home[class*="fp-viewing-7"] {
   background: #f3753a;
   transition: background .6s ease; }

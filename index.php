@@ -64,10 +64,10 @@
 						<li>Interaction Design</li>
 					</ul>
 					<p>From full page web applications to marketing landing sites, these are the projects I've built designed and built with Maxwell over the course of the past 3 years.</p>
-					<a class="btn ghost" href="maxwell-kardia.php">Project Kardia</a>
-					<a class="btn ghost" href="maxwell.php">Corporate Site</a>
-					<a class="btn ghost" href="maxwell-ui.php">Maxwell UI</a>
-					<a class="btn ghost" href="max-mkt.php">Product Marketplace</a>
+					<a class="btn ghost" href="./maxwell-kardia.php">Project Kardia</a>
+					<a class="btn ghost" href="./maxwell.php">Corporate Site</a>
+					<a class="btn ghost" href="./maxwell-ui.php">Maxwell UI</a>
+					<a class="btn ghost" href="./max-mkt.php">Product Marketplace</a>
 					<!-- <a class="btn ghost" href="http://lmosele.com/eoy/">Yearly Report Demo</a> -->
 					<a class="btn ghost" target="_blank" href="https://medium.com/@l_mosele/the-process-behind-our-end-of-year-report-bc6a71b0aca6#.mvo8kgik2">EOY Tech Case Study</a>
 				</figure>
@@ -85,7 +85,7 @@
 						<li>Interaction Design</li>
 					</ul>
 					<p>As part of our product team, I worked on defining all brand UX guidelines, communicating with engineers, user testing, and designing user interfaces.</p>
-					<a class="btn ghost" href="salt.php">Product Case Study</a>
+					<a class="btn ghost" href="./salt.php">Product Case Study</a>
 				</figure>
 			</div>
 	    </div>
@@ -101,7 +101,7 @@
 						<li>Interaction Design</li>
 					</ul>
 					<p>I was brought on to lead the design of the world's first car seat customizer ecommerce tool. I worked closely with their team and Trellis to create a uniquely Cosi shopping experience.</p>
-					<a class="btn ghost" href="maxicosi.php">See Case Study</a>
+					<a class="btn ghost" href="./maxicosi.php">See Case Study</a>
 				</figure>
 			</div>
 	    </div>
@@ -117,27 +117,25 @@
 						<li>Interaction Design</li>
 					</ul>
 					<p>I worked with Trellis to design the UX and UI of AllCell's entire new Ecommerce experience. I defined all architecture and UI guidelines from the product experience to the community and forum sites.</p>
-					<a class="btn ghost" target="_blank" href="https://www.allcells.com/">Home Page</a>
-					<a class="btn ghost" target="_blank" href="http://www.allcells.com/products/">Products</a>
-					<a class="btn ghost" target="_blank" href="https://www.allcells.com/forum/products/">Forum</a>
+					<a class="btn ghost" target="_blank" href="./allcells.php">Home Page</a>
 				</figure>
 			</div>
 	    </div>
 
 	    <div class="section middle" id="play">
-				<a href="https://www.behance.net/gallery/61521727/Project-Succotash" target="_blank" class="tile">
-					<div class="preview succotash"></div>
-					<div class="text">
-						<h3>Project Succotash</h3>
-						<p>A weekend project with friends to design a Machine Learning enabled web application that teaches you skills using only free online material.</p>		
-						<span>See More <i class="fa fa-external-link"></i></span>
-					</div>
-				</a>
-				<a href="https://medium.com/@l_mosele/fighting-misinformation-with-design-81b991e86c9e" target="_blank" class="tile">
+	    	<a href="https://medium.com/@l_mosele/fighting-misinformation-with-design-81b991e86c9e" target="_blank" class="tile">
 					<div class="preview propaganda"></div>
 					<div class="text">
 						<h3>Fighting Propaganda With Design</h3>
 						<p>A thought piece I wrote on social media's propaganda problem and how we can approach the problem with design thinking</p>		
+						<span>See More <i class="fa fa-external-link"></i></span>
+					</div>
+				</a>
+				<a href="https://www.behance.net/gallery/61521727/Project-Succotash" target="_blank" class="tile">
+					<div class="preview succotash"></div>
+					<div class="text">
+						<h3>Project Succotash</h3>
+						<p>A weekend project with to design a Machine Learning enabled web application that teaches you skills using only free online material.</p>		
 						<span>See More <i class="fa fa-external-link"></i></span>
 					</div>
 				</a>

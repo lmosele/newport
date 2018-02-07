@@ -152,7 +152,23 @@
     background: $color5;
   }
 }
-
+#allcells {
+  a.return,
+  .popout a,
+  .mobile-trigger .fa,
+  .mobile-popout li a
+   {
+    color: $color5;
+  }
+  #nav-icon span,
+  .double-bounce1, 
+  .double-bounce2 {
+    background: $color5;
+  }
+  .callout {
+    color: $color5;
+  }
+}
 
 // =============================== Print Designs
 #home[class*="fp-viewing-7"] {
