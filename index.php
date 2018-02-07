@@ -30,7 +30,7 @@
 	    	<!-- main section -->
 	    	<div class="slide" data-anchor="main">
 	    		<div class="container">
-	    			<h2>More Than Just Pixels.</h2>
+	    			<h2>Hi, I'm Lucas.</h2>
 	    			<button class="btn ghost" onclick="$.fn.fullpage.moveSectionDown();">
 	    				See My Work
 	    			</button>
@@ -42,8 +42,8 @@
 	    	<!-- about me -->
     		<div class="slide" data-anchor="aboutme">
     			<div class="container">
-	    			<h2>My name's Lucas</h2>
-	    			<h3>I'm a UX/UI Engineer from Brazil living and working in Boston</h3>
+	    			<h2>UX/UI & Engineer</h2>
+	    			<h3>from Brazil, currently living and working in Boston</h3>
 	    			<div class="container small">
 		    			<a class="btn ghost full" target="_blank" href="./dist/docs/lucas-mosele-resume.pdf">Resume <i class="left fa fa-download"></i></a>
 		    			<button class="btn ghost full" onclick="$.fn.fullpage.moveSectionDown();">My Work</button>
@@ -63,7 +63,7 @@
 						<li>Product Development</li>
 						<li>Interaction Design</li>
 					</ul>
-					<p>From full page web applications to marketing landing sites, these are the projects I've built designed and built with Maxwell over the course of the past 3 years.</p>
+					<p>From full page web applications to marketing landing sites, these are the projects I've designed and built with Maxwell over the course of the past 3 years.</p>
 					<a class="btn ghost" href="./maxwell-kardia.php">Project Kardia</a>
 					<a class="btn ghost" href="./maxwell.php">Corporate Site</a>
 					<a class="btn ghost" href="./maxwell-ui.php">Maxwell UI</a>
@@ -135,7 +135,7 @@
 					<div class="preview succotash"></div>
 					<div class="text">
 						<h3>Project Succotash</h3>
-						<p>A weekend project with to design a Machine Learning enabled web application that teaches you skills using only free online material.</p>		
+						<p>A weekend project to design a Machine Learning enabled web application that teaches you skills using only free online material.</p>		
 						<span>See More <i class="fa fa-external-link"></i></span>
 					</div>
 				</a>
@@ -155,7 +155,7 @@
 				<div class="preview gatsby"></div>
 				<div class="text">
 					<h3>Great Gatsby Poster</h3>
-					<p>A poster based based on the Art Deco movement, one of my favorite and most time consuming personal projects so far.</p>
+					<p>A poster based based on the Art Deco movement, one of my favorite and most time consuming illustration projects so far.</p>
 					<span>See More <i class="fa fa-external-link"></i></span>
 				</div>
 			</a>
@@ -169,7 +169,7 @@
 				<div class="preview majestic"></div>
 				<div class="text">
 					<h3>Majestic Casual</h3>
-					<p>Work-in-Progress experimental music app for Majestic Casual, mostly used as an excuse to experiment with Flinto's animation tools</p>		
+					<p>My first experiment with Flinto, a WIP app for Majestic Casual. Tune back in for the final product!</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
 				</div>
 			</a>
@@ -177,7 +177,7 @@
 				<div class="preview mayhem"></div>
 				<div class="text">
 					<h3>Model Mayhem App</h3>
-					<p>A quick and dirty draft concept I cold pitched to the world's largest social media for modeling talent.</p>		
+					<p>A quick draft concept I cold-pitched to the world's largest social media for modeling talent.</p>		
 					<span>See More <i class="fa fa-chevron-right"></i></span>
 				</div>
 			</a>
